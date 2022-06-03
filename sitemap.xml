@@ -142,14 +142,14 @@
   </url>
   
   <url>
-    <loc>https://czzczzczz.github.io/List/tools/index.html</loc>
+    <loc>https://czzczzczz.github.io/List/music/index.html</loc>
     
     <lastmod>2022-06-02</lastmod>
     
   </url>
   
   <url>
-    <loc>https://czzczzczz.github.io/List/music/index.html</loc>
+    <loc>https://czzczzczz.github.io/List/tools/index.html</loc>
     
     <lastmod>2022-06-02</lastmod>
     
@@ -198,14 +198,14 @@
   </url>
   
   <url>
-    <loc>https://czzczzczz.github.io/List/galleries/%E5%9F%8E%E5%B8%82%E9%A3%8E%E5%85%89/index.html</loc>
+    <loc>https://czzczzczz.github.io/List/galleries/%E6%B8%85%E6%96%B0%E8%8A%B1%E5%8D%89/index.html</loc>
     
     <lastmod>2022-06-02</lastmod>
     
   </url>
   
   <url>
-    <loc>https://czzczzczz.github.io/List/galleries/%E6%B8%85%E6%96%B0%E8%8A%B1%E5%8D%89/index.html</loc>
+    <loc>https://czzczzczz.github.io/List/galleries/%E5%9F%8E%E5%B8%82%E9%A3%8E%E5%85%89/index.html</loc>
     
     <lastmod>2022-06-02</lastmod>
     
@@ -240,14 +240,14 @@
   </url>
   
   <url>
-    <loc>https://czzczzczz.github.io/List/galleries/%E4%B9%96%E5%B7%A7%E5%B0%8F%E7%8B%97/index.html</loc>
+    <loc>https://czzczzczz.github.io/List/galleries/%E4%BA%8C%E6%AC%A1%E5%85%83%E9%A3%8E/index.html</loc>
     
     <lastmod>2022-06-02</lastmod>
     
   </url>
   
   <url>
-    <loc>https://czzczzczz.github.io/List/galleries/%E4%BA%8C%E6%AC%A1%E5%85%83%E9%A3%8E/index.html</loc>
+    <loc>https://czzczzczz.github.io/List/galleries/%E4%B9%96%E5%B7%A7%E5%B0%8F%E7%8B%97/index.html</loc>
     
     <lastmod>2022-06-02</lastmod>
     
@@ -284,13 +284,6 @@
   </url>
   
   <url>
-    <loc>https://czzczzczz.github.io/tags/%E6%B8%B2%E6%9F%93%E7%BB%95%E8%BF%87/</loc>
-    <lastmod>2022-06-03</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
     <loc>https://czzczzczz.github.io/tags/Github/</loc>
     <lastmod>2022-06-03</lastmod>
     <changefreq>daily</changefreq>
@@ -299,6 +292,13 @@
   
   <url>
     <loc>https://czzczzczz.github.io/tags/%E5%8D%9A%E5%AE%A2/</loc>
+    <lastmod>2022-06-03</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://czzczzczz.github.io/tags/%E6%B8%B2%E6%9F%93%E7%BB%95%E8%BF%87/</loc>
     <lastmod>2022-06-03</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
