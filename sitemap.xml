@@ -121,14 +121,14 @@
   </url>
   
   <url>
-    <loc>https://czzczzczz.github.io/List/tools/index.html</loc>
+    <loc>https://czzczzczz.github.io/List/music/index.html</loc>
     
     <lastmod>2022-06-02</lastmod>
     
   </url>
   
   <url>
-    <loc>https://czzczzczz.github.io/List/music/index.html</loc>
+    <loc>https://czzczzczz.github.io/List/tools/index.html</loc>
     
     <lastmod>2022-06-02</lastmod>
     
@@ -156,7 +156,7 @@
   </url>
   
   <url>
-    <loc>https://czzczzczz.github.io/List/galleries/%E7%94%9C%E7%BE%8E%E9%A3%9F%E5%93%81/index.html</loc>
+    <loc>https://czzczzczz.github.io/List/galleries/%E7%92%80%E7%92%A8%E6%98%9F%E7%A9%BA/index.html</loc>
     
     <lastmod>2022-06-02</lastmod>
     
@@ -170,7 +170,7 @@
   </url>
   
   <url>
-    <loc>https://czzczzczz.github.io/List/galleries/%E7%92%80%E7%92%A8%E6%98%9F%E7%A9%BA/index.html</loc>
+    <loc>https://czzczzczz.github.io/List/galleries/%E7%94%9C%E7%BE%8E%E9%A3%9F%E5%93%81/index.html</loc>
     
     <lastmod>2022-06-02</lastmod>
     
@@ -263,14 +263,7 @@
   </url>
   
   <url>
-    <loc>https://czzczzczz.github.io/tags/Github/</loc>
-    <lastmod>2022-06-03</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://czzczzczz.github.io/tags/%E5%8D%9A%E5%AE%A2/</loc>
+    <loc>https://czzczzczz.github.io/tags/%E6%B8%B2%E6%9F%93%E7%BB%95%E8%BF%87/</loc>
     <lastmod>2022-06-03</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
@@ -291,7 +284,14 @@
   </url>
   
   <url>
-    <loc>https://czzczzczz.github.io/tags/%E6%B8%B2%E6%9F%93%E7%BB%95%E8%BF%87/</loc>
+    <loc>https://czzczzczz.github.io/tags/Github/</loc>
+    <lastmod>2022-06-03</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://czzczzczz.github.io/tags/%E5%8D%9A%E5%AE%A2/</loc>
     <lastmod>2022-06-03</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
