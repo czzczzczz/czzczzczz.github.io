@@ -6,7 +6,7 @@
   <link href="https://czzczzczz.github.io/atom.xml" rel="self"/>
   
   <link href="https://czzczzczz.github.io/"/>
-  <updated>2022-06-02T23:54:01.545Z</updated>
+  <updated>2022-06-03T05:23:43.773Z</updated>
   <id>https://czzczzczz.github.io/</id>
   
   <author>
@@ -17,13 +17,73 @@
   <generator uri="https://hexo.io/">Hexo</generator>
   
   <entry>
-    <title>Hello World</title>
-    <link href="https://czzczzczz.github.io/posts/4a17b156.html"/>
-    <id>https://czzczzczz.github.io/posts/4a17b156.html</id>
-    <published>2022-06-02T15:31:18.711Z</published>
-    <updated>2022-06-02T23:54:01.545Z</updated>
+    <title>text</title>
+    <link href="https://czzczzczz.github.io/posts/0.html"/>
+    <id>https://czzczzczz.github.io/posts/0.html</id>
+    <published>2022-06-03T05:22:32.232Z</published>
+    <updated>2022-06-03T05:23:43.773Z</updated>
     
-    <content type="html"><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><p>Welcome to <a href="https://hexo.io/">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues">GitHub</a>.</p><h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><pre class="line-numbers language-bash" data-language="bash"><code class="language-bash">$ hexo new <span class="token string">"My New Post"</span><span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre><p>More info: <a href="https://hexo.io/docs/writing.html">Writing</a></p><h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><pre class="line-numbers language-bash" data-language="bash"><code class="language-bash">$ hexo server<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre><p>More info: <a href="https://hexo.io/docs/server.html">Server</a></p><h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><pre class="line-numbers language-bash" data-language="bash"><code class="language-bash">$ hexo generate<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre><p>More info: <a href="https://hexo.io/docs/generating.html">Generating</a></p><h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><pre class="line-numbers language-bash" data-language="bash"><code class="language-bash">$ hexo deploy<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre><p>More info: <a href="https://hexo.io/docs/one-command-deployment.html">Deployment</a></p>]]></content>
+    <content type="html"><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><p>1</p><p>2</p><p>3</p><p>4</p>]]></content>
+    
+    
+      
+      
+    <summary type="html">&lt;link rel=&quot;stylesheet&quot; class=&quot;aplayer-secondary-style-marker&quot; href=&quot;\assets\css\APlayer.min.css&quot;&gt;&lt;script src=&quot;\assets\js\APlayer.min.js&quot; cla</summary>
+      
+    
+    
+    
+    
+  </entry>
+  
+  <entry>
+    <title>新建博客文章名</title>
+    <link href="https://czzczzczz.github.io/posts/9e43dbe9.html"/>
+    <id>https://czzczzczz.github.io/posts/9e43dbe9.html</id>
+    <published>2022-06-03T04:59:03.000Z</published>
+    <updated>2022-06-03T05:19:40.158Z</updated>
+    
+    <content type="html"><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><h2 id="1"><a href="#1" class="headerlink" title="1"></a>1</h2><p>外面的世界很精彩</p><h3 id="2"><a href="#2" class="headerlink" title="2"></a>2</h3><p>外面的世界很无奈</p><pre class="line-numbers language-c" data-language="c"><code class="language-c"><span class="token comment">/**/</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span></span></code></pre><p><img src="C:\Users\c'z'z\AppData\Roaming\Typora\typora-user-images\image-20220603130104907.png" alt="image-20220603130104907"></p>]]></content>
+    
+    
+      
+      
+    <summary type="html">&lt;link rel=&quot;stylesheet&quot; class=&quot;aplayer-secondary-style-marker&quot; href=&quot;\assets\css\APlayer.min.css&quot;&gt;&lt;script src=&quot;\assets\js\APlayer.min.js&quot; cla</summary>
+      
+    
+    
+    
+    
+  </entry>
+  
+  <entry>
+    <title>article title</title>
+    <link href="https://czzczzczz.github.io/posts/a6f5b56e.html"/>
+    <id>https://czzczzczz.github.io/posts/a6f5b56e.html</id>
+    <published>2022-06-03T02:33:19.882Z</published>
+    <updated>2022-06-03T05:21:06.814Z</updated>
+    
+    <content type="html"><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><p>11</p><p>我我我我</p><p>weee<img src="C:\Users\c'z'z\Desktop$~80K4D8`F%~M5$CIAL`~5R.png"></p>]]></content>
+    
+    
+      
+      
+    <summary type="html">&lt;link rel=&quot;stylesheet&quot; class=&quot;aplayer-secondary-style-marker&quot; href=&quot;\assets\css\APlayer.min.css&quot;&gt;&lt;script src=&quot;\assets\js\APlayer.min.js&quot; cla</summary>
+      
+    
+    
+    
+    
+  </entry>
+  
+  <entry>
+    <title>1212</title>
+    <link href="https://czzczzczz.github.io/posts/40b62714.html"/>
+    <id>https://czzczzczz.github.io/posts/40b62714.html</id>
+    <published>2022-03-27T02:00:02.000Z</published>
+    <updated>2022-06-03T05:19:50.834Z</updated>
+    
+    <content type="html"><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><h1 id="1"><a href="#1" class="headerlink" title="1"></a>1</h1><p>的</p><p>2<img src="C:\Users\c'z'z\AppData\Roaming\Typora\typora-user-images\image-20220603112427286.png" alt="image-20220603112427286"></p>]]></content>
     
     
       
