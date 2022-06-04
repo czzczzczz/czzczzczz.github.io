@@ -23,19 +23,6 @@
     
     
     <entry>
-      <title>text</title>
-      <link href="posts/0.html"/>
-      <url>posts/0.html</url>
-      
-        <content type="html"><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><p>1</p><p>2</p><p>3</p><p>4</p>]]></content>
-      
-      
-      
-    </entry>
-    
-    
-    
-    <entry>
       <title>LuckyBlog开源搭建教程</title>
       <link href="posts/d74d8b76.html"/>
       <url>posts/d74d8b76.html</url>
