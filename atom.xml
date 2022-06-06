@@ -6,7 +6,7 @@
   <link href="https://czzczzczz.github.io/atom.xml" rel="self"/>
   
   <link href="https://czzczzczz.github.io/"/>
-  <updated>2022-06-06T07:45:38.629Z</updated>
+  <updated>2022-06-06T07:53:03.436Z</updated>
   <id>https://czzczzczz.github.io/</id>
   
   <author>
@@ -17,13 +17,13 @@
   <generator uri="https://hexo.io/">Hexo</generator>
   
   <entry>
-    <title></title>
-    <link href="https://czzczzczz.github.io/posts/0.html"/>
-    <id>https://czzczzczz.github.io/posts/0.html</id>
-    <published>2022-06-06T07:19:46.234Z</published>
-    <updated>2022-06-06T07:45:38.629Z</updated>
+    <title>typora简单使用教程</title>
+    <link href="https://czzczzczz.github.io/posts/2c61642.html"/>
+    <id>https://czzczzczz.github.io/posts/2c61642.html</id>
+    <published>2022-06-06T07:29:43.000Z</published>
+    <updated>2022-06-06T07:53:03.436Z</updated>
     
-    <content type="html"><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script>]]></content>
+    <content type="html"><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><h1 id="typora-快捷键"><a href="#typora-快捷键" class="headerlink" title="typora 快捷键"></a>typora 快捷键</h1><p>ctrl + 1到6 对应1到6级标题</p><p>或者使用 ## text 几个#就是几级标题</p><p>CTRL + 和CTRL - 对应标题的等级增减</p><p>CTRL 0 对应正文</p><p>CTRL / 进入源代码模式</p><p>CTRL B <strong>加粗</strong> CTRL I <em>倾斜</em> CTRL U<u>下划线</u></p><p>^text ^ 上标</p><p>~text ~ 下标 </p><p>无序列表 </p><p>-/+/* text</p><p>有序列表 1. text</p><p>代码行 ``</p><p>代码块 ``` </p><p>CTRL T 表格</p><p>CTRL K 超链接 </p><p>CTRL shift I 插入图片</p><p><img src="https://pic4.zhimg.com/80/v2-257cefe56bfb076285a8753546ce4d77_720w.jpg"></p>]]></content>
     
     
       
