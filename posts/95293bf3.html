@@ -4,7 +4,7 @@
 
 <head>
     <meta charset="utf-8">
-    <meta name="keywords" content="Hexo之渲染绕过, galaxy 光电 ">
+    <meta name="keywords" content="光学, galaxy 光电 ">
     <meta name="description" content="本科 | 光电 | ">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
@@ -17,7 +17,7 @@
     <!-- Global site tag (gtag.js) - Google Analytics -->
 
 
-    <title>Hexo之渲染绕过 | galaxy</title>
+    <title>光学 | galaxy</title>
 
     <link rel="icon" type="image/jpeg" href="https://s1.ax1x.com/2022/06/04/XdZAQ1.jpg">
 
@@ -510,12 +510,12 @@
 
 
 
-<div class="bg-cover pd-header post-cover" style="background-image: url('https://cdn.jsdelivr.net/gh/LuckyZmj/imgbed@master/posts/20200928015500.jpg')">
+<div class="bg-cover pd-header post-cover" style="background-image: url('https://cdn.jsdelivr.net/gh/LuckyZmj/imgbed@master/posts/20200928012539.jpg')">
     <div class="container" style="right: 0px;left: 0px;">
         <div class="row">
             <div class="col s12 m12 l12">
                 <div class="brand">
-                    <h1 class="description center-align post-title">Hexo之渲染绕过</h1>
+                    <h1 class="description center-align post-title">光学</h1>
                 </div>
             </div>
         </div>
@@ -634,29 +634,12 @@
             <div class="row tag-cate">
                 <div class="col s7">
                     
-                    <div class="article-tag">
-                        
-                            <a href="/tags/Hexo/">
-                                <span class="chip bg-color">Hexo</span>
-                            </a>
-                        
-                            <a href="/tags/%E6%B8%B2%E6%9F%93%E7%BB%95%E8%BF%87/">
-                                <span class="chip bg-color">渲染绕过</span>
-                            </a>
-                        
-                    </div>
+                          <div class="article-tag">
+                            <span class="chip bg-color">无标签</span>
+                          </div>
                     
                 </div>
                 <div class="col s5 right-align">
-                    
-                    <div class="post-cate">
-                        <i class="fas fa-bookmark fa-fw icon-category"></i>
-                        
-                            <a href="/categories/%E5%8D%9A%E5%AE%A2%E7%AF%87/" class="post-category">
-                                博客篇
-                            </a>
-                        
-                    </div>
                     
                 </div>
             </div>
@@ -665,28 +648,28 @@
                 
                 <div class="post-date info-break-policy">
                     <i class="far fa-calendar-minus fa-fw"></i>发布日期:&nbsp;&nbsp;
-                    2020-04-28
+                    2022-06-06
                 </div>
                 
 
                 
                 <div class="post-date info-break-policy">
                     <i class="far fa-calendar-check fa-fw"></i>更新日期:&nbsp;&nbsp;
-                    2022-06-03
+                    2022-06-06
                 </div>
                 
 
                 
                 <div class="info-break-policy">
                     <i class="far fa-file-word fa-fw"></i>文章字数:&nbsp;&nbsp;
-                    463
+                    1.7k
                 </div>
                 
 
                 
                 <div class="info-break-policy">
                     <i class="far fa-clock fa-fw"></i>阅读时长:&nbsp;&nbsp;
-                    1 分
+                    5 分
                 </div>
                 
 
@@ -704,46 +687,84 @@
 
         <div class="card-content article-card-content">
             <div id="articleContent">
-                <h3 id="0x001-Hexo-渲染"><a href="#0x001-Hexo-渲染" class="headerlink" title="0x001 Hexo 渲染"></a>0x001 Hexo 渲染</h3><p>  在Hexo部署时会默认渲染source下的所有html页面，但有时候想在Hexo博客上单独自定义html页面或README.md时，却不希望被Hexo渲染。因此对某个文件或者目录进行排除渲染是非常必要的。</p>
-<h3 id="0x002-方法一：font-matter"><a href="#0x002-方法一：font-matter" class="headerlink" title="0x002 方法一：font matter"></a>0x002 方法一：font matter</h3><p><code>Hexo</code>新建网站页面，然后将你的代码直接写入 <code>index.md</code> 中</p>
-<p>在 <code>Front matter</code> 中添加 <code>layout: false</code>，此方法适用于单一的纯<code>HTML</code><br><code>CSS</code> 页面。</p>
-<pre class="line-numbers language-bash" data-language="bash"><code class="language-bash">---
-title: tools
-date: <span class="token number">2020</span>-04-28 00:00:00
-type: <span class="token string">"tools"</span>
-layout: <span class="token boolean">false</span>
----<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
-
-<h3 id="0x003-方法二：skip-render"><a href="#0x003-方法二：skip-render" class="headerlink" title="0x003 方法二：skip render"></a>0x003 方法二：skip render</h3><p>在博客根目录下的 <code>_config.yml</code>，找到 <code>skip_render</code>，大概在32行左右，写入你想要的跳过渲染的路径，注意缩进和空格。</p>
-<pre class="line-numbers language-bash" data-language="bash"><code class="language-bash"><span class="token comment"># 指定目录跳过hexo渲染</span>
-skip_render:
-  - <span class="token string">'tools/*'</span>
-  - <span class="token string">'tools/**'</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span></span></code></pre>
-
-<blockquote>
-<p>注释：<code>tools/*</code> 表示在目录 <code>source/fireworks</code> 下的文件全部跳过渲染，<code>tools/**</code> 表示在博客根目录 <code>source/tools/</code> 文件夹下的文件全部跳过渲染（例如页面的 js、css 在另一个文件夹中）。</p>
-</blockquote>
-<h3 id="0x004-案例：webstack-导航"><a href="#0x004-案例：webstack-导航" class="headerlink" title="0x004 案例：webstack 导航"></a>0x004 案例：webstack 导航</h3><p><code>webstack</code>是一个纯静态的网址导航网站，内容均由<code>viggo</code>收集并整理。项目基于<code>bootstrap</code>前端框架开发。</p>
-<p><img src="https://camo.githubusercontent.com/41111c4c1d9922982f380566e6a2f8415204c52c/687474703a2f2f7777772e776562737461636b2e63632f6173736574732f696d616765732f707265766965772e676966" alt="image"></p>
-<ul>
-<li>Github：<a target="_blank" rel="noopener" href="https://github.com/WebStackPage/WebStackPage.github.io">https://github.com/WebStackPage/WebStackPage.github.io</a></li>
-</ul>
-<p>在博客根目录 <code>source/</code>下新建<code>tools</code>，然后新建<code>index.html</code>,将<code>webstack</code>网页源码全选复制粘贴到里面。</p>
-<ul>
-<li>本站的webstack源码：<a href="view-source:http://luckyzmj.cn/tools/">view-source:http://luckyzmj.cn/tools/</a></li>
-</ul>
-<blockquote>
-<p>注意：将源码里的部分信息以及跳转链接按照你真实个人博客的环境进行修改。</p>
-</blockquote>
-<p>然后打开博客根目录下配置文件<code>_config.yml</code>，找到<code>skip_render</code>，做如下修改：</p>
-<pre class="line-numbers language-bash" data-language="bash"><code class="language-bash">skip_render:
-  - <span class="token string">'tools/*'</span>
-  - <span class="token string">'tools/**'</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span></span></code></pre>
-
-<p>最后执行<code>hexo clean</code>和<code>hexo s -g </code>本地预览，检查无误后<code>hexo g -d</code>部署到服务器上即可。</p>
-<h3 id="参考文章"><a href="#参考文章" class="headerlink" title="参考文章"></a>参考文章</h3><ul>
-<li><a target="_blank" rel="noopener" href="https://xiabor.com/2020/04/21/hexo3/#%E5%A6%82%E4%BD%95%E8%B7%B3%E8%BF%87hexo%E7%9A%84%E6%B8%B2%E6%9F%93">https://xiabor.com/2020/04/21/hexo3/#%E5%A6%82%E4%BD%95%E8%B7%B3%E8%BF%87hexo%E7%9A%84%E6%B8%B2%E6%9F%93</a></li>
-</ul>
+                <h1 id="10-2-几何光学"><a href="#10-2-几何光学" class="headerlink" title="10.2 几何光学"></a>10.2 几何光学</h1><p>光线经光学系统<strong>成像</strong>的理论</p>
+<h2 id="一-传播定律"><a href="#一-传播定律" class="headerlink" title="一 传播定律"></a>一 传播定律</h2><h3 id="1-光的直线传播定律（均匀媒介）"><a href="#1-光的直线传播定律（均匀媒介）" class="headerlink" title="1 光的直线传播定律（均匀媒介）"></a>1 光的直线传播定律（均匀媒介）</h3><p><img src="https://cdn.jsdelivr.net/gh/czzczzczz/image/image-20220606171511779.png" alt="image-20220606171511779"></p>
+<p>不涉及光的本质（粒子或波），只是一条线，所以也无关速度，波长等。</p>
+<h3 id="2-反射定律"><a href="#2-反射定律" class="headerlink" title="2 反射定律"></a>2 反射定律</h3><p><img src="https://cdn.jsdelivr.net/gh/czzczzczz/image/image-20220606172754487.png" alt="image-20220606172754487"></p>
+<p>中间为平面镜不透明，人在有挡板右方，根据直线传播定律人看不到小球，但人却可以通过平面镜看到小球，根据直线传播定律，小球应该在平面镜的后面，但很明显不是，所以应是左上方小球发出光线，经平面镜反射，实验测得i=i^`^</p>
+<h3 id="3-折射定律"><a href="#3-折射定律" class="headerlink" title="3 折射定律"></a>3 折射定律</h3><p><img src="https://cdn.jsdelivr.net/gh/czzczzczz/image/image-20220606173242017.png" alt="image-20220606173242017"></p>
+<p>如图,人在左方看到球,根据直线传播定律,球应该在黑点球的位置,但实际在发光的球在下方,所以可得光在不同折射率介质传播时,并不是沿直线传播</p>
+<p>且 sini<del>1</del> n<del>1</del> = sini<del>2</del> n<del>2</del></p>
+<p>光的色散,不同波长光折射率不同,即不同颜色的光从某一介质进入不同介质时,角度的偏移量不同(🌈)</p>
+<h3 id="4-光路可逆原理"><a href="#4-光路可逆原理" class="headerlink" title="4 光路可逆原理"></a>4 光路可逆原理</h3><p><img src="https://cdn.jsdelivr.net/gh/czzczzczz/image/image-20220606174206327.png" alt="image-20220606174206327"></p>
+<p>经过黑匣子(光学系统)后,Q点在Q^`^点成像,称这两点共轭.(即有其一点,必有另一点)</p>
+<h2 id="二-费马原理"><a href="#二-费马原理" class="headerlink" title="二 费马原理"></a>二 费马原理</h2><p><img src="https://cdn.jsdelivr.net/gh/czzczzczz/image/image-20220606175249541.png" alt="image-20220606175249541"></p>
+<p>两点间光的实际路径,是光程平稳的路径 </p>
+<p><strong>光程</strong>:折射率*光所经过的路程,即ns。其中s=vt，光程=ct，即在相同时间内光在真空中走过的距离</p>
+<p><strong>平稳</strong>：极值或恒定值。</p>
+<p>椭圆面内两焦点之间光的路径，光程为恒定值</p>
+<p><img src="https://cdn.jsdelivr.net/gh/czzczzczz/image/image-20220606184207705.png" alt="image-20220606184207705"></p>
+<p>我现在的理解是，当发光点在左焦点发出无数的光线，这些光先按照直线传播定律传播，到达边界，此时会发生反射定律，可证，这些反射光线交与右焦点，所以知道光线的起始位置和方向，然后利用直线传播定律，反射折射定律就完全可以确定其在整个空间的传播路径了。那么，费马原理，有什么用，，，我认为，在用费马原理是一定要抛弃掉三定律，只确定起点和终点，加上一个限定条件，然后推导出光的传播路径，这时其应该与三定律推导的相同，这样，可证明费马原理的正确性。（但是费马原理不是可以直接推导出三定律吗，，）如上图，我们确定起点和终点分别是左右焦点，限定条件为经过椭圆面上某个点，然后推路径。如黑色路径，我们可以得到在该条件下直线路径最短，而最长路径为不存在，所以我们可以得到黑色路径即为实际路径，而发光点有无数个方向的光线，而这是一个椭球面，所以光线交于右焦点。</p>
+<p><img src="https://cdn.jsdelivr.net/gh/czzczzczz/image/image-20220606191109425.png" alt="image-20220606191109425"></p>
+<p>上图蓝色直线相切与椭球面，在已知物点和像点为左右焦点的前提下，限定反射点位于蓝色直线上，此时有无穷种可能，画出黑色路径做代表，可证，黑色光线光程大于红色光线，而直线光程小于曲线，所以在这无穷个可能中，红色光程是最小的，即为真是传播路径，黑色的传播路径不可能存在。（其实红色的满足反射定律，而黑色不满足）</p>
+<p>紫色球面为与椭球面相切的球面，可证红色光程在所有的可能中为最小的，所以绿色路径不存在。</p>
+<h3 id="原理与定律"><a href="#原理与定律" class="headerlink" title="原理与定律"></a>原理与定律</h3><p>·可以由Fermat原理导出几何光学的实验定律</p>
+<p>·所以可以说，Fermat原理是更基本的</p>
+<p>·一般来说，任何一门学科，都有着无法证明的（指从理论上无法证明）最基本的假设，这就是原理（定律可以被原理证明）,是这一学科所建立的基础</p>
+<h3 id="物像之间的等光程性"><a href="#物像之间的等光程性" class="headerlink" title="物像之间的等光程性"></a>物像之间的等光程性</h3><p>物点Q与像点Q’之间的光程总是平稳的，即不管光线经何路径，凡是由Q通过同样的光学系统到达Q’的光线，都是等光程的。</p>
+<p><img src="https://cdn.jsdelivr.net/gh/czzczzczz/image/image-20220606200601999.png" alt="image-20220606200601999"></p>
+<p>（如果是中间直线无透镜干扰，上面放一个平面镜使其反射后如上图所示，那么这两条路径不等，折射率相等，那光程相等吗？）</p>
+<h2 id="三-几何光学的适用条件"><a href="#三-几何光学的适用条件" class="headerlink" title="三 几何光学的适用条件"></a>三 几何光学的适用条件</h2><ol>
+<li><p>光学系统的尺度远大于光波的波长</p>
+</li>
+<li><p>介质是各向同性（不然双折射）</p>
+</li>
+<li><p>光强不是很大</p>
+</li>
+</ol>
+<h1 id="10-3-反射和折射的应用"><a href="#10-3-反射和折射的应用" class="headerlink" title="10.3 反射和折射的应用"></a>10.3 反射和折射的应用</h1><h2 id="一-光在平面上的反射"><a href="#一-光在平面上的反射" class="headerlink" title="一 光在平面上的反射"></a>一 光在平面上的反射</h2><p><img src="https://cdn.jsdelivr.net/gh/czzczzczz/image/image-20220606201526760.png" alt="image-20220606201526760"></p>
+<p>轴下方为虚光线和虚像</p>
+<p>根据费马原理，有<img src="https://cdn.jsdelivr.net/gh/czzczzczz/image/image-20220606202146335.png" alt="image-20220606202146335"></p>
+<p>上式对任意光线成立的条件是等式等于0，即</p>
+<p><img src="https://cdn.jsdelivr.net/gh/czzczzczz/image/image-20220606202319347.png" alt="image-20220606202319347"></p>
+<p>虚光线的光程称为虚光程</p>
+<p><img src="https://cdn.jsdelivr.net/gh/czzczzczz/image/image-20220606202642101.png" alt="image-20220606202642101"></p>
+<p>平面镜反射时，物与像点点对应，所以可以严格成像。</p>
+<h2 id="二-光在平面上的折射"><a href="#二-光在平面上的折射" class="headerlink" title="二 光在平面上的折射"></a>二 光在平面上的折射</h2><p><img src="https://cdn.jsdelivr.net/gh/czzczzczz/image/image-20220606203109151.png" alt="image-20220606203109151"></p>
+<p>来自同一点光源的入射光，经平面折射后，其折射光线的反向延长线不再汇聚于同一点因而严格说来，平面折射是不能成像的</p>
+<p>不是不能成像，而是不能严格成像</p>
+<h3 id="棱镜"><a href="#棱镜" class="headerlink" title="棱镜"></a>棱镜</h3><p><img src="https://cdn.jsdelivr.net/gh/czzczzczz/image/image-20220606203700395.png" alt="image-20220606203700395"></p>
+<h3 id="全反射"><a href="#全反射" class="headerlink" title="全反射"></a>全反射</h3><p><img src="https://cdn.jsdelivr.net/gh/czzczzczz/image/image-20220606203947359.png" alt="image-20220606203947359"></p>
+<h3 id="全反射临界角"><a href="#全反射临界角" class="headerlink" title="全反射临界角"></a>全反射临界角</h3><p><img src="https://cdn.jsdelivr.net/gh/czzczzczz/image/image-20220606204038857.png" alt="image-20220606204038857"></p>
+<h3 id="全反射棱镜"><a href="#全反射棱镜" class="headerlink" title="全反射棱镜"></a>全反射棱镜</h3><p><img src="https://cdn.jsdelivr.net/gh/czzczzczz/image/image-20220606204408880.png" alt="image-20220606204408880"></p>
+<h3 id="光纤"><a href="#光纤" class="headerlink" title="光纤"></a>光纤</h3><p><img src="https://cdn.jsdelivr.net/gh/czzczzczz/image/image-20220606204743534.png" alt="image-20220606204743534"></p>
+<h1 id="10-4-变折射率光学"><a href="#10-4-变折射率光学" class="headerlink" title="10.4 变折射率光学"></a>10.4 变折射率光学</h1><p><img src="https://cdn.jsdelivr.net/gh/czzczzczz/image/image-20220606205517451.png" alt="image-20220606205517451"></p>
+<p> <img src="https://cdn.jsdelivr.net/gh/czzczzczz/image/image-20220606210006005.png" alt="image-20220606210006005"></p>
+<h1 id="10-5-近轴光在单球面上的成像"><a href="#10-5-近轴光在单球面上的成像" class="headerlink" title="10.5 近轴光在单球面上的成像"></a>10.5 近轴光在单球面上的成像</h1><h2 id="5-1-物与像的虚实性"><a href="#5-1-物与像的虚实性" class="headerlink" title="5.1 物与像的虚实性"></a>5.1 物与像的虚实性</h2><h3 id="1同心光束"><a href="#1同心光束" class="headerlink" title="1同心光束"></a>1同心光束</h3><p>从同一点发出的或汇聚到同一点的光线束，称为同心光束。</p>
+<p><img src="https://cdn.jsdelivr.net/gh/czzczzczz/image/image-20220606211706773.png" alt="image-20220606211706773"></p>
+<p>成像的最基本条件是要满足同心光束的变性。（拍照时每一个物点对应一个像点，一个圆形瞳孔不能拍成椭圆了）</p>
+<p>从整个物和像的对应关系看，还必须要满足物像间的相似性。（虽然鼻子眼睛都没变型，但他们的相对位置不能改变）</p>
+<p>空间上，各个点之间的相互位置要一一对应，同时每一对物像点的颜色要一一对应。·要求成像的光学系统不产生畸变，没有像差，色差等。（颜色也不要变）</p>
+<h3 id="2-光具组：光学系统"><a href="#2-光具组：光学系统" class="headerlink" title="2 光具组：光学系统"></a>2 光具组：光学系统</h3><p><img src="https://cdn.jsdelivr.net/gh/czzczzczz/image/image-20220606212443883.png" alt="image-20220606212443883"></p>
+<h3 id="3-理想光具组"><a href="#3-理想光具组" class="headerlink" title="3 理想光具组"></a>3 理想光具组</h3><p>精确成像的必要条件是物上一点与像上点对应。<br>使同心光束保持其同心性不变的光具组为理想光具组</p>
+<h3 id="4-物方和像方"><a href="#4-物方和像方" class="headerlink" title="4 物方和像方"></a>4 物方和像方</h3><p>·物点所在的空间为物方空间·像点所在的空间为像方空间</p>
+<p><img src="https://cdn.jsdelivr.net/gh/czzczzczz/image/image-20220606212703106.png" alt="image-20220606212703106"></p>
+<h3 id="5-实物与虚物，实像与虚像"><a href="#5-实物与虚物，实像与虚像" class="headerlink" title="5 实物与虚物，实像与虚像"></a>5 实物与虚物，实像与虚像</h3><p>发出同心光束的物点，为实物点;物方同心光束延长后汇聚所成的点，为虚物点。</p>
+<p><img src="https://cdn.jsdelivr.net/gh/czzczzczz/image/image-20220606213128834.png" alt="image-20220606213128834"></p>
+<h2 id="5-2-近轴光在单球面上的成像"><a href="#5-2-近轴光在单球面上的成像" class="headerlink" title="5.2 近轴光在单球面上的成像"></a>5.2 近轴光在单球面上的成像</h2><p><img src="https://cdn.jsdelivr.net/gh/czzczzczz/image/image-20220606213607911.png" alt="image-20220606213607911"></p>
+<h3 id="1-轴上物点成像"><a href="#1-轴上物点成像" class="headerlink" title="1. 轴上物点成像"></a>1. 轴上物点成像</h3><p><img src="https://cdn.jsdelivr.net/gh/czzczzczz/image/image-20220606213703864.png" alt="image-20220606213703864"></p>
+<p><img src="https://cdn.jsdelivr.net/gh/czzczzczz/image/image-20220606214008854.png" alt="image-20220606214008854"></p>
+<p><img src="https://cdn.jsdelivr.net/gh/czzczzczz/image/image-20220606214021452.png" alt="image-20220606214021452"></p>
+<p>在应用余弦定理</p>
+<p><img src="https://cdn.jsdelivr.net/gh/czzczzczz/image/image-20220606214241144.png" alt="image-20220606214241144"></p>
+<p>将正弦和余弦结论综合，得</p>
+<p><img src="https://cdn.jsdelivr.net/gh/czzczzczz/image/image-20220606214534174.png" alt="image-20220606214534174"></p>
+<p><img src="https://cdn.jsdelivr.net/gh/czzczzczz/image/image-20220606214550774.png" alt="image-20220606214550774"></p>
+<p>欲使折射光线保持同心性，必须满足（1）近轴（傍轴）条件，即<img src="https://cdn.jsdelivr.net/gh/czzczzczz/image/image-20220606214825191.png" alt="image-20220606214825191"></p>
+<p><img src="https://cdn.jsdelivr.net/gh/czzczzczz/image/image-20220606215000025.png" alt="image-20220606215000025"></p>
+<p><img src="https://cdn.jsdelivr.net/gh/czzczzczz/image/image-20220606215223893.png" alt="image-20220606215223893"></p>
+<p><img src="https://cdn.jsdelivr.net/gh/czzczzczz/image/image-20220606215542670.png" alt="image-20220606215542670"></p>
+<h3 id="2-轴外物点成像"><a href="#2-轴外物点成像" class="headerlink" title="2. 轴外物点成像"></a>2. 轴外物点成像</h3><p><img src="https://cdn.jsdelivr.net/gh/czzczzczz/image/image-20220606215951403.png" alt="image-20220606215951403"></p>
 
                 
             </div>
@@ -760,7 +781,7 @@ skip_render:
                     </i>
                 </span>
                 <span class="reprint-info">
-                    <a href="/about" rel="external nofollow noreferrer">Luckey</a>
+                    <a href="/about" rel="external nofollow noreferrer">czz</a>
                 </span>
             </div>
             <div class="reprint__type">
@@ -770,7 +791,7 @@ skip_render:
                     </i>
                 </span>
                 <span class="reprint-info">
-                    <a href="https://czzczzczz.github.io/posts/17fd92ae.html">https://czzczzczz.github.io/posts/17fd92ae.html</a>
+                    <a href="https://czzczzczz.github.io/posts/95293bf3.html">https://czzczzczz.github.io/posts/95293bf3.html</a>
                 </span>
             </div>
             <div class="reprint__notice">
@@ -783,7 +804,7 @@ skip_render:
                     本博客所有文章除特別声明外，均采用
                     <a href="https://creativecommons.org/licenses/by/4.0/deed.zh" rel="external nofollow noreferrer" target="_blank">CC BY 4.0</a>
                     许可协议。转载请注明来源
-                    <a href="/about" target="_blank">Luckey</a>
+                    <a href="/about" target="_blank">czz</a>
                     !
                 </span>
             </div>
@@ -807,15 +828,7 @@ skip_render:
                 <div class="post-meta__tag-list" style="display: inline-block;">
                     
                         <div class="article-tag">
-                            
-                                <a href="/tags/Hexo/">
-                                    <span class="chip bg-color">Hexo</span>
-                                </a>
-                            
-                                <a href="/tags/%E6%B8%B2%E6%9F%93%E7%BB%95%E8%BF%87/">
-                                    <span class="chip bg-color">渲染绕过</span>
-                                </a>
-                            
+                            <span class="chip bg-color">无标签</span>
                         </div>
                     
                 </div>
@@ -1285,53 +1298,39 @@ new Valine({
 <article id="prenext-posts" class="prev-next articles">
     <div class="row article-row">
         
-        <div class="article col s12 m6" data-aos="fade-up">
+        <div class="article col s12 m6" data-aos="fade-up" data-aos="fade-up">
             <div class="article-badge left-badge text-color">
-                <i class="fas fa-chevron-left"></i>&nbsp;上一篇</div>
+                <i class="far fa-dot-circle"></i>&nbsp;本篇
+            </div>
             <div class="card">
-                <a href="/posts/d74d8b76.html">
+                <a href="/posts/95293bf3.html">
                     <div class="card-image">
                         
                         
-                        <img src="https://cdn.jsdelivr.net/gh/LuckyZmj/imgbed@master/posts/20200928013834.jpg" class="responsive-img" alt="LuckyBlog开源搭建教程">
+                        <img src="https://cdn.jsdelivr.net/gh/LuckyZmj/imgbed@master/posts/20200928012539.jpg" class="responsive-img" alt="光学">
                         
-                        <span class="card-title">LuckyBlog开源搭建教程</span>
+                        <span class="card-title">光学</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
                     <div class="summary block-with-text">
                         
-                            之前在B站上发布了个人博客的视频，播放量也破千了，有网友私聊也想要搭建一个这样的博客。经过一段时间的准备，现将博客LuckyBlog的源代码公布出来，大家只需要根据以下的步骤，即可快速搭建一个漂亮且完善的博客。
+                            
                         
                     </div>
                     <div class="publish-info">
-                        <span class="publish-date">
-                            <i class="far fa-clock fa-fw icon-date"></i>2020-09-17
-                        </span>
+                            <span class="publish-date">
+                                <i class="far fa-clock fa-fw icon-date"></i>2022-06-06
+                            </span>
                         <span class="publish-author">
                             
-                            <i class="fas fa-bookmark fa-fw icon-category"></i>
-                            
-                            <a href="/categories/%E5%8D%9A%E5%AE%A2%E7%AF%87/" class="post-category">
-                                    博客篇
-                                </a>
-                            
+                            <i class="fas fa-user fa-fw"></i>
+                            czz
                             
                         </span>
                     </div>
                 </div>
-                
-                <div class="card-action article-tags">
-                    
-                    <a href="/tags/hexo-blog-lucky/">
-                        <span class="chip bg-color">hexo-blog-lucky</span>
-                    </a>
-                    
-                    <a href="/tags/%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA%E6%95%99%E7%A8%8B/">
-                        <span class="chip bg-color">博客搭建教程</span>
-                    </a>
-                    
-                </div>
+
                 
             </div>
         </div>
@@ -1342,48 +1341,32 @@ new Valine({
                 下一篇&nbsp;<i class="fas fa-chevron-right"></i>
             </div>
             <div class="card">
-                <a href="/posts/4b3510a4.html">
+                <a href="/posts/758c1bd4.html">
                     <div class="card-image">
                         
                         
-                        <img src="https://cdn.jsdelivr.net/gh/LuckyZmj/imgbed@master/posts/20200928020120.jpg" class="responsive-img" alt="文字背景粒子特效">
+                        <img src="https://cdn.jsdelivr.net/gh/LuckyZmj/imgbed@master/posts/20200928015537.jpg" class="responsive-img" alt="xind使用教程">
                         
-                        <span class="card-title">文字背景粒子特效</span>
+                        <span class="card-title">xind使用教程</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
                     <div class="summary block-with-text">
                         
-                            一款jQuery+CSS3的文字背景粒子动画特效，一共6种粒子效果，每种文字背景的粒子效果都不同，有漂浮的有坠落的等等。 
+                            
                         
                     </div>
                     <div class="publish-info">
                             <span class="publish-date">
-                                <i class="far fa-clock fa-fw icon-date"></i>2020-03-27
+                                <i class="far fa-clock fa-fw icon-date"></i>2022-06-06
                             </span>
                         <span class="publish-author">
                             
-                            <i class="fas fa-bookmark fa-fw icon-category"></i>
-                            
-                            <a href="/categories/%E5%89%8D%E7%AB%AF%E7%AF%87/" class="post-category">
-                                    前端篇
-                                </a>
-                            
+                            <i class="fas fa-user fa-fw"></i>
+                            czz
                             
                         </span>
                     </div>
-                </div>
-                
-                <div class="card-action article-tags">
-                    
-                    <a href="/tags/jQuery-CSS3/">
-                        <span class="chip bg-color">jQuery+CSS3</span>
-                    </a>
-                    
-                    <a href="/tags/%E7%B2%92%E5%AD%90%E7%89%B9%E6%95%88/">
-                        <span class="chip bg-color">粒子特效</span>
-                    </a>
-                    
                 </div>
                 
             </div>
