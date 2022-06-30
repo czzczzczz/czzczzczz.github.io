@@ -655,21 +655,21 @@
                 
                 <div class="post-date info-break-policy">
                     <i class="far fa-calendar-check fa-fw"></i>更新日期:&nbsp;&nbsp;
-                    2022-06-29
+                    2022-06-30
                 </div>
                 
 
                 
                 <div class="info-break-policy">
                     <i class="far fa-file-word fa-fw"></i>文章字数:&nbsp;&nbsp;
-                    3.1k
+                    3.6k
                 </div>
                 
 
                 
                 <div class="info-break-policy">
                     <i class="far fa-clock fa-fw"></i>阅读时长:&nbsp;&nbsp;
-                    11 分
+                    12 分
                 </div>
                 
 
@@ -795,6 +795,22 @@
 <p>例如，如果应用程序执行以下包含用户输入“Gifts”的查询：</p>
 <p>SELECT name, description FROM products WHERE category = ‘Gifts’<br>然后攻击者可以提交输入：</p>
 <p>‘ UNION SELECT username, password FROM users–<br>这将导致应用程序返回所有用户名和密码以及产品的名称和描述。</p>
+<h2 id="CDN检查"><a href="#CDN检查" class="headerlink" title="CDN检查"></a>CDN检查</h2><h3 id="一、什么是CDN？"><a href="#一、什么是CDN？" class="headerlink" title="一、什么是CDN？"></a>一、什么是CDN？</h3><p>CDN的全称是Content Delivery Network，翻译成中文就是内容分发网络。CDN依靠部署在各地的边缘服务器，通过中心平台的负载均衡、内容分发、调度等功能模块，使用户就近获取内容，降低网络延迟，提高访问速度。简单来讲，CDN是用来进行加速的，它可以让用户更快获得所需的数据。举个例子，某个网站的服务器在北京，如果深圳的用户想要获取服务器上的数据，就需要跨越很远的距离，由于传输速度和路由转发等因素，就会导致访问速度非常缓慢。但如果我们在深圳建立一个CDN服务器，上面缓存了一些服务器数据，那么深圳用户只需要访问这个CDN的服务器就能获取相关的内容，这样速度就提升了很多。但在安全测试过 程中，若目标存在 CDN 服务，将会影响到后续的安全测试过程。</p>
+<p><img src="https://cdn.jsdelivr.net/gh/czzczzczz/image/202206301840744.png" alt="image-20220630184030681"></p>
+<h3 id="二、如何判断目标存在CDN服务"><a href="#二、如何判断目标存在CDN服务" class="headerlink" title="二、如何判断目标存在CDN服务?"></a>二、如何判断目标存在CDN服务?</h3><p>利用多节点技术进行请求返回判断<br><a target="_blank" rel="noopener" href="https://ping.chinaz.com/">https://ping.chinaz.com/</a><br>使用超级ping工具进行测试，若全国ip测试都一样，即没有开启cdn，不一样则反之。</p>
+<h3 id="三、目前常见的CDN绕过技术有哪些"><a href="#三、目前常见的CDN绕过技术有哪些" class="headerlink" title="三、目前常见的CDN绕过技术有哪些?"></a>三、目前常见的CDN绕过技术有哪些?</h3><ol>
+<li><p>利用子域名请求获取真实IP</p>
+</li>
+<li><p>利用国外地址请求获取真实IP</p>
+</li>
+<li><p>利用第三方接口查询获取真实IP</p>
+</li>
+<li><p>利用邮件服务器接口获取真实IP</p>
+</li>
+<li><p>利用黑暗引擎搜索特定文件获取真实IP</p>
+</li>
+</ol>
+<p>涉及资源：<br><a target="_blank" rel="noopener" href="https://www.shodan.io/">https://www.shodan.io</a><br><a target="_blank" rel="noopener" href="http://ping.chinaz.com/">http://ping.chinaz.com</a><br><a target="_blank" rel="noopener" href="https://www.get-site-ip.com/">https://www.get-site-ip.com/</a><br><a target="_blank" rel="noopener" href="https://github.com/Tai7sy/fuckcdn">https://github.com/Tai7sy/fuckcdn</a><br><a target="_blank" rel="noopener" href="https://github.com/boy-hack/w8fuckcdn">https://github.com/boy-hack/w8fuckcdn</a><br><a target="_blank" rel="noopener" href="https://mp.weixin.qq.com/s?__biz=MzA5MzQ3MDE1NQ==&amp;mid=2653939118&amp;idx=1&amp;sn=945b81344d9c89431a8c413ff633fc3a&amp;chksm=8b86290abcf1a01cdc00711339884602b5bb474111d3aff2d465182702715087e22c852c158f&amp;token=268417143&amp;lang=zh_CN#rd">https://mp.weixin.qq.com/s?__biz=MzA5MzQ3MDE1NQ==&amp;mid=2653939118&amp;idx=1&amp;sn=945b81344d9c89431a8c413ff633fc3a&amp;chksm=8b86290abcf1a01cdc00711339884602b5bb474111d3aff2d465182702715087e22c852c158f&amp;token=268417143&amp;lang=zh_CN#rd</a></p>
 
                 
             </div>
@@ -1634,7 +1650,7 @@ new Valine({
             <br>
             
             &nbsp;<i class="fas fa-chart-area"></i>&nbsp;站点总字数:&nbsp;<span
-                class="white-color">23.1k</span>&nbsp;字
+                class="white-color">23.6k</span>&nbsp;字
             
             
             
