@@ -119,24 +119,6 @@
   </url>
   
   <url>
-    <loc>https://www.czzczz.top/tags/index.html</loc>
-    
-    <lastmod>2023-03-22</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://www.czzczz.top/box/nav/index.html</loc>
-    
-    <lastmod>2023-03-22</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
     <loc>https://www.czzczz.top/box/animation/index.html</loc>
     
     <lastmod>2023-03-22</lastmod>
@@ -146,7 +128,7 @@
   </url>
   
   <url>
-    <loc>https://www.czzczz.top/personal/about/index.html</loc>
+    <loc>https://www.czzczz.top/tags/index.html</loc>
     
     <lastmod>2023-03-22</lastmod>
     
@@ -164,7 +146,7 @@
   </url>
   
   <url>
-    <loc>https://www.czzczz.top/personal/bb/index.html</loc>
+    <loc>https://www.czzczz.top/life/music/index.html</loc>
     
     <lastmod>2023-03-22</lastmod>
     
@@ -173,7 +155,43 @@
   </url>
   
   <url>
-    <loc>https://www.czzczz.top/life/music/index.html</loc>
+    <loc>https://www.czzczz.top/box/nav/index.html</loc>
+    
+    <lastmod>2023-03-22</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://www.czzczz.top/life/games/index.html</loc>
+    
+    <lastmod>2023-03-22</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://www.czzczz.top/personal/about/index.html</loc>
+    
+    <lastmod>2023-03-22</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://www.czzczz.top/life/movies/index.html</loc>
+    
+    <lastmod>2023-03-22</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://www.czzczz.top/personal/bb/index.html</loc>
     
     <lastmod>2023-03-22</lastmod>
     
@@ -200,15 +218,6 @@
   </url>
   
   <url>
-    <loc>https://www.czzczz.top/life/games/index.html</loc>
-    
-    <lastmod>2023-03-22</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
     <loc>https://www.czzczz.top/social/fcircle/index.html</loc>
     
     <lastmod>2023-03-22</lastmod>
@@ -219,15 +228,6 @@
   
   <url>
     <loc>https://www.czzczz.top/social/link/index.html</loc>
-    
-    <lastmod>2023-03-22</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://www.czzczz.top/life/movies/index.html</loc>
     
     <lastmod>2023-03-22</lastmod>
     
