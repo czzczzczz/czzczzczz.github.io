@@ -1,0 +1,758 @@
+<!DOCTYPE html><html lang="zh-CN" data-theme="light"><head><div id="myscoll"></div><meta charset="UTF-8"><meta http-equiv="X-UA-Compatible" content="IE=edge"><meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"><title>Fomalhaut🥝</title><meta name="keywords" content="Java,MySQL,算法,代码,博客,Butterfly,Hexo,Fomalhaut🥝,Fomalhaut"><meta name="author" content="Fomalhaut🥝"><meta name="copyright" content="Fomalhaut🥝"><meta name="format-detection" content="telephone=no"><meta name="theme-color" content="ffffff"><meta name="description" content="Future is now 🍭🍭🍭">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Fomalhaut🥝">
+<meta property="og:url" content="https://www.fomal.cc/page/3/index.html">
+<meta property="og:site_name" content="Fomalhaut🥝">
+<meta property="og:description" content="Future is now 🍭🍭🍭">
+<meta property="og:locale" content="zh_CN">
+<meta property="og:image" content="https://tuchuang.voooe.cn/images/2023/01/02/avatar.webp">
+<meta property="article:author" content="Fomalhaut🥝">
+<meta property="article:tag" content="Java,MySQL,算法,代码,博客,Butterfly,Hexo,Fomalhaut🥝,Fomalhaut">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="https://tuchuang.voooe.cn/images/2023/01/02/avatar.webp"><link rel="shortcut icon" href="/"><link rel="canonical" href="https://www.fomal.cc/page/3/"><link rel="preconnect" href="//cdn.jsdelivr.net"/><link rel="preconnect" href="//busuanzi.ibruce.info"/><link rel="stylesheet" href="/css/index.css"><link rel="stylesheet" href="https://lf6-cdn-tos.bytecdntp.com/cdn/expire-1-M/font-awesome/6.0.0/css/all.min.css" media="print" onload="this.media='all'"><link rel="stylesheet" href="https://cdn.staticfile.org/fancyapps-ui/4.0.31/fancybox.min.css" media="print" onload="this.media='all'"><script>const GLOBAL_CONFIG = { 
+  root: '/',
+  algolia: undefined,
+  localSearch: {"path":"/search.xml","preload":true,"languages":{"hits_empty":"找不到您查询的内容：${query}"}},
+  translate: undefined,
+  noticeOutdate: {"limitDay":365,"position":"top","messagePrev":"It has been","messageNext":"days since the last update, the content of the article may be outdated."},
+  highlight: {"plugin":"highlighjs","highlightCopy":true,"highlightLang":true,"highlightHeightLimit":230},
+  copy: {
+    success: '复制成功',
+    error: '复制错误',
+    noSupport: '浏览器不支持'
+  },
+  relativeDate: {
+    homepage: true,
+    post: true
+  },
+  runtime: '',
+  date_suffix: {
+    just: '刚刚',
+    min: '分钟前',
+    hour: '小时前',
+    day: '天前',
+    month: '个月前'
+  },
+  copyright: undefined,
+  lightbox: 'fancybox',
+  Snackbar: undefined,
+  source: {
+    justifiedGallery: {
+      js: 'https://cdnjs.cloudflare.com/ajax/libs/flickr-justified-gallery/2.1.2/fjGallery.min.js',
+      css: 'https://cdnjs.cloudflare.com/ajax/libs/flickr-justified-gallery/2.1.2/fjGallery.min.css'
+    }
+  },
+  isPhotoFigcaption: false,
+  islazyload: true,
+  isAnchor: false
+}</script><script id="config-diff">var GLOBAL_CONFIG_SITE = {
+  title: 'Fomalhaut🥝',
+  isPost: false,
+  isHome: true,
+  isHighlightShrink: false,
+  isToc: false,
+  postUpdate: '2025-05-10 17:06:05'
+}</script><noscript><style type="text/css">
+  #nav {
+    opacity: 1
+  }
+  .justified-gallery img {
+    opacity: 1
+  }
+
+  #recent-posts time,
+  #post-meta time {
+    display: inline !important
+  }
+</style></noscript><script>(win=>{
+    win.saveToLocal = {
+      set: function setWithExpiry(key, value, ttl) {
+        if (ttl === 0) return
+        const now = new Date()
+        const expiryDay = ttl * 86400000
+        const item = {
+          value: value,
+          expiry: now.getTime() + expiryDay,
+        }
+        localStorage.setItem(key, JSON.stringify(item))
+      },
+
+      get: function getWithExpiry(key) {
+        const itemStr = localStorage.getItem(key)
+
+        if (!itemStr) {
+          return undefined
+        }
+        const item = JSON.parse(itemStr)
+        const now = new Date()
+
+        if (now.getTime() > item.expiry) {
+          localStorage.removeItem(key)
+          return undefined
+        }
+        return item.value
+      }
+    }
+  
+    win.getScript = url => new Promise((resolve, reject) => {
+      const script = document.createElement('script')
+      script.src = url
+      script.async = true
+      script.onerror = reject
+      script.onload = script.onreadystatechange = function() {
+        const loadState = this.readyState
+        if (loadState && loadState !== 'loaded' && loadState !== 'complete') return
+        script.onload = script.onreadystatechange = null
+        resolve()
+      }
+      document.head.appendChild(script)
+    })
+  
+      win.activateDarkMode = function () {
+        document.documentElement.setAttribute('data-theme', 'dark')
+        if (document.querySelector('meta[name="theme-color"]') !== null) {
+          document.querySelector('meta[name="theme-color"]').setAttribute('content', '#0d0d0d')
+        }
+      }
+      win.activateLightMode = function () {
+        document.documentElement.setAttribute('data-theme', 'light')
+        if (document.querySelector('meta[name="theme-color"]') !== null) {
+          document.querySelector('meta[name="theme-color"]').setAttribute('content', 'ffffff')
+        }
+      }
+      const t = saveToLocal.get('theme')
+    
+          const now = new Date()
+          const hour = now.getHours()
+          const isNight = hour <= 6 || hour >= 18
+          if (t === undefined) isNight ? activateDarkMode() : activateLightMode()
+          else if (t === 'light') activateLightMode()
+          else activateDarkMode()
+        
+      const asideStatus = saveToLocal.get('aside-status')
+      if (asideStatus !== undefined) {
+        if (asideStatus === 'hide') {
+          document.documentElement.classList.add('hide-aside')
+        } else {
+          document.documentElement.classList.remove('hide-aside')
+        }
+      }
+    
+    const detectApple = () => {
+      if(/iPad|iPhone|iPod|Macintosh/.test(navigator.userAgent)){
+        document.documentElement.classList.add('apple')
+      }
+    }
+    detectApple()
+    })(window)</script><link rel="stylesheet" href="https://cdn1.tianli0.top/npm/element-ui@2.15.6/packages/theme-chalk/lib/index.css"><style id="themeColor"></style><style id="rightSide"></style><style id="transPercent"></style><style id="blurNum"></style><style id="settingStyle"></style><span id="fps"></span><style id="defineBg"></style><style id="menu_shadow"></style><svg aria-hidden="true" style="position:absolute; overflow:hidden; width:0; height:0"><symbol id="icon-sun" viewBox="0 0 1024 1024"><path d="M960 512l-128 128v192h-192l-128 128-128-128H192v-192l-128-128 128-128V192h192l128-128 128 128h192v192z" fill="#FFD878" p-id="8420"></path><path d="M736 512a224 224 0 1 0-448 0 224 224 0 1 0 448 0z" fill="#FFE4A9" p-id="8421"></path><path d="M512 109.248L626.752 224H800v173.248L914.752 512 800 626.752V800h-173.248L512 914.752 397.248 800H224v-173.248L109.248 512 224 397.248V224h173.248L512 109.248M512 64l-128 128H192v192l-128 128 128 128v192h192l128 128 128-128h192v-192l128-128-128-128V192h-192l-128-128z" fill="#4D5152" p-id="8422"></path><path d="M512 320c105.888 0 192 86.112 192 192s-86.112 192-192 192-192-86.112-192-192 86.112-192 192-192m0-32a224 224 0 1 0 0 448 224 224 0 0 0 0-448z" fill="#4D5152" p-id="8423"></path></symbol><symbol id="icon-moon" viewBox="0 0 1024 1024"><path d="M611.370667 167.082667a445.013333 445.013333 0 0 1-38.4 161.834666 477.824 477.824 0 0 1-244.736 244.394667 445.141333 445.141333 0 0 1-161.109334 38.058667 85.077333 85.077333 0 0 0-65.066666 135.722666A462.08 462.08 0 1 0 747.093333 102.058667a85.077333 85.077333 0 0 0-135.722666 65.024z" fill="#FFB531" p-id="11345"></path><path d="M329.728 274.133333l35.157333-35.157333a21.333333 21.333333 0 1 0-30.165333-30.165333l-35.157333 35.157333-35.114667-35.157333a21.333333 21.333333 0 0 0-30.165333 30.165333l35.114666 35.157333-35.114666 35.157334a21.333333 21.333333 0 1 0 30.165333 30.165333l35.114667-35.157333 35.157333 35.157333a21.333333 21.333333 0 1 0 30.165333-30.165333z" fill="#030835" p-id="11346"></path></symbol></svg><!-- hexo injector head_end start --><link rel="stylesheet" href="https://npm.elemecdn.com/hexo-butterfly-tag-plugins-plus@latest/lib/assets/font-awesome-animation.min.css" media="defer" onload="this.media='all'"><link rel="stylesheet" href="https://npm.elemecdn.com/hexo-butterfly-tag-plugins-plus@latest/lib/tag_plugins.css" media="defer" onload="this.media='all'"><script src="https://npm.elemecdn.com/hexo-butterfly-tag-plugins-plus@latest/lib/assets/carousel-touch.js"></script><link rel="stylesheet" href="https://npm.elemecdn.com/hexo-butterfly-swiper/lib/swiper.min.css" media="print" onload="this.media='all'"><link rel="stylesheet" href="https://npm.elemecdn.com/hexo-butterfly-swiper/lib/swiperstyle.css" media="print" onload="this.media='all'"><link rel="stylesheet" href="https://npm.elemecdn.com/hexo-butterfly-wowjs/lib/animate.min.css" media="print" onload="this.media='screen'"><link rel="stylesheet" href="https://npm.elemecdn.com/hexo-filter-gitcalendar/lib/gitcalendar.css" media="print" onload="this.media='all'"><!-- hexo injector head_end end --><meta name="generator" content="Hexo 6.3.0"><link rel="alternate" href="/atom.xml" title="Fomalhaut🥝" type="application/atom+xml">
+</head><body><div id="loading-box" onclick="document.getElementById(&quot;loading-box&quot;).classList.add(&quot;loaded&quot;)"><div class="loading-bg"><div class="loading-img"></div><div class="loading-image-dot"></div></div></div><div id="web_bg"></div><div id="sidebar"><div id="menu-mask"></div><div id="sidebar-menus"><div class="avatar-img is-center"><img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="https://tuchuang.voooe.cn/images/2023/01/02/avatar.webp" onerror="onerror=null;src='/assets/r1.jpg'" alt="avatar"/></div><div class="sidebar-site-data site-data is-center"><a href="/archives/"><div class="headline">文章</div><div class="length-num">81</div></a><a href="/tags/"><div class="headline">标签</div><div class="length-num">11</div></a><a href="/categories/"><div class="headline">分类</div><div class="length-num">1</div></a></div><hr/><div class="menus_items"><div class="menus_item"><a class="site-page faa-parent animated-hover" href="/"><svg class="menu_icon faa-tada" aria-hidden="true" style="width:1.30em;height:1.30em;vertical-align:-0.15em;fill:currentColor;overflow:hidden;"><use xlink:href="#icon-home"></use></svg><span class="menu_word" style="font-size:17px"> 首页</span></a></div><div class="menus_item"><a class="site-page group faa-parent animated-hover hide" href="javascript:void(0);"><svg class="menu_icon faa-tada" aria-hidden="true" style="width:1.30em;height:1.30em;vertical-align:-0.15em;fill:currentColor;overflow:hidden;"><use xlink:href="#icon--article"></use></svg><span class="menu_word" style="font-size:17px"> 文章</span><i class="fas fa-chevron-down"></i></a><ul class="menus_item_child"><li><a class="site-page child faa-parent animated-hover" href="/archives/"><svg class="menu_icon faa-tada" aria-hidden="true" style="width:1.30em;height:1.30em;vertical-align:-0.15em;fill:currentColor;overflow:hidden;"><use xlink:href="#icon-guidang1">                   </use></svg><span class="menu_word" style="font-size:17px"> 归档</span></a></li><li><a class="site-page child faa-parent animated-hover" href="/tags/"><svg class="menu_icon faa-tada" aria-hidden="true" style="width:1.30em;height:1.30em;vertical-align:-0.15em;fill:currentColor;overflow:hidden;"><use xlink:href="#icon-sekuaibiaoqian">                   </use></svg><span class="menu_word" style="font-size:17px"> 标签</span></a></li><li><a class="site-page child faa-parent animated-hover" href="/categories/"><svg class="menu_icon faa-tada" aria-hidden="true" style="width:1.30em;height:1.30em;vertical-align:-0.15em;fill:currentColor;overflow:hidden;"><use xlink:href="#icon-fenlei">                   </use></svg><span class="menu_word" style="font-size:17px"> 分类</span></a></li></ul></div><div class="menus_item"><a class="site-page group faa-parent animated-hover hide" href="javascript:void(0);"><svg class="menu_icon faa-tada" aria-hidden="true" style="width:1.30em;height:1.30em;vertical-align:-0.15em;fill:currentColor;overflow:hidden;"><use xlink:href="#icon-pinweishenghuo"></use></svg><span class="menu_word" style="font-size:17px"> 休闲</span><i class="fas fa-chevron-down"></i></a><ul class="menus_item_child"><li><a class="site-page child faa-parent animated-hover" href="/life/music/"><svg class="menu_icon faa-tada" aria-hidden="true" style="width:1.30em;height:1.30em;vertical-align:-0.15em;fill:currentColor;overflow:hidden;"><use xlink:href="#icon-yinle">                   </use></svg><span class="menu_word" style="font-size:17px"> 八音盒</span></a></li><li><a class="site-page child faa-parent animated-hover" href="/life/movies/"><svg class="menu_icon faa-tada" aria-hidden="true" style="width:1.30em;height:1.30em;vertical-align:-0.15em;fill:currentColor;overflow:hidden;"><use xlink:href="#icon-dianying1">                   </use></svg><span class="menu_word" style="font-size:17px"> 影院</span></a></li><li><a class="site-page child faa-parent animated-hover" href="/life/games/"><svg class="menu_icon faa-tada" aria-hidden="true" style="width:1.30em;height:1.30em;vertical-align:-0.15em;fill:currentColor;overflow:hidden;"><use xlink:href="#icon-youxishoubing">                   </use></svg><span class="menu_word" style="font-size:17px"> 游戏</span></a></li></ul></div><div class="menus_item"><a class="site-page group faa-parent animated-hover hide" href="javascript:void(0);"><svg class="menu_icon faa-tada" aria-hidden="true" style="width:1.30em;height:1.30em;vertical-align:-0.15em;fill:currentColor;overflow:hidden;"><use xlink:href="#icon-xiangzi"></use></svg><span class="menu_word" style="font-size:17px"> 八宝箱</span><i class="fas fa-chevron-down"></i></a><ul class="menus_item_child"><li><a class="site-page child faa-parent animated-hover" href="/box/gallery/"><svg class="menu_icon faa-tada" aria-hidden="true" style="width:1.30em;height:1.30em;vertical-align:-0.15em;fill:currentColor;overflow:hidden;"><use xlink:href="#icon-tubiaozhizuomoban">                   </use></svg><span class="menu_word" style="font-size:17px"> 画廊</span></a></li><li><a class="site-page child faa-parent animated-hover" href="/box/animation/"><svg class="menu_icon faa-tada" aria-hidden="true" style="width:1.30em;height:1.30em;vertical-align:-0.15em;fill:currentColor;overflow:hidden;"><use xlink:href="#icon-nvwumao">                   </use></svg><span class="menu_word" style="font-size:17px"> 动画</span></a></li><li><a class="site-page child faa-parent animated-hover" href="/box/nav/"><svg class="menu_icon faa-tada" aria-hidden="true" style="width:1.30em;height:1.30em;vertical-align:-0.15em;fill:currentColor;overflow:hidden;"><use xlink:href="#icon-zhifengche">                   </use></svg><span class="menu_word" style="font-size:17px"> 网址导航</span></a></li></ul></div><div class="menus_item"><a class="site-page group faa-parent animated-hover hide" href="javascript:void(0);"><svg class="menu_icon faa-tada" aria-hidden="true" style="width:1.30em;height:1.30em;vertical-align:-0.15em;fill:currentColor;overflow:hidden;"><use xlink:href="#icon-shejiaoxinxi"></use></svg><span class="menu_word" style="font-size:17px"> 社交</span><i class="fas fa-chevron-down"></i></a><ul class="menus_item_child"><li><a class="site-page child faa-parent animated-hover" href="/social/fcircle/"><svg class="menu_icon faa-tada" aria-hidden="true" style="width:1.30em;height:1.30em;vertical-align:-0.15em;fill:currentColor;overflow:hidden;"><use xlink:href="#icon-pengyouquan">                   </use></svg><span class="menu_word" style="font-size:17px"> 朋友圈</span></a></li><li><a class="site-page child faa-parent animated-hover" href="/comments/"><svg class="menu_icon faa-tada" aria-hidden="true" style="width:1.30em;height:1.30em;vertical-align:-0.15em;fill:currentColor;overflow:hidden;"><use xlink:href="#icon-liuyan">                   </use></svg><span class="menu_word" style="font-size:17px"> 留言板</span></a></li><li><a class="site-page child faa-parent animated-hover" href="/social/link/"><svg class="menu_icon faa-tada" aria-hidden="true" style="width:1.30em;height:1.30em;vertical-align:-0.15em;fill:currentColor;overflow:hidden;"><use xlink:href="#icon-lianjie">                   </use></svg><span class="menu_word" style="font-size:17px"> 友人帐</span></a></li></ul></div><div class="menus_item"><a class="site-page group faa-parent animated-hover hide" href="javascript:void(0);"><svg class="menu_icon faa-tada" aria-hidden="true" style="width:1.30em;height:1.30em;vertical-align:-0.15em;fill:currentColor;overflow:hidden;"><use xlink:href="#icon-wangye"></use></svg><span class="menu_word" style="font-size:17px"> 网站</span><i class="fas fa-chevron-down"></i></a><ul class="menus_item_child"><li><a class="site-page child faa-parent animated-hover" href="/site/census/"><svg class="menu_icon faa-tada" aria-hidden="true" style="width:1.30em;height:1.30em;vertical-align:-0.15em;fill:currentColor;overflow:hidden;"><use xlink:href="#icon--tongjibiao">                   </use></svg><span class="menu_word" style="font-size:17px"> 网站统计</span></a></li><li><a class="site-page child faa-parent animated-hover" href="/site/echarts/"><svg class="menu_icon faa-tada" aria-hidden="true" style="width:1.30em;height:1.30em;vertical-align:-0.15em;fill:currentColor;overflow:hidden;"><use xlink:href="#icon-shujutongji1">                   </use></svg><span class="menu_word" style="font-size:17px"> 文章统计</span></a></li><li><a class="site-page child faa-parent animated-hover" href="/site/time/"><svg class="menu_icon faa-tada" aria-hidden="true" style="width:1.30em;height:1.30em;vertical-align:-0.15em;fill:currentColor;overflow:hidden;"><use xlink:href="#icon-xianxingshalou">                   </use></svg><span class="menu_word" style="font-size:17px"> 旧时光</span></a></li></ul></div><div class="menus_item"><a class="site-page group faa-parent animated-hover hide" href="javascript:void(0);"><svg class="menu_icon faa-tada" aria-hidden="true" style="width:1.30em;height:1.30em;vertical-align:-0.15em;fill:currentColor;overflow:hidden;"><use xlink:href="#icon-maoliang"></use></svg><span class="menu_word" style="font-size:17px"> 个人</span><i class="fas fa-chevron-down"></i></a><ul class="menus_item_child"><li><a class="site-page child faa-parent animated-hover" href="/personal/bb/"><svg class="menu_icon faa-tada" aria-hidden="true" style="width:1.30em;height:1.30em;vertical-align:-0.15em;fill:currentColor;overflow:hidden;"><use xlink:href="#icon-qunliaotian">                   </use></svg><span class="menu_word" style="font-size:17px"> 唠叨</span></a></li><li><a class="site-page child faa-parent animated-hover" href="/personal/love/"><svg class="menu_icon faa-tada" aria-hidden="true" style="width:1.30em;height:1.30em;vertical-align:-0.15em;fill:currentColor;overflow:hidden;"><use xlink:href="#icon-love-sign">                   </use></svg><span class="menu_word" style="font-size:17px"> 恋爱小屋</span></a></li><li><a class="site-page child faa-parent animated-hover" href="/personal/about/"><svg class="menu_icon faa-tada" aria-hidden="true" style="width:1.30em;height:1.30em;vertical-align:-0.15em;fill:currentColor;overflow:hidden;"><use xlink:href="#icon-paperplane">                   </use></svg><span class="menu_word" style="font-size:17px"> 关于</span></a></li></ul></div></div></div></div><div class="page home" id="body-wrap"><header class="full_page" id="page-header"><nav id="nav"><span id="blog_name"><a id="site-name" href="/">Fomalhaut🥝</a></span><div id="menus"><div class="menus_items"><div class="menus_item"><a class="site-page faa-parent animated-hover" href="/"><svg class="menu_icon faa-tada" aria-hidden="true" style="width:1.30em;height:1.30em;vertical-align:-0.15em;fill:currentColor;overflow:hidden;"><use xlink:href="#icon-home"></use></svg><span class="menu_word" style="font-size:17px"> 首页</span></a></div><div class="menus_item"><a class="site-page group faa-parent animated-hover hide" href="javascript:void(0);"><svg class="menu_icon faa-tada" aria-hidden="true" style="width:1.30em;height:1.30em;vertical-align:-0.15em;fill:currentColor;overflow:hidden;"><use xlink:href="#icon--article"></use></svg><span class="menu_word" style="font-size:17px"> 文章</span><i class="fas fa-chevron-down"></i></a><ul class="menus_item_child"><li><a class="site-page child faa-parent animated-hover" href="/archives/"><svg class="menu_icon faa-tada" aria-hidden="true" style="width:1.30em;height:1.30em;vertical-align:-0.15em;fill:currentColor;overflow:hidden;"><use xlink:href="#icon-guidang1">                   </use></svg><span class="menu_word" style="font-size:17px"> 归档</span></a></li><li><a class="site-page child faa-parent animated-hover" href="/tags/"><svg class="menu_icon faa-tada" aria-hidden="true" style="width:1.30em;height:1.30em;vertical-align:-0.15em;fill:currentColor;overflow:hidden;"><use xlink:href="#icon-sekuaibiaoqian">                   </use></svg><span class="menu_word" style="font-size:17px"> 标签</span></a></li><li><a class="site-page child faa-parent animated-hover" href="/categories/"><svg class="menu_icon faa-tada" aria-hidden="true" style="width:1.30em;height:1.30em;vertical-align:-0.15em;fill:currentColor;overflow:hidden;"><use xlink:href="#icon-fenlei">                   </use></svg><span class="menu_word" style="font-size:17px"> 分类</span></a></li></ul></div><div class="menus_item"><a class="site-page group faa-parent animated-hover hide" href="javascript:void(0);"><svg class="menu_icon faa-tada" aria-hidden="true" style="width:1.30em;height:1.30em;vertical-align:-0.15em;fill:currentColor;overflow:hidden;"><use xlink:href="#icon-pinweishenghuo"></use></svg><span class="menu_word" style="font-size:17px"> 休闲</span><i class="fas fa-chevron-down"></i></a><ul class="menus_item_child"><li><a class="site-page child faa-parent animated-hover" href="/life/music/"><svg class="menu_icon faa-tada" aria-hidden="true" style="width:1.30em;height:1.30em;vertical-align:-0.15em;fill:currentColor;overflow:hidden;"><use xlink:href="#icon-yinle">                   </use></svg><span class="menu_word" style="font-size:17px"> 八音盒</span></a></li><li><a class="site-page child faa-parent animated-hover" href="/life/movies/"><svg class="menu_icon faa-tada" aria-hidden="true" style="width:1.30em;height:1.30em;vertical-align:-0.15em;fill:currentColor;overflow:hidden;"><use xlink:href="#icon-dianying1">                   </use></svg><span class="menu_word" style="font-size:17px"> 影院</span></a></li><li><a class="site-page child faa-parent animated-hover" href="/life/games/"><svg class="menu_icon faa-tada" aria-hidden="true" style="width:1.30em;height:1.30em;vertical-align:-0.15em;fill:currentColor;overflow:hidden;"><use xlink:href="#icon-youxishoubing">                   </use></svg><span class="menu_word" style="font-size:17px"> 游戏</span></a></li></ul></div><div class="menus_item"><a class="site-page group faa-parent animated-hover hide" href="javascript:void(0);"><svg class="menu_icon faa-tada" aria-hidden="true" style="width:1.30em;height:1.30em;vertical-align:-0.15em;fill:currentColor;overflow:hidden;"><use xlink:href="#icon-xiangzi"></use></svg><span class="menu_word" style="font-size:17px"> 八宝箱</span><i class="fas fa-chevron-down"></i></a><ul class="menus_item_child"><li><a class="site-page child faa-parent animated-hover" href="/box/gallery/"><svg class="menu_icon faa-tada" aria-hidden="true" style="width:1.30em;height:1.30em;vertical-align:-0.15em;fill:currentColor;overflow:hidden;"><use xlink:href="#icon-tubiaozhizuomoban">                   </use></svg><span class="menu_word" style="font-size:17px"> 画廊</span></a></li><li><a class="site-page child faa-parent animated-hover" href="/box/animation/"><svg class="menu_icon faa-tada" aria-hidden="true" style="width:1.30em;height:1.30em;vertical-align:-0.15em;fill:currentColor;overflow:hidden;"><use xlink:href="#icon-nvwumao">                   </use></svg><span class="menu_word" style="font-size:17px"> 动画</span></a></li><li><a class="site-page child faa-parent animated-hover" href="/box/nav/"><svg class="menu_icon faa-tada" aria-hidden="true" style="width:1.30em;height:1.30em;vertical-align:-0.15em;fill:currentColor;overflow:hidden;"><use xlink:href="#icon-zhifengche">                   </use></svg><span class="menu_word" style="font-size:17px"> 网址导航</span></a></li></ul></div><div class="menus_item"><a class="site-page group faa-parent animated-hover hide" href="javascript:void(0);"><svg class="menu_icon faa-tada" aria-hidden="true" style="width:1.30em;height:1.30em;vertical-align:-0.15em;fill:currentColor;overflow:hidden;"><use xlink:href="#icon-shejiaoxinxi"></use></svg><span class="menu_word" style="font-size:17px"> 社交</span><i class="fas fa-chevron-down"></i></a><ul class="menus_item_child"><li><a class="site-page child faa-parent animated-hover" href="/social/fcircle/"><svg class="menu_icon faa-tada" aria-hidden="true" style="width:1.30em;height:1.30em;vertical-align:-0.15em;fill:currentColor;overflow:hidden;"><use xlink:href="#icon-pengyouquan">                   </use></svg><span class="menu_word" style="font-size:17px"> 朋友圈</span></a></li><li><a class="site-page child faa-parent animated-hover" href="/comments/"><svg class="menu_icon faa-tada" aria-hidden="true" style="width:1.30em;height:1.30em;vertical-align:-0.15em;fill:currentColor;overflow:hidden;"><use xlink:href="#icon-liuyan">                   </use></svg><span class="menu_word" style="font-size:17px"> 留言板</span></a></li><li><a class="site-page child faa-parent animated-hover" href="/social/link/"><svg class="menu_icon faa-tada" aria-hidden="true" style="width:1.30em;height:1.30em;vertical-align:-0.15em;fill:currentColor;overflow:hidden;"><use xlink:href="#icon-lianjie">                   </use></svg><span class="menu_word" style="font-size:17px"> 友人帐</span></a></li></ul></div><div class="menus_item"><a class="site-page group faa-parent animated-hover hide" href="javascript:void(0);"><svg class="menu_icon faa-tada" aria-hidden="true" style="width:1.30em;height:1.30em;vertical-align:-0.15em;fill:currentColor;overflow:hidden;"><use xlink:href="#icon-wangye"></use></svg><span class="menu_word" style="font-size:17px"> 网站</span><i class="fas fa-chevron-down"></i></a><ul class="menus_item_child"><li><a class="site-page child faa-parent animated-hover" href="/site/census/"><svg class="menu_icon faa-tada" aria-hidden="true" style="width:1.30em;height:1.30em;vertical-align:-0.15em;fill:currentColor;overflow:hidden;"><use xlink:href="#icon--tongjibiao">                   </use></svg><span class="menu_word" style="font-size:17px"> 网站统计</span></a></li><li><a class="site-page child faa-parent animated-hover" href="/site/echarts/"><svg class="menu_icon faa-tada" aria-hidden="true" style="width:1.30em;height:1.30em;vertical-align:-0.15em;fill:currentColor;overflow:hidden;"><use xlink:href="#icon-shujutongji1">                   </use></svg><span class="menu_word" style="font-size:17px"> 文章统计</span></a></li><li><a class="site-page child faa-parent animated-hover" href="/site/time/"><svg class="menu_icon faa-tada" aria-hidden="true" style="width:1.30em;height:1.30em;vertical-align:-0.15em;fill:currentColor;overflow:hidden;"><use xlink:href="#icon-xianxingshalou">                   </use></svg><span class="menu_word" style="font-size:17px"> 旧时光</span></a></li></ul></div><div class="menus_item"><a class="site-page group faa-parent animated-hover hide" href="javascript:void(0);"><svg class="menu_icon faa-tada" aria-hidden="true" style="width:1.30em;height:1.30em;vertical-align:-0.15em;fill:currentColor;overflow:hidden;"><use xlink:href="#icon-maoliang"></use></svg><span class="menu_word" style="font-size:17px"> 个人</span><i class="fas fa-chevron-down"></i></a><ul class="menus_item_child"><li><a class="site-page child faa-parent animated-hover" href="/personal/bb/"><svg class="menu_icon faa-tada" aria-hidden="true" style="width:1.30em;height:1.30em;vertical-align:-0.15em;fill:currentColor;overflow:hidden;"><use xlink:href="#icon-qunliaotian">                   </use></svg><span class="menu_word" style="font-size:17px"> 唠叨</span></a></li><li><a class="site-page child faa-parent animated-hover" href="/personal/love/"><svg class="menu_icon faa-tada" aria-hidden="true" style="width:1.30em;height:1.30em;vertical-align:-0.15em;fill:currentColor;overflow:hidden;"><use xlink:href="#icon-love-sign">                   </use></svg><span class="menu_word" style="font-size:17px"> 恋爱小屋</span></a></li><li><a class="site-page child faa-parent animated-hover" href="/personal/about/"><svg class="menu_icon faa-tada" aria-hidden="true" style="width:1.30em;height:1.30em;vertical-align:-0.15em;fill:currentColor;overflow:hidden;"><use xlink:href="#icon-paperplane">                   </use></svg><span class="menu_word" style="font-size:17px"> 关于</span></a></li></ul></div></div><center id="name-container"><a id="page-name" href="javascript:scrollToTop()">PAGE_NAME</a></center><div id="nav-right"><div id="search-button"><a class="search faa-parent animated-hover" title="检索站内任何你想要的信息"><svg class="faa-tada icon" style="height:24px;width:24px;fill:currentColor;position:relative;top:6px" aria-hidden="true"><use xlink:href="#icon-valentine_-search-love-find-heart"></use></svg><span> 搜索</span></a></div><a class="meihua faa-parent animated-hover" onclick="toggleWinbox()" title="美化设置-自定义你的风格" id="meihua-button"><svg class="faa-tada icon" style="height:26px;width:26px;fill:currentColor;position:relative;top:8px" aria-hidden="true"><use xlink:href="#icon-tupian1"></use></svg></a><a class="sun_moon faa-parent animated-hover" onclick="switchNightMode()" title="浅色和深色模式转换" id="nightmode-button"><svg class="faa-tada" style="height:25px;width:25px;fill:currentColor;position:relative;top:7px" viewBox="0 0 1024 1024"><use id="modeicon" xlink:href="#icon-moon">       </use></svg></a><div id="toggle-menu"><a><i class="fas fa-bars fa-fw"></i></a></div></div></div></nav><div id="site-info"><h1 id="site-title">Fomalhaut🥝</h1><div id="site-subtitle"><span id="subtitle"></span></div><div id="site_social_icons"><a class="social-icon faa-parent animated-hover" href="/assets/QRCode.jpg" target="_blank" title="微信"><svg class="social_icon faa-tada" aria-hidden="true" style="width:1.15em;height:1.15em;vertical-align:-0.15em;fill:currentColor;overflow:hidden;"><use xlink:href="#icon-weixin"></use></svg></a><a class="social-icon faa-parent animated-hover" href="https://res.abeim.cn/api/qq/?qq=1174008660" target="_blank" title="QQ"><svg class="social_icon faa-tada" aria-hidden="true" style="width:1.15em;height:1.15em;vertical-align:-0.15em;fill:currentColor;overflow:hidden;"><use xlink:href="#icon-QQ"></use></svg></a><a class="social-icon faa-parent animated-hover" href="https://space.bilibili.com/220757832" target="_blank" title="B站"><svg class="social_icon faa-tada" aria-hidden="true" style="width:1.15em;height:1.15em;vertical-align:-0.15em;fill:currentColor;overflow:hidden;"><use xlink:href="#icon-bilibili"></use></svg></a><a class="social-icon faa-parent animated-hover" href="mailto:1174008660@qq.com" target="_blank" title="QQ邮箱"><svg class="social_icon faa-tada" aria-hidden="true" style="width:1.15em;height:1.15em;vertical-align:-0.15em;fill:currentColor;overflow:hidden;"><use xlink:href="#icon-youxiang"></use></svg></a><a class="social-icon faa-parent animated-hover" href="https://leetcode.cn/u/fomalhaut1998" target="_blank" title="力扣"><svg class="social_icon faa-tada" aria-hidden="true" style="width:1.15em;height:1.15em;vertical-align:-0.15em;fill:currentColor;overflow:hidden;"><use xlink:href="#icon-leetcode"></use></svg></a></div></div><div id="scroll-down"><i class="fas fa-angle-down scroll-down-effects"></i></div></header><main class="layout" id="content-inner"><div class="recent-posts" id="recent-posts"><div class="recent-post-item"><div class="recent-post-content left"><div class="recent-post-cover"><img class="article-cover" src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="https://source.fomal.cc/img/default_cover_14.webp" onerror="this.onerror=null;this.src='/assets/r2.jpg'" alt="无题"></div><div class="recent-post-info"><a class="article-title" href="/posts/0.html" title="无题"><div class="article-title-link">无题</div></a><div class="recent-post-meta">               <div class="article-meta-wrap"><span class="post-meta-date"><svg class="meta_icon post-ui-icon" style="width:21px;height:21px;position:relative;top:6px"><use xlink:href="#icon-rili"></use></svg><span class="article-meta-label">发表于 </span><time class="post-meta-date-created" datetime="2025-05-10T08:19:27.841Z" title="发表于 2025-05-10 16:19:27">2025-05-10</time><span class="article-meta-separator"> | </span><svg class="meta_icon post-ui-icon" style="width:13px;height:13px;position:relative;top:2px"><use xlink:href="#icon-gengxin1">                   </use></svg><span class="article-meta-label">更新于 </span><time class="post-meta-date-updated" datetime="2025-05-10T08:20:46.097Z" title="更新于 2025-05-10 16:20:46">2025-05-10</time></span></div></div></div><a class="article-content" href="/posts/0.html" title="无题"><div class="article-content-text">js基础
+学习目标:
+
+逆向工具准备
+熟悉 逆向的基本过程
+熟悉 JavaScript语法
+
+一.前期准备
+1. 技术准备
+
+python基础语法
+爬虫基础功底
+JavaScript基础语法知识(可以自己偷偷的学习一些)
+
+2. 工具准备
+
+node解释器
+
+官网地址:https://nodejs.org/zh-cn (推荐安装版本16版本)
+
+
+
+
+把提供的软件包解压到你对应的文件目录,解压之后把两个文件目录添加到环境变量
+
+
+
+
+pycharm专业版开发工具
+
+在pycharm安装node插件
+
+
+
+pycharm配置node环境
+
+
+
+
+浏览器
+
+EDG浏览器
+chrome浏览器
+
+
+
+二.逆向简介
+1. 课程安排
+
+25节课左右
+基础知识-4节课
+算法知识-5-6节课
+rpc技术1-2节课
+wasm技术1-2节课
+webpack技术1-2节课
+ast技术2-3节课
+补环境专题 4-5节课
+cookie专题4-5节课
+验证码专题2-3节课
+
+2. 什么是js逆向
+1. js逆向和js加密是什么操作
+
+
+JavaScript加密: 通常指的是在JavaScript中使用各种加密技术 ...</div></a><div class="recent-post-arrow"></div></div></div><div class="recent-post-item"><div class="recent-post-content right"><div class="recent-post-cover"><img class="article-cover" src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="https://source.fomal.cc/img/default_cover_14.webp" onerror="this.onerror=null;this.src='/assets/r2.jpg'" alt="无题"></div><div class="recent-post-info"><a class="article-title" href="/posts/0.html" title="无题"><div class="article-title-link">无题</div></a><div class="recent-post-meta">               <div class="article-meta-wrap"><span class="post-meta-date"><svg class="meta_icon post-ui-icon" style="width:21px;height:21px;position:relative;top:6px"><use xlink:href="#icon-rili"></use></svg><span class="article-meta-label">发表于 </span><time class="post-meta-date-created" datetime="2025-05-10T08:19:27.835Z" title="发表于 2025-05-10 16:19:27">2025-05-10</time><span class="article-meta-separator"> | </span><svg class="meta_icon post-ui-icon" style="width:13px;height:13px;position:relative;top:2px"><use xlink:href="#icon-gengxin1">                   </use></svg><span class="article-meta-label">更新于 </span><time class="post-meta-date-updated" datetime="2025-05-10T08:20:46.088Z" title="更新于 2025-05-10 16:20:46">2025-05-10</time></span></div></div></div><a class="article-content" href="/posts/0.html" title="无题"><div class="article-content-text">seaborn库：
+Seaborn是一种基于matplotlib的图形可视化库。他提前已经定义好了一套自己的风格。然后也封装了一系列的方便的绘图函数，之前通过matplotlib需要很多代码才能完成的绘图，使用seaborn可能就是一行代码的事情。总结一句话：使用seaborn绘图比matplotlib更好看，更简单！
+安装：
+
+通过pip：pip install seaborn。
+通过anaconda： conda install seaborn。
+
+官方文档：
+https://seaborn.pydata.org/tutorial.html
+6.3 seaborn—绘制统计图形
+Seaborn基于Matplotlib核心库进行了更高级的API封装，matplotlib里面业可以绘制图行，但是他里面有成千上白万的图行，里面有许多有的函数与库
+可以轻松地画出更漂亮的图形，而Seaborn的漂亮主要体现在配色更加舒服，以及图形元素的样式更加细腻。
+12import seaborn as sns%matplotlib inline
+6.3.1 可视化数据的分布
+可视化数据集中的成对关系 要 ...</div></a><div class="recent-post-arrow"></div></div></div><div class="recent-post-item"><div class="recent-post-content left"><div class="recent-post-cover"><img class="article-cover" src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="https://source.fomal.cc/img/default_cover_14.webp" onerror="this.onerror=null;this.src='/assets/r2.jpg'" alt="无题"></div><div class="recent-post-info"><a class="article-title" href="/posts/0.html" title="无题"><div class="article-title-link">无题</div></a><div class="recent-post-meta">               <div class="article-meta-wrap"><span class="post-meta-date"><svg class="meta_icon post-ui-icon" style="width:21px;height:21px;position:relative;top:6px"><use xlink:href="#icon-rili"></use></svg><span class="article-meta-label">发表于 </span><time class="post-meta-date-created" datetime="2025-05-10T08:19:27.834Z" title="发表于 2025-05-10 16:19:27">2025-05-10</time><span class="article-meta-separator"> | </span><svg class="meta_icon post-ui-icon" style="width:13px;height:13px;position:relative;top:2px"><use xlink:href="#icon-gengxin1">                   </use></svg><span class="article-meta-label">更新于 </span><time class="post-meta-date-updated" datetime="2025-05-10T08:20:46.089Z" title="更新于 2025-05-10 16:20:46">2025-05-10</time></span></div></div></div><a class="article-content" href="/posts/0.html" title="无题"><div class="article-content-text">数据可视化
+数据可视化的概述
+有句话说得好——“一图胜千言”，放到数据领域就是说，对于复杂难懂且体量庞大的数据而言，图表的信息量要大得多，这也是我们为什么要谈数据可视化。今天帆软君就带大家进一步了解一下。
+什么是数据可视化
+定义：数据可视化是指将数据以图表的形式表示并利用数据分析和开发工具发现其中未知信息的处理过程。
+顾名思义，数据可视化就是将数据转换成图或表等，以一种更直观的方式展现和呈现数据。通过“可视化”的方式，我们看不懂的数据通过图形化的手段进行有效地表达，准确高效、简洁全面地传递某种信息，甚至我们帮助发现某种规律和特征，挖掘数据背后的价值。
+
+数据可视化旨在借助图形化手段，清晰有效地将数据中的各种属性和变量呈现出来，使用户可以从不同的维度观察数据,从而对数据进行更深入地观察和分析。
+数据可视化的工具
+
+6.2Matplotlib介绍-绘制图片
+Matplotlib的功能和matlab中的画图的功能十分类似。因为matlab进行画图相对来说比较复杂，所以使用python中的Matplotlib来画图比较方便。
+Matplotlib是python中的一个包，主要用于绘制2D图形（ ...</div></a><div class="recent-post-arrow"></div></div></div><div class="recent-post-item"><div class="recent-post-content right"><div class="recent-post-cover"><img class="article-cover" src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="https://source.fomal.cc/img/default_cover_14.webp" onerror="this.onerror=null;this.src='/assets/r2.jpg'" alt="无题"></div><div class="recent-post-info"><a class="article-title" href="/posts/0.html" title="无题"><div class="article-title-link">无题</div></a><div class="recent-post-meta">               <div class="article-meta-wrap"><span class="post-meta-date"><svg class="meta_icon post-ui-icon" style="width:21px;height:21px;position:relative;top:6px"><use xlink:href="#icon-rili"></use></svg><span class="article-meta-label">发表于 </span><time class="post-meta-date-created" datetime="2025-05-10T08:19:27.832Z" title="发表于 2025-05-10 16:19:27">2025-05-10</time><span class="article-meta-separator"> | </span><svg class="meta_icon post-ui-icon" style="width:13px;height:13px;position:relative;top:2px"><use xlink:href="#icon-gengxin1">                   </use></svg><span class="article-meta-label">更新于 </span><time class="post-meta-date-updated" datetime="2025-05-10T08:20:46.089Z" title="更新于 2025-05-10 16:20:46">2025-05-10</time></span></div></div></div><a class="article-content" href="/posts/0.html" title="无题"><div class="article-content-text">数据预处理
+在工程实践中，我们得到的数据会存在有缺失值、重复值等，在使用之前需要进行数据预处理。数据预处理没有标准的流程，通常针对不同的任务和数据集属性的不同而不同。数据预处理的常用流程为：去除唯一属性、处理缺失值、属性编码、数据标准化正则化、特征选择、主成分分析。接下来，我们使用pandas中数据预处理的内容进行详细的数据进行解释。
+4.1 数据清洗
+数据清洗(Data cleaning)– 对数据进行重新审查和校验的过程，目的在于删除重复信息、纠正存在的错误，并提供数据一致性。数据清洗的目的在于提高数据的质量，将脏的数据（这里是指对数据分析没有实际意义的意义，格式非法，不在1指定1范围里的数据）清洗干净，使原有的数据具有完整性，唯一性，权威性，合法性，一致性等特点。
+4.2空值和缺失值的处理
+缺失值处理，是每个数据分析人都避不开的沉重话题。正如那句经典的：“数据分析中的大部分时间，花在了数据预处理上。”数据预处理做得好，往往让我们的数据分析工作事半功倍。其中，正确处理缺失值，更是重中之重。出现这种的原因有那些呢？
+
+信息暂时无法获取。如某种产品的收益等具有滞后效应。
+数据因人为因素 ...</div></a><div class="recent-post-arrow"></div></div></div><div class="recent-post-item"><div class="recent-post-content left"><div class="recent-post-cover"><img class="article-cover" src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="https://source.fomal.cc/img/default_cover_14.webp" onerror="this.onerror=null;this.src='/assets/r2.jpg'" alt="无题"></div><div class="recent-post-info"><a class="article-title" href="/posts/0.html" title="无题"><div class="article-title-link">无题</div></a><div class="recent-post-meta">               <div class="article-meta-wrap"><span class="post-meta-date"><svg class="meta_icon post-ui-icon" style="width:21px;height:21px;position:relative;top:6px"><use xlink:href="#icon-rili"></use></svg><span class="article-meta-label">发表于 </span><time class="post-meta-date-created" datetime="2025-05-10T08:19:27.831Z" title="发表于 2025-05-10 16:19:27">2025-05-10</time><span class="article-meta-separator"> | </span><svg class="meta_icon post-ui-icon" style="width:13px;height:13px;position:relative;top:2px"><use xlink:href="#icon-gengxin1">                   </use></svg><span class="article-meta-label">更新于 </span><time class="post-meta-date-updated" datetime="2025-05-10T08:20:46.088Z" title="更新于 2025-05-10 16:20:46">2025-05-10</time></span></div></div></div><a class="article-content" href="/posts/0.html" title="无题"><div class="article-content-text">为什么要学习pandas?
+那么问题来了：
+numpy已经能够帮助我们处理数据，能够结合matplotlib解决我们数据分析的问题，那么pandas学习的目的在什么地方呢？
+numpy能够帮我们处理处理数值型数据，但是这还不够， 很多时候，我们的数据除了数值之外，还有字符串，还有时间序列等
+
+比如：我们通过爬虫获取到了存储在数据库中的数据
+
+所以，pandas出现了。
+什么是Pandas?
+
+Pandas的名称来自于面板数据（panel data）
+
+Pandas是一个强大的分析结构化数据的工具集，基于NumPy构建，提供了高级数据结构和数据操作工具，它是使Python成为强大而高效的数据分析环境的重要因素之一。
+
+一个强大的分析和操作大型结构化数据集所需的工具集
+基础是NumPy，提供了高性能矩阵的运算
+提供了大量能够快速便捷地处理数据的函数和方法
+应用于数据挖掘，数据分析
+提供数据清洗功能
+
+官网：
+http://pandas.pydata.org/
+1.Pandas的数据结构分析
+1.1 pandas模块简介
+首先，使用pandas相应的操作之前都需要导入pandas模块
+12i ...</div></a><div class="recent-post-arrow"></div></div></div><div class="recent-post-item"><div class="recent-post-content right"><div class="recent-post-cover"><img class="article-cover" src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="https://source.fomal.cc/img/default_cover_14.webp" onerror="this.onerror=null;this.src='/assets/r2.jpg'" alt="无题"></div><div class="recent-post-info"><a class="article-title" href="/posts/0.html" title="无题"><div class="article-title-link">无题</div></a><div class="recent-post-meta">               <div class="article-meta-wrap"><span class="post-meta-date"><svg class="meta_icon post-ui-icon" style="width:21px;height:21px;position:relative;top:6px"><use xlink:href="#icon-rili"></use></svg><span class="article-meta-label">发表于 </span><time class="post-meta-date-created" datetime="2025-05-10T08:19:27.829Z" title="发表于 2025-05-10 16:19:27">2025-05-10</time><span class="article-meta-separator"> | </span><svg class="meta_icon post-ui-icon" style="width:13px;height:13px;position:relative;top:2px"><use xlink:href="#icon-gengxin1">                   </use></svg><span class="article-meta-label">更新于 </span><time class="post-meta-date-updated" datetime="2025-05-10T08:20:46.088Z" title="更新于 2025-05-10 16:20:46">2025-05-10</time></span></div></div></div><a class="article-content" href="/posts/0.html" title="无题"><div class="article-content-text">Numpy库介绍
+NumPy是一个功能强大的Python库，主要用于对多维数组执行计算。NumPy这个词来源于两个单词-- Numerical和Python。NumPy提供了大量的库函数和操作，可以帮助程序员轻松地进行数值计算。在数据分析和机器学习领域被广泛使用。他有以下几个特点：
+
+numpy内置了并行运算功能，当系统有多个核心时，做某种计算时，numpy会自动做并行计算。
+Numpy底层使用C语言编写，内部解除了GIL（全局解释器锁），其对数组的操作速度不受Python解释器的限制，效率远高于纯Python代码。
+有一个强大的N维数组对象Array（一种类似于列表的东西）。
+实用的线性代数、傅里叶变换和随机数生成函数。
+
+总而言之，他是一个非常高效的用于处理数值型运算的包。
+安装：
+通过pip install numpy即可安装。
+教程地址：
+
+官网：https://docs.scipy.org/doc/numpy/user/quickstart.html。
+中文文档：https://www.numpy.org.cn/user_guide/quickstart_tutorial/i ...</div></a><div class="recent-post-arrow"></div></div></div><div class="recent-post-item"><div class="recent-post-content left"><div class="recent-post-cover"><img class="article-cover" src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="https://source.fomal.cc/img/default_cover_14.webp" onerror="this.onerror=null;this.src='/assets/r2.jpg'" alt="无题"></div><div class="recent-post-info"><a class="article-title" href="/posts/0.html" title="无题"><div class="article-title-link">无题</div></a><div class="recent-post-meta">               <div class="article-meta-wrap"><span class="post-meta-date"><svg class="meta_icon post-ui-icon" style="width:21px;height:21px;position:relative;top:6px"><use xlink:href="#icon-rili"></use></svg><span class="article-meta-label">发表于 </span><time class="post-meta-date-created" datetime="2025-05-10T08:19:27.826Z" title="发表于 2025-05-10 16:19:27">2025-05-10</time><span class="article-meta-separator"> | </span><svg class="meta_icon post-ui-icon" style="width:13px;height:13px;position:relative;top:2px"><use xlink:href="#icon-gengxin1">                   </use></svg><span class="article-meta-label">更新于 </span><time class="post-meta-date-updated" datetime="2025-05-10T08:20:46.164Z" title="更新于 2025-05-10 16:20:46">2025-05-10</time></span></div></div></div><a class="article-content" href="/posts/0.html" title="无题"><div class="article-content-text">实验方案：使用LIBS技术完成口红中Cd元素的定量测量
+1. 实验目的
+通过 LIBS 技术，定量测量口红样品中 镉（Cd） 元素的浓度。通过建立镉标准溶液的校准曲线，测定口红中镉元素的实际含量，并评估其是否符合食品和化妆品安全标准。
+
+2. 实验原理
+LIBS（激光诱导击穿光谱） 是一种基于激光与样品表面相互作用引发的等离子体现象的分析技术。当激光照射到样品表面时，会在样品的表面产生一个等离子体云，样品中的元素被激发并发射出具有特征波长的光谱线。这些光谱线可用于元素的识别和定量分析。定量分析通常通过建立标准溶液的校准曲线来完成。
+
+镉元素的特征谱线：镉在 LIBS 光谱中的特征谱线位于 228.8 nm 和 214.4 nm 附近。
+
+通过测量口红样品中镉的谱线强度，结合已知浓度的标准溶液，建立标准曲线，从而定量分析口红中镉的含量。
+
+3. 实验材料与设备
+实验材料：
+
+口红样品
+镉标准溶液（浓度：1000 µg/mL）
+去离子水
+离心管（10 mL）
+
+实验设备：
+
+LIBS平台：用于获取口红样品的光谱数据
+电子天平：用于称取口红样品
+超声波震荡仪：用于震荡混合样品
+水浴锅：用于加 ...</div></a><div class="recent-post-arrow"></div></div></div><div class="recent-post-item"><div class="recent-post-content right"><div class="recent-post-cover"><img class="article-cover" src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="https://source.fomal.cc/img/default_cover_14.webp" onerror="this.onerror=null;this.src='/assets/r2.jpg'" alt="无题"></div><div class="recent-post-info"><a class="article-title" href="/posts/0.html" title="无题"><div class="article-title-link">无题</div></a><div class="recent-post-meta">               <div class="article-meta-wrap"><span class="post-meta-date"><svg class="meta_icon post-ui-icon" style="width:21px;height:21px;position:relative;top:6px"><use xlink:href="#icon-rili"></use></svg><span class="article-meta-label">发表于 </span><time class="post-meta-date-created" datetime="2025-05-10T08:19:27.820Z" title="发表于 2025-05-10 16:19:27">2025-05-10</time><span class="article-meta-separator"> | </span><svg class="meta_icon post-ui-icon" style="width:13px;height:13px;position:relative;top:2px"><use xlink:href="#icon-gengxin1">                   </use></svg><span class="article-meta-label">更新于 </span><time class="post-meta-date-updated" datetime="2025-05-10T08:20:46.088Z" title="更新于 2025-05-10 16:20:46">2025-05-10</time></span></div></div></div><a class="article-content" href="/posts/0.html" title="无题"><div class="article-content-text">实验目的
+​	本实验的主要目的是使用 LIBS 技术通过构建标准定标曲线，定量分析水中锰（Mn）元素的浓度。通过与已知浓度的标准样品的比对，建立浓度与光谱信号强度之间的关系，进而推算样品中 Mn 的浓度。
+实验方法
+实验装置
+​	LIBS 元素成像的实验装置如图所示，其中包含Nd:YAG激光器（波长为 1064 nm，脉宽约为10 ns）、光谱仪（Avantes公司的四通道光纤光谱仪）、数字脉冲延时产生器（Quantum Composer公司的9520系列）、三维移动平台（OptoSigma 公司的SHOT-304GS型平移台控制器）、聚焦透镜等。
+
+样本制备
+
+
+清洗所用仪器：硅片，镊子，挖孔器，培养皿
+
+
+使用挖孔器从定量滤纸裁出直径为6mm的圆形纸片，放进培养皿备用
+
+
+使用微量可调移液枪将标准Mn溶液(100mg/L)与超纯水按以下比例滴加到离心管中，并使用超声波震荡6分钟
+
+
+
+
+
+Mass ratio/(ppm)
+water(ul)
+Mn原液(ul)
+
+
+
+
+5
+95
+5
+
+
+10
+90
+10
+
+
+15
+85
+15
+
+
+20
+80
+20
+
+
+30
+70
+30
+
+
+40
+60 ...</div></a><div class="recent-post-arrow"></div></div></div><div class="recent-post-item"><div class="recent-post-content left"><div class="recent-post-cover"><img class="article-cover" src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="https://source.fomal.cc/img/default_cover_14.webp" onerror="this.onerror=null;this.src='/assets/r2.jpg'" alt="无题"></div><div class="recent-post-info"><a class="article-title" href="/posts/0.html" title="无题"><div class="article-title-link">无题</div></a><div class="recent-post-meta">               <div class="article-meta-wrap"><span class="post-meta-date"><svg class="meta_icon post-ui-icon" style="width:21px;height:21px;position:relative;top:6px"><use xlink:href="#icon-rili"></use></svg><span class="article-meta-label">发表于 </span><time class="post-meta-date-created" datetime="2025-05-10T08:19:27.819Z" title="发表于 2025-05-10 16:19:27">2025-05-10</time><span class="article-meta-separator"> | </span><svg class="meta_icon post-ui-icon" style="width:13px;height:13px;position:relative;top:2px"><use xlink:href="#icon-gengxin1">                   </use></svg><span class="article-meta-label">更新于 </span><time class="post-meta-date-updated" datetime="2025-05-10T08:20:46.087Z" title="更新于 2025-05-10 16:20:46">2025-05-10</time></span></div></div></div><a class="article-content" href="/posts/0.html" title="无题"><div class="article-content-text">
+2024年12月25日
+
+1. 样品制备
+
+取 10 μL 溶液样品，滴加到Si基底表面进行加热，干燥后在基板表面形成一层直径为 () mm 左右的圆形样品层。对整个圆形沉积层区域进行全覆盖扫描，每个点采集 1 个脉冲，扫描矩阵 ()×()，即 1 个圆形沉积层共采集 ()个脉冲，累计获得 1 幅 LIBS 光谱.试验重复 5 次。
+使用酒精消毒Si基底和小刀，裁纸刀，尺子，镊子，将双面胶粘在Si基底上，滤纸贴在双面胶上
+
+取xul的溶液样品滴加到1.1cmx1.1cm的滤纸上，干燥20min
+取xul的溶液样品滴加到0.55cmx0.55cm的滤纸上，干燥20min
+
+
+
+先检测无滴加待测样品的纯Si基底（以及加上滤纸），使用水中锰原液分别使用上述3种方法获得对应的光谱（delay=0.2us，电压=560V），比较特征峰强度及信噪比，选取合适的样品制备方法。
+制备一定量浓度的Mn溶液：原液100ppm
+
+
+
+Mn溶液浓度
+纯水（*原液体积ul）
+水中锰（/ul）
+
+
+
+
+90
+1.111
+10
+
+
+80
+2.5
+10
+
+
+70
+4.286
+10
+
+
+
+采用超声波震荡，使其均匀分布 ...</div></a><div class="recent-post-arrow"></div></div></div><div class="recent-post-item"><div class="recent-post-content right"><div class="recent-post-cover"><img class="article-cover" src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="https://source.fomal.cc/img/default_cover_14.webp" onerror="this.onerror=null;this.src='/assets/r2.jpg'" alt="无题"></div><div class="recent-post-info"><a class="article-title" href="/posts/0.html" title="无题"><div class="article-title-link">无题</div></a><div class="recent-post-meta">               <div class="article-meta-wrap"><span class="post-meta-date"><svg class="meta_icon post-ui-icon" style="width:21px;height:21px;position:relative;top:6px"><use xlink:href="#icon-rili"></use></svg><span class="article-meta-label">发表于 </span><time class="post-meta-date-created" datetime="2025-05-10T08:19:27.818Z" title="发表于 2025-05-10 16:19:27">2025-05-10</time><span class="article-meta-separator"> | </span><svg class="meta_icon post-ui-icon" style="width:13px;height:13px;position:relative;top:2px"><use xlink:href="#icon-gengxin1">                   </use></svg><span class="article-meta-label">更新于 </span><time class="post-meta-date-updated" datetime="2025-05-10T08:20:46.087Z" title="更新于 2025-05-10 16:20:46">2025-05-10</time></span></div></div></div><a class="article-content" href="/posts/0.html" title="无题"><div class="article-content-text">
+2025年3月13日
+
+样品制备
+
+
+清洗所用仪器：硅片，镊子，挖孔器，培养皿
+
+
+使用挖孔器从定量滤纸裁出直径为6mm的圆形纸片，放进培养皿备用
+
+
+使用微量可调移液枪（≥2ul）将标准Cd溶液(1000ug/ml)与超纯水按以下比例滴加到离心管（最大容量为1.5ml）中，并使用超声波震荡6分钟
+
+
+
+
+
+Mass ratio/(ppm)
+water(ul)
+Mn原液(ul)
+
+
+
+
+5
+995
+5
+
+
+10
+990
+10
+
+
+15
+985
+15
+
+
+20
+980
+20
+
+
+30
+970
+30
+
+
+40
+960
+40
+
+
+50
+950
+50
+
+
+60
+940
+60
+
+
+70
+930
+70
+
+
+
+
+
+在硅片上粘贴一层双面胶，用镊子按压使其平坦，将裁好的圆形纸片粘贴到双面胶上，取10ul的混合溶液滴加在上面
+
+
+使用风干机风干30min
+
+
+实验步骤
+谱线选择
+在圆形定量滤纸上滴加纯水，先对其进行检测。再使用Cd原液制作50ppm样本，对其检测，通过对比光谱选择合适的特征谱线。(Cd II 214. 44 nm、Cd II 226. 50 nm、Cd I228. 80 nm )
+优化延 ...</div></a><div class="recent-post-arrow"></div></div></div><div class="recent-post-item"><div class="recent-post-content left"><div class="recent-post-cover"><img class="article-cover" src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="https://source.fomal.cc/img/default_cover_14.webp" onerror="this.onerror=null;this.src='/assets/r2.jpg'" alt="无题"></div><div class="recent-post-info"><a class="article-title" href="/posts/0.html" title="无题"><div class="article-title-link">无题</div></a><div class="recent-post-meta">               <div class="article-meta-wrap"><span class="post-meta-date"><svg class="meta_icon post-ui-icon" style="width:21px;height:21px;position:relative;top:6px"><use xlink:href="#icon-rili"></use></svg><span class="article-meta-label">发表于 </span><time class="post-meta-date-created" datetime="2025-05-10T08:19:27.816Z" title="发表于 2025-05-10 16:19:27">2025-05-10</time><span class="article-meta-separator"> | </span><svg class="meta_icon post-ui-icon" style="width:13px;height:13px;position:relative;top:2px"><use xlink:href="#icon-gengxin1">                   </use></svg><span class="article-meta-label">更新于 </span><time class="post-meta-date-updated" datetime="2025-05-10T08:20:46.086Z" title="更新于 2025-05-10 16:20:46">2025-05-10</time></span></div></div></div><a class="article-content" href="/posts/0.html" title="无题"><div class="article-content-text">实验记录模板主要用于记录实验的全过程，包括实验的具体操作步骤、所用设备、实验数据、问题和思考等。一个良好的实验记录不仅帮助实验人员追溯和分析实验过程，还能够确保实验的可重复性和数据的可靠性。下面是一个通用的实验记录模板，你可以根据自己的实验需要进行调整。
+
+
+2024年12月26日
+
+实验记录模板
+实验名称：
+
+口红中重金属元素的 LIBS 检测
+
+实验日期：
+
+[填写日期]
+
+实验人员：
+
+[填写实验人员姓名]
+
+实验地点：
+
+[填写实验地点]
+
+
+一、实验目的
+
+[简要说明本次实验的目标，例：使用 LIBS 技术检测口红样品中的重金属元素（如铅、汞、镉）含量。]
+
+
+二、实验原理
+
+[简要说明实验原理，例：LIBS 技术通过激光击穿样品，激发样品中元素的特征谱线，从而实现元素识别与定量分析。]
+
+
+三、实验材料与设备
+
+
+实验材料
+：
+
+口红样品（质量：0.1 g）
+重金属标准溶液（汞/铅/镉，浓度：1000 µg/mL）
+去离子水
+
+
+
+实验设备
+：
+
+LIBS 光谱仪
+超声波震荡仪
+离心管（10 mL）
+水浴锅
+温度计
+
+
+
+
+四、实验步骤
+
+样品准备：
+
+称取 0.1 g 口 ...</div></a><div class="recent-post-arrow"></div></div></div><div class="recent-post-item"><div class="recent-post-content right"><div class="recent-post-cover"><img class="article-cover" src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="https://source.fomal.cc/img/default_cover_14.webp" onerror="this.onerror=null;this.src='/assets/r2.jpg'" alt="无题"></div><div class="recent-post-info"><a class="article-title" href="/posts/0.html" title="无题"><div class="article-title-link">无题</div></a><div class="recent-post-meta">               <div class="article-meta-wrap"><span class="post-meta-date"><svg class="meta_icon post-ui-icon" style="width:21px;height:21px;position:relative;top:6px"><use xlink:href="#icon-rili"></use></svg><span class="article-meta-label">发表于 </span><time class="post-meta-date-created" datetime="2025-05-10T08:19:27.815Z" title="发表于 2025-05-10 16:19:27">2025-05-10</time><span class="article-meta-separator"> | </span><svg class="meta_icon post-ui-icon" style="width:13px;height:13px;position:relative;top:2px"><use xlink:href="#icon-gengxin1">                   </use></svg><span class="article-meta-label">更新于 </span><time class="post-meta-date-updated" datetime="2025-05-10T08:20:46.084Z" title="更新于 2025-05-10 16:20:46">2025-05-10</time></span></div></div></div><a class="article-content" href="/posts/0.html" title="无题"><div class="article-content-text">
+
+2024年12月26日
+
+1. 实验目的
+
+目的描述：简明扼要地说明实验的核心目标，为什么要进行此实验，期望通过实验解决什么问题或验证什么假设。
+应用背景：简要介绍实验的背景、相关领域的研究现状，实验的必要性和意义。
+
+2. 实验原理
+
+理论依据：解释实验所依赖的理论基础或原理，阐明实验现象背后的科学原理。对于分析实验，通常包括所用分析技术的基本原理，如 LIBS（激光诱导击穿光谱）的原理，光谱分析的基本概念等。
+反应机理（如适用）：如果实验涉及化学反应或物理变化，需要详细描述相关的反应机理和条件。
+
+3. 实验材料与设备
+
+
+实验材料
+：
+
+列出所有实验所需的化学品、样品及其规格、数量等。如口红样品、标准溶液、去离子水等。
+
+
+
+实验设备
+：
+
+列出实验中需要的仪器设备、仪器的型号、品牌等。如 LIBS 仪器、超声波震荡仪、离心管、水浴锅等。
+
+
+
+4. 实验方法
+
+
+样品制备
+：
+
+描述样品的准备过程。例如：称取口红基质样品，加入标准溶液等。需要明确样品的预处理方法、溶解过程、溶液配制等。
+
+
+
+实验步骤
+：
+
+详细列出每个实验步骤的操作流程，确保操作步骤清晰且易于遵循。这部分 ...</div></a><div class="recent-post-arrow"></div></div></div><nav id="pagination"><div class="pagination"><a class="extend prev" rel="prev" href="/page/2/#content-inner"><i class="fas fa-chevron-left fa-fw"></i></a><a class="page-number" href="/">1</a><a class="page-number" href="/page/2/#content-inner">2</a><span class="page-number current">3</span><a class="page-number" href="/page/4/#content-inner">4</a><span class="space">&hellip;</span><a class="page-number" href="/page/7/#content-inner">7</a><a class="extend next" rel="next" href="/page/4/#content-inner"><i class="fas fa-chevron-right fa-fw"></i></a></div></nav></div><div class="aside-content" id="aside-content"><div class="card-widget card-info"><div class="author_top is-center"><div class="card-info-avatar"><div class="avatar-img"><img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="https://tuchuang.voooe.cn/images/2023/01/02/avatar.webp" onerror="this.onerror=null;this.src='/assets/r1.jpg'" alt="avatar"/></div><div class="author-status-box"><div class="author-status"><g-emoji class="g-emoji" alias="palm_tree" fallback-src="https://lskypro.acozycotage.net/LightPicture/2022/12/fe1dc0402e623096.jpg">🐟</g-emoji><span>认真摸鱼中</span></div></div></div><b><div class="author-info__name">Fomalhaut🥝</div></b><div class="author-info__description">Future is now 🍭🍭🍭</div></div><div class="card-info-data site-data is-center"><a href="/archives/"><div class="headline">文章</div><div class="length-num">81</div></a><a href="/tags/"><div class="headline">标签</div><div class="length-num">11</div></a><a href="/categories/"><div class="headline">分类</div><div class="length-num">1</div></a></div><a id="card-info-btn" target="_blank" rel="noopener" href="https://github.com/fomalhaut1998" title="前往作者的Github"><span>前往小窝</span><i class="faa-passing animated" style="padding-left:20px;display:inline-block;vertical-align:middle;"><svg class="icon" style="height:28px;width:28px;fill:currentColor;position:relative;top:5px"><use xlink:href="#icon-xiaoqiche"></use></svg></i></a><div class="card-info-social-icons is-center"><a class="social-icon faa-parent animated-hover" href="/assets/QRCode.jpg" target="_blank" title="微信"><svg class="social_icon faa-tada" aria-hidden="true" style="width:1.15em;height:1.15em;vertical-align:-0.15em;fill:currentColor;overflow:hidden;"><use xlink:href="#icon-weixin"></use></svg></a><a class="social-icon faa-parent animated-hover" href="https://res.abeim.cn/api/qq/?qq=1174008660" target="_blank" title="QQ"><svg class="social_icon faa-tada" aria-hidden="true" style="width:1.15em;height:1.15em;vertical-align:-0.15em;fill:currentColor;overflow:hidden;"><use xlink:href="#icon-QQ"></use></svg></a><a class="social-icon faa-parent animated-hover" href="https://space.bilibili.com/220757832" target="_blank" title="B站"><svg class="social_icon faa-tada" aria-hidden="true" style="width:1.15em;height:1.15em;vertical-align:-0.15em;fill:currentColor;overflow:hidden;"><use xlink:href="#icon-bilibili"></use></svg></a><a class="social-icon faa-parent animated-hover" href="mailto:1174008660@qq.com" target="_blank" title="QQ邮箱"><svg class="social_icon faa-tada" aria-hidden="true" style="width:1.15em;height:1.15em;vertical-align:-0.15em;fill:currentColor;overflow:hidden;"><use xlink:href="#icon-youxiang"></use></svg></a><a class="social-icon faa-parent animated-hover" href="https://leetcode.cn/u/fomalhaut1998" target="_blank" title="力扣"><svg class="social_icon faa-tada" aria-hidden="true" style="width:1.15em;height:1.15em;vertical-align:-0.15em;fill:currentColor;overflow:hidden;"><use xlink:href="#icon-leetcode"></use></svg></a></div></div><div class="card-widget card-announcement"><div class="item-headline"><a class="faa-parent animated-hover"><svg class="faa-tada icon" style="height:25px;width:25px;fill:currentColor;position:relative;top:5px" aria-hidden="true"><use xlink:href="#icon-gonggao"></use></svg></a><span style="font-weight:bold">公告栏</span></div><div class="announcement_content"><center><b>--- 主域名 ---<br><a href="https://www.fomal.cc" title="此线路部署于Vercel" class="anno_content"><font color="#5ea6e5">fomal.cc</font></a>&nbsp;|&nbsp;<a target="_blank" rel="noopener" href="https://www.fomal.cn" title="此线路部署于Vercel" class="anno_content"><font color="#5ea6e5">fomal.cn</font></a><br>--- 备用域名 ---<br><a target="_blank" rel="noopener" href="https://netlify.fomal.cc" title="此线路部署于Netlify" class="anno_content"><font color="#5ea6e5">netlify.fomal.cc</font></a><br><a target="_blank" rel="noopener" href="https://cloudflare.fomal.cc" title="此线路部署于Cloudflare" class="anno_content"><font color="#5ea6e5">cloudflare.fomal.cc</font></a><br>--- 网站安卓APP ---<br>🍧<a target="_blank" rel="noopener" href="https://lskypro.acozycotage.net/Fomalhaut/Fomalhaut.apk" title="点这里可以下载网站的安卓APP" class="anno_content"><font color="#5ea6e5">点此下载</font></a>🍧</b></center></div><div id="welcome-info"></div></div><div class="sticky_layout"><div class="card-widget card-friend-link"><div class="item-headline"><a class="faa-parent animated-hover"><svg class="faa-tada icon" style="height:25px;width:25px;fill:currentColor;position:relative;top:5px" aria-hidden="true"><use xlink:href="#icon-tongxunlu"></use></svg></a><span style="font-weight:bold">通讯录</span></div><div class="card-friend-link-container"><details class="card-friend-class-name"><summary class="card-friend-class-desc" title="这里是最熟悉的小伙伴或者赞助商，当然是最前排啦"><sapn>0.推荐网站🍔</sapn><span class="online-friend-number"></span><sapn>1</sapn></summary><a class="card-friend-item online-friend-link" href="https://www.fomal.cc/" title="Fomalhaut🥝" target="_blank"><img class="no-lightbox card-friend-avatar" src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="https://www.fomal.cc/assets/avatar.webp" onerror="this.onerror=null;this.src='/assets/r1.jpg'" alt="Fomalhaut🥝"/><div class="card-friend-details"><div class="card-friend-name">Fomalhaut🥝</div><div class="card-friend-descr" title="Future is now 🍭🍭🍭">Future is now 🍭🍭🍭</div></div></a></details></div><div class="ja-pjax"><script>var addressbook = document.getElementsByClassName("card-friend-class-name");
+for (var i=0; i<addressbook.length; i++){
+  var online = addressbook[i].getElementsByClassName("online-friend-link").length;
+  addressbook[i].getElementsByClassName("online-friend-number")[0].innerHTML = "  "+online+"/";
+}</script></div></div><div class="card-widget card-webinfo"><div class="item-headline"><a class="faa-parent animated-hover"><svg class="faa-tada icon" style="height:25px;width:25px;fill:currentColor;position:relative;top:5px" aria-hidden="true"><use xlink:href="#icon-shujutongji2"></use></svg></a><span style="font-weight:bold">小站资讯</span></div><div class="webinfo"><div class="webinfo-item"><div class="item-name">文章数目 :</div><div class="item-count">81</div></div><div class="webinfo-item"><div class="item-name">本站总字数 :</div><div class="item-count">56.8w</div></div><div class="webinfo-item"><div class="item-name">本站访客数 :</div><div class="item-count" id="busuanzi_value_site_uv"><i class="fa-solid fa-spinner fa-spin"></i></div></div><div class="webinfo-item"><div class="item-name">本站总访问量 :</div><div class="item-count" id="busuanzi_value_site_pv"><i class="fa-solid fa-spinner fa-spin"></i></div></div><div class="webinfo-item"><div class="item-name">最后更新时间 :</div><div class="item-count" id="last-push-date" data-lastPushDate="2025-05-10T09:06:04.576Z"><i class="fa-solid fa-spinner fa-spin"></i></div></div></div></div></div></div></main><footer id="footer" style="background-color: transparent;"><div id="footer-wrap"><div id="ft"><div class="ft-item-1"><div class="t-top"><div class="t-t-l"><p class="ft-t t-l-t">格言🧬</p><div class="bg-ad"><div>再看看那个光点，它就在这里，这是家园，这是我们 —— 你所爱的每一个人，你认识的一个人，你听说过的每一个人，曾经有过的每一个人，都在它上面度过他们的一生✨</div><div class="btn-xz-box"><a class="btn-xz" target="_blank" rel="noopener" href="https://stellarium.org/">点击开启星辰之旅</a></div></div></div><div class="t-t-r"><p class="ft-t t-l-t">猜你想看💡</p><ul class="ft-links"><li><a href="/posts/eec9786.html">魔改指南</a><a href="/box/nav/">网址导航</a></li><li><a href="/social/link/">我的朋友</a><a href="/comments/">留点什么</a></li><li><a href="/personal/about/">关于作者</a><a href="/archives/">文章归档</a></li><li><a href="/categories/">文章分类</a><a href="/tags/">文章标签</a></li><li><a href="/box/Gallery/">我的画廊</a><a href="/personal/bb/">我的唠叨</a></li><li><a href="/site/time/">建设进程</a><a href="/site/census/">网站统计</a></li></ul></div></div></div><div class="ft-item-2"><p class="ft-t">推荐友链⌛</p><div class="ft-img-group"><div class="img-group-item"><a href="https://www.fomal.cc/" title="Fomalhaut🥝"><img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="https://lskypro.acozycotage.net/LightPicture/2022/12/60e5d4e39da7c077.webp" alt=""/></a></div><div class="img-group-item"><a href="javascript:void(0)" title="广告位招租"><img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="https://lskypro.acozycotage.net/LightPicture/2022/12/65307a5828af6790.webp" alt=""/></a></div><div class="img-group-item"><a href="javascript:void(0)" title="广告位招租"><img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="https://lskypro.acozycotage.net/LightPicture/2022/12/65307a5828af6790.webp" alt=""/></a></div><div class="img-group-item"><a href="javascript:void(0)" title="广告位招租"><img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="https://lskypro.acozycotage.net/LightPicture/2022/12/65307a5828af6790.webp" alt=""/></a></div><div class="img-group-item"><a href="javascript:void(0)" title="广告位招租"><img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="https://lskypro.acozycotage.net/LightPicture/2022/12/65307a5828af6790.webp" alt=""/></a></div><div class="img-group-item"><a href="javascript:void(0)" title="广告位招租"><img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="https://lskypro.acozycotage.net/LightPicture/2022/12/65307a5828af6790.webp" alt=""/></a></div><div class="img-group-item"><a href="javascript:void(0)" title="广告位招租"><img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="https://lskypro.acozycotage.net/LightPicture/2022/12/65307a5828af6790.webp" alt=""/></a></div><div class="img-group-item"><a href="javascript:void(0)" title="广告位招租"><img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="https://lskypro.acozycotage.net/LightPicture/2022/12/65307a5828af6790.webp" alt=""/></a></div></div></div></div><div class="copyright"><span><b>&copy;2022-2025</b></span><span><b>&nbsp;&nbsp;By Fomalhaut🥝</b></span></div><div id="workboard"></div><p id="ghbdages"><a class="github-badge" target="_blank" href="https://hexo.io/" style="margin-inline:5px" title="博客框架为Hexo_v6.3.0"><img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="https://sourcebucket.s3.ladydaily.com/badge/Frame-Hexo-blue.svg" alt=""/></a><a class="github-badge" target="_blank" href="https://butterfly.js.org/" style="margin-inline:5px" title="主题版本Butterfly_v4.3.1"><img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="https://sourcebucket.s3.ladydaily.com/badge/Theme-Butterfly-6513df.svg" alt=""/></a><a class="github-badge" target="_blank" href="https://vercel.com/" style="margin-inline:5px" title="本站采用多线部署，主线路托管于Vercel"><img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="https://sourcebucket.s3.ladydaily.com/badge/Hosted-Vercel-brightgreen.svg" alt=""/></a><a class="github-badge" target="_blank" href="https://user.51.la/" style="margin-inline:5px" title="本站数据分析得益于51la技术支持"><img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="https://sourcebucket.s3.ladydaily.com/badge/Analytics-51la-3db1eb.svg" alt=""/></a><a class="github-badge" target="_blank" href="https://icp.gov.moe/?keyword=20226665" style="margin-inline:5px" title="本站已加入萌ICP豪华套餐，萌ICP备20226665号"><img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="https://sourcebucket.s3.ladydaily.com/badge/萌ICP备-20226665-fe1384.svg" alt=""/></a><a class="github-badge" target="_blank" href="https://bitiful.dogecast.com/buckets" style="margin-inline:5px" title="本网站经Service Worker分流至缤纷云对象存储"><img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src=" https://sourcebucket.s3.ladydaily.com/badge/Bucket-缤纷云-9c62da.svg" alt=""/></a><a class="github-badge" target="_blank" href="https://www.netdun.net/" style="margin-inline:5px" title="本站使用网盾星球提供CDN加速与防护"><img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="https://sourcebucket.s3.ladydaily.com/badge/CDN-网盾星球-fff2cc.svg" alt=""/></a><a class="github-badge" target="_blank" href="https://github.com/" style="margin-inline:5px" title="本网站源码由Github提供存储仓库"><img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src=" https://sourcebucket.s3.ladydaily.com/badge/Source-Github-d021d6.svg" alt=""/></a></p></div></footer></div><div id="rightside"><div id="rightside-config-hide"><a class="icon-V hidden" onclick="switchNightMode()" title="浅色和深色模式转换"><svg width="25" height="25" viewBox="0 0 1024 1024"><use id="modeicon" xlink:href="#icon-moon"></use></svg></a><button id="hide-aside-btn" type="button" title="单栏和双栏切换"><i class="fas fa-arrows-alt-h"></i></button><button class="share" type="button" title="右键模式" onclick="changeMouseMode()"><i class="fas fa-mouse"></i></button></div><div id="rightside-config-show"><button id="rightside_config" type="button" title="设置"><i class="fas fa-cog right_side"></i></button><button class="share" type="button" title="分享链接" onclick="share()"><i class="fas fa-share-nodes"></i></button><button id="go-up" type="button" title="回到顶部"><i class="fas fa-arrow-up"></i><span id="percent">0<span>%</span></span></button><button id="go-down" type="button" title="直达底部" onclick="btf.scrollToDest(document.body.scrollHeight, 500)"><i class="fas fa-arrow-down"></i></button></div></div><div id="local-search"><div class="search-dialog"><nav class="search-nav"><span class="search-dialog-title">搜索</span><span id="loading-status"></span><button class="search-close-button"><i class="fas fa-times"></i></button></nav><div class="is-center" id="loading-database"><i class="fas fa-spinner fa-pulse"></i><span>  数据库加载中</span></div><div class="search-wrap"><div id="local-search-input"><div class="local-search-box"><input class="local-search-box--input" placeholder="搜索文章" type="text"/></div></div><hr/><div id="local-search-results"></div></div></div><div id="search-mask"></div></div><div class="js-pjax" id="rightMenu"><div class="rightMenu-group rightMenu-small"><a class="rightMenu-item" href="javascript:window.history.back();"><i class="fa fa-arrow-left"></i></a><a class="rightMenu-item" href="javascript:window.history.forward();"><i class="fa fa-arrow-right"></i></a><a class="rightMenu-item" href="javascript:window.location.reload();"><i class="fa fa-refresh"></i></a><a class="rightMenu-item" href="javascript:rmf.scrollToTop();"><i class="fa fa-arrow-up"></i></a></div><div class="rightMenu-group rightMenu-line hide" id="menu-text"><a class="rightMenu-item" href="javascript:rmf.copySelect();"><i class="fa fa-copy"></i><span>复制</span></a><a class="rightMenu-item" href="javascript:window.open(&quot;https://www.baidu.com/s?wd=&quot;+window.getSelection().toString());window.location.reload();"><i class="fa fa-search"></i><span>百度搜索</span></a></div><div class="rightMenu-group rightMenu-line hide" id="menu-too"><a class="rightMenu-item" href="javascript:window.open(window.getSelection().toString());window.location.reload();"><i class="fa fa-link"></i><span>转到链接</span></a></div><div class="rightMenu-group rightMenu-line hide" id="menu-paste"><a class="rightMenu-item" href="javascript:rmf.paste()"><i class="fa fa-copy"></i><span>粘贴</span></a></div><div class="rightMenu-group rightMenu-line hide" id="menu-post"><a class="rightMenu-item" href="#post-comment"><i class="fas fa-comment"></i><span>空降评论</span></a><a class="rightMenu-item" href="javascript:rmf.copyWordsLink()"><i class="fa fa-link"></i><span>复制本文地址</span></a></div><div class="rightMenu-group rightMenu-line hide" id="menu-to"><a class="rightMenu-item" href="javascript:rmf.openWithNewTab()"><i class="fa fa-window-restore"></i><span>新窗口打开</span></a><a class="rightMenu-item" id="menu-too" href="javascript:rmf.open()"><i class="fa fa-link"></i><span>转到链接</span></a><a class="rightMenu-item" href="javascript:rmf.copyLink()"><i class="fa fa-copy"></i><span>复制链接</span></a></div><div class="rightMenu-group rightMenu-line hide" id="menu-img"><a class="rightMenu-item" href="javascript:rmf.saveAs()"><i class="fa fa-download"></i><span>保存图片</span></a><a class="rightMenu-item" href="javascript:rmf.openWithNewTab()"><i class="fa fa-window-restore"></i><span>在新窗口打开</span></a><a class="rightMenu-item" href="javascript:rmf.copyLink()"><i class="fa fa-copy"></i><span>复制图片链接</span></a></div><div class="rightMenu-group rightMenu-line"><a class="rightMenu-item" href="javascript:randomPost()"><i class="fa fa-paper-plane"></i><span>随便逛逛</span></a><a class="rightMenu-item" href="javascript:switchNightMode();"><i class="fa fa-moon"></i><span>昼夜切换</span></a><a class="rightMenu-item" href="/personal/about/"><i class="fa fa-info-circle"></i><span>关于博客</span></a><a class="rightMenu-item" href="javascript:toggleWinbox();"><i class="fas fa-cog"></i><span>美化设置</span></a><a class="rightMenu-item" href="javascript:rmf.fullScreen();"><i class="fas fa-expand"></i><span>切换全屏</span></a><a class="rightMenu-item" href="javascript:window.print();"><i class="fa-solid fa-print"></i><span>打印页面</span></a></div></div><div><script src="/js/utils.js"></script><script src="/js/main.js"></script><script src="https://cdn.staticfile.org/fancyapps-ui/4.0.31/fancybox.umd.min.js"></script><script src="https://lf3-cdn-tos.bytecdntp.com/cdn/expire-1-M/instant.page/5.1.0/instantpage.min.js" type="module"></script><script src="https://lf3-cdn-tos.bytecdntp.com/cdn/expire-1-M/vanilla-lazyload/17.3.1/lazyload.iife.min.js"></script><script src="/js/search/local-search.js"></script><script async="async">var preloader = {
+  endLoading: () => {
+    document.body.style.overflow = 'auto';
+    document.getElementById('loading-box').classList.add("loaded")
+  },
+  initLoading: () => {
+    document.body.style.overflow = '';
+    document.getElementById('loading-box').classList.remove("loaded")
+
+  }
+}
+window.addEventListener('load',preloader.endLoading())
+setTimeout(function(){preloader.endLoading();}, 5000);
+document.getElementById('loading-box').addEventListener('click',()=> {preloader.endLoading()})</script><div class="js-pjax"><script>function subtitleType () {
+  if (true) { 
+    window.typed = new Typed("#subtitle", {
+      strings: ["Welcome to Fomalhaut🥝のTiny Home!🤣🤣🤣","Hope you have a nice day!🍭🍭🍭"],
+      startDelay: 300,
+      typeSpeed: 150,
+      loop: true,
+      backSpeed: 50
+    })
+  } else {
+    document.getElementById("subtitle").innerHTML = 'Welcome to Fomalhaut🥝のTiny Home!🤣🤣🤣'
+  }
+}
+
+if (true) {
+  if (typeof Typed === 'function') {
+    subtitleType()
+  } else {
+    getScript('https://lf9-cdn-tos.bytecdntp.com/cdn/expire-1-M/typed.js/2.0.12/typed.min.js').then(subtitleType)
+  }
+} else {
+  subtitleType()
+}</script></div><script src="https://cdn.staticfile.org/jquery/3.6.3/jquery.min.js"></script><script async src="https://cdn1.tianli0.top/npm/vue@2.6.14/dist/vue.min.js"></script><script async src="https://cdn1.tianli0.top/npm/element-ui@2.15.6/lib/index.js"></script><script async src="https://cdn.bootcdn.net/ajax/libs/clipboard.js/2.0.11/clipboard.min.js"></script><script defer type="text/javascript" src="https://cdn1.tianli0.top/npm/sweetalert2@8.19.0/dist/sweetalert2.all.js"></script><script async src="//npm.elemecdn.com/pace-js@1.2.4/pace.min.js"></script><script defer src="https://cdn1.tianli0.top/gh/nextapps-de/winbox/dist/winbox.bundle.min.js"></script><script async src="//at.alicdn.com/t/c/font_3586335_hsivh70x0fm.js"></script><script async src="//at.alicdn.com/t/c/font_3636804_gr02jmjr3y9.js"></script><script async src="//at.alicdn.com/t/c/font_3612150_kfv55xn3u2g.js"></script><script async src="https://cdn.wpon.cn/2022-sucai/Gold-ingot.js"></script><canvas id="universe"></canvas><canvas id="snow"></canvas><script defer src="/js/fomal.js"></script><link rel="stylesheet" href="https://lf6-cdn-tos.bytecdntp.com/cdn/expire-1-M/aplayer/1.10.1/APlayer.min.css" media="print" onload="this.media='all'"><script src="https://lf6-cdn-tos.bytecdntp.com/cdn/expire-1-M/aplayer/1.10.1/APlayer.min.js"></script><script src="https://cdn1.tianli0.top/npm/js-heo@1.0.12/metingjs/Meting.min.js"></script><script src="https://lib.baomitu.com/pjax/0.2.8/pjax.min.js"></script><script>let pjaxSelectors = ["head > title","#config-diff","#body-wrap","#rightside-config-hide","#rightside-config-show","#web_bg",".js-pjax","#bibi","body > title","#app","#tag-echarts","#posts-echart","#categories-echarts"]
+
+var pjax = new Pjax({
+  elements: 'a:not([target="_blank"])',
+  selectors: pjaxSelectors,
+  cacheBust: false,
+  analytics: false,
+  scrollRestoration: false
+})
+
+document.addEventListener('pjax:send', function () {
+
+  // removeEventListener scroll 
+  window.tocScrollFn && window.removeEventListener('scroll', window.tocScrollFn)
+  window.scrollCollect && window.removeEventListener('scroll', scrollCollect)
+
+  typeof preloader === 'object' && preloader.initLoading()
+  document.getElementById('rightside').style.cssText = "opacity: ''; transform: ''"
+  
+  if (window.aplayers) {
+    for (let i = 0; i < window.aplayers.length; i++) {
+      if (!window.aplayers[i].options.fixed) {
+        window.aplayers[i].destroy()
+      }
+    }
+  }
+
+  typeof typed === 'object' && typed.destroy()
+
+  //reset readmode
+  const $bodyClassList = document.body.classList
+  $bodyClassList.contains('read-mode') && $bodyClassList.remove('read-mode')
+
+  typeof disqusjs === 'object' && disqusjs.destroy()
+})
+
+document.addEventListener('pjax:complete', function () {
+  window.refreshFn()
+
+  document.querySelectorAll('script[data-pjax]').forEach(item => {
+    const newScript = document.createElement('script')
+    const content = item.text || item.textContent || item.innerHTML || ""
+    Array.from(item.attributes).forEach(attr => newScript.setAttribute(attr.name, attr.value))
+    newScript.appendChild(document.createTextNode(content))
+    item.parentNode.replaceChild(newScript, item)
+  })
+
+  GLOBAL_CONFIG.islazyload && window.lazyLoadInstance.update()
+
+  typeof chatBtnFn === 'function' && chatBtnFn()
+  typeof panguInit === 'function' && panguInit()
+
+  // google analytics
+  typeof gtag === 'function' && gtag('config', '', {'page_path': window.location.pathname});
+
+  // baidu analytics
+  typeof _hmt === 'object' && _hmt.push(['_trackPageview',window.location.pathname]);
+
+  typeof loadMeting === 'function' && document.getElementsByClassName('aplayer').length && loadMeting()
+
+  // prismjs
+  typeof Prism === 'object' && Prism.highlightAll()
+
+  typeof preloader === 'object' && preloader.endLoading()
+})
+
+document.addEventListener('pjax:error', (e) => {
+  if (e.request.status === 404) {
+    pjax.loadUrl('/404.html')
+  }
+})</script><script async data-pjax src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script></div><!-- hexo injector body_end start --> <script data-pjax>if(document.getElementById('recent-posts') && (location.pathname ==='/'|| '/' ==='all')){
+    var parent = document.getElementById('recent-posts');
+    var child = '<div class="recent-post-item" style="width:100%;height: auto"><div id="catalog_magnet"><a class="magnet_link_more"  href="https://www.fomal.cc/categories/" style="flex:1;text-align: center;margin-bottom: 10px;">查看更多...</a></div></div>';
+    console.log('已挂载magnet')
+    parent.insertAdjacentHTML("afterbegin",child)}
+     </script><style>#catalog_magnet{flex-wrap: wrap;display: flex;width:100%;justify-content:space-between;padding: 10px 10px 0 10px;align-content: flex-start;}.magnet_item{flex-basis: calc(33.333333333333336% - 5px);background: #e9e9e9;margin-bottom: 10px;border-radius: 8px;transition: all 0.2s ease-in-out;}.magnet_item:hover{background: var(--text-bg-hover)}.magnet_link_more{color:#555}.magnet_link{color:black}.magnet_link:hover{color:white}@media screen and (max-width: 600px) {.magnet_item {flex-basis: 100%;}}.magnet_link_context{display:flex;padding: 10px;font-size:16px;transition: all 0.2s ease-in-out;}.magnet_link_context:hover{padding: 10px 20px;}</style>
+    <style></style><script data-pjax>
+  function butterfly_swiper_injector_config(){
+    var parent_div_git = document.getElementById('recent-posts');
+    var item_html = '<div class="recent-post-item" style="height: auto;width: 100%"><div class="blog-slider swiper-container-fade swiper-container-horizontal" id="swiper_container"><div class="blog-slider__wrp swiper-wrapper" style="transition-duration: 0ms;"></div><div class="blog-slider__pagination swiper-pagination-clickable swiper-pagination-bullets"></div></div></div>';
+    console.log('已挂载butterfly_swiper')
+    parent_div_git.insertAdjacentHTML("afterbegin",item_html)
+    }
+  var elist = 'undefined'.split(',');
+  var cpage = location.pathname;
+  var epage = '/';
+  var flag = 0;
+
+  for (var i=0;i<elist.length;i++){
+    if (cpage.includes(elist[i])){
+      flag++;
+    }
+  }
+
+  if ((epage ==='all')&&(flag == 0)){
+    butterfly_swiper_injector_config();
+  }
+  else if (epage === cpage){
+    butterfly_swiper_injector_config();
+  }
+  </script><script defer src="https://npm.elemecdn.com/hexo-butterfly-swiper/lib/swiper.min.js"></script><script defer data-pjax src="https://npm.elemecdn.com/hexo-butterfly-swiper/lib/swiper_init.js"></script><div class="js-pjax"><script async="async">var arr = document.getElementsByClassName('recent-post-item');
+for(var i = 0;i<arr.length;i++){
+    arr[i].classList.add('wow');
+    arr[i].classList.add('animate__zoomIn');
+    arr[i].setAttribute('data-wow-duration', '2s');
+    arr[i].setAttribute('data-wow-delay', '200ms');
+    arr[i].setAttribute('data-wow-offset', '30');
+    arr[i].setAttribute('data-wow-iteration', '1');
+  }</script><script async="async">var arr = document.getElementsByClassName('card-widget');
+for(var i = 0;i<arr.length;i++){
+    arr[i].classList.add('wow');
+    arr[i].classList.add('animate__zoomIn');
+    arr[i].setAttribute('data-wow-duration', '2s');
+    arr[i].setAttribute('data-wow-delay', '200ms');
+    arr[i].setAttribute('data-wow-offset', '30');
+    arr[i].setAttribute('data-wow-iteration', '1');
+  }</script></div><script defer src="https://npm.elemecdn.com/hexo-butterfly-wowjs/lib/wow.min.js"></script><script defer src="https://npm.elemecdn.com/hexo-butterfly-wowjs/lib/wow_init.js"></script><script data-pjax src="https://npm.elemecdn.com/hexo-filter-gitcalendar/lib/gitcalendar.js"></script><script data-pjax>
+  function gitcalendar_injector_config(){
+      var parent_div_git = document.getElementById('gitZone');
+      var item_html = '<div class="recent-post-item" id="gitcalendarBar" style="width:100%;height:auto;padding:10px;"><style>#git_container{min-height: 320px}@media screen and (max-width:650px) {#git_container{min-height: 0px}}</style><div id="git_loading" style="width:10%;height:100%;margin:0 auto;display: block;"><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 50 50" style="enable-background:new 0 0 50 50" xml:space="preserve"><path fill="#d0d0d0" d="M25.251,6.461c-10.318,0-18.683,8.365-18.683,18.683h4.068c0-8.071,6.543-14.615,14.615-14.615V6.461z" transform="rotate(275.098 25 25)"><animatetransform attributeType="xml" attributeName="transform" type="rotate" from="0 25 25" to="360 25 25" dur="0.6s" repeatCount="indefinite"></animatetransform></path></svg><style>#git_container{display: none;}</style></div><div id="git_container"></div></div>';
+      parent_div_git.insertAdjacentHTML("afterbegin",item_html)
+      console.log('已挂载gitcalendar')
+      }
+
+    if( document.getElementById('gitZone') && (location.pathname ==='/site/census/'|| '/site/census/' ==='all')){
+        gitcalendar_injector_config()
+        GitCalendarInit("/api?null",['#d9e0df', '#c6e0dc', '#a8dcd4', '#9adcd2', '#89ded1', '#77e0d0', '#5fdecb', '#47dcc6', '#39dcc3', '#1fdabe', '#00dab9'],'null')
+    }
+  </script><!-- hexo injector body_end end --></body></html>

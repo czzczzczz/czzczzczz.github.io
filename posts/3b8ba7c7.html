@@ -1,0 +1,806 @@
+<!DOCTYPE html><html lang="zh-CN" data-theme="light"><head><div id="myscoll"></div><meta charset="UTF-8"><meta http-equiv="X-UA-Compatible" content="IE=edge"><meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"><title>text | Fomalhaut🥝</title><meta name="keywords" content="Java,MySQL,算法,代码,博客,Butterfly,Hexo,Fomalhaut🥝,Fomalhaut"><meta name="author" content="Fomalhaut🥝"><meta name="copyright" content="Fomalhaut🥝"><meta name="format-detection" content="telephone=no"><meta name="theme-color" content="ffffff"><meta name="description" content="数据分析介绍 什么是数据分析： 数据分析是指用适当的统计分析方法对收集来的大量数据进行分析，提取有用信息和形成结论而对数据加以详细研究和概括总结的过程。数据分析的目的有多种，概括起来有三种：现状分析、原因分析、预测分析。现状分析简单来说就是告诉你过去发生了什么。原因分析简单来说就是告诉你某一现状为什么发生。预测分析简单来说就是预测未来会发生什么。 数据分析步骤： 数据分析主要有六个过程：  需求明">
+<meta property="og:type" content="article">
+<meta property="og:title" content="text">
+<meta property="og:url" content="https://www.fomal.cc/posts/3b8ba7c7.html">
+<meta property="og:site_name" content="Fomalhaut🥝">
+<meta property="og:description" content="数据分析介绍 什么是数据分析： 数据分析是指用适当的统计分析方法对收集来的大量数据进行分析，提取有用信息和形成结论而对数据加以详细研究和概括总结的过程。数据分析的目的有多种，概括起来有三种：现状分析、原因分析、预测分析。现状分析简单来说就是告诉你过去发生了什么。原因分析简单来说就是告诉你某一现状为什么发生。预测分析简单来说就是预测未来会发生什么。 数据分析步骤： 数据分析主要有六个过程：  需求明">
+<meta property="og:locale" content="zh_CN">
+<meta property="og:image" content="https://source.fomal.cc/img/default_cover_14.webp">
+<meta property="article:published_time" content="2025-05-10T08:53:12.000Z">
+<meta property="article:modified_time" content="2025-05-10T08:56:49.853Z">
+<meta property="article:author" content="Fomalhaut🥝">
+<meta property="article:tag" content="Java,MySQL,算法,代码,博客,Butterfly,Hexo,Fomalhaut🥝,Fomalhaut">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="https://source.fomal.cc/img/default_cover_14.webp"><link rel="shortcut icon" href="/"><link rel="canonical" href="https://www.fomal.cc/posts/3b8ba7c7"><link rel="preconnect" href="//cdn.jsdelivr.net"/><link rel="preconnect" href="//busuanzi.ibruce.info"/><link rel="stylesheet" href="/css/index.css"><link rel="stylesheet" href="https://lf6-cdn-tos.bytecdntp.com/cdn/expire-1-M/font-awesome/6.0.0/css/all.min.css" media="print" onload="this.media='all'"><link rel="stylesheet" href="https://cdn.staticfile.org/fancyapps-ui/4.0.31/fancybox.min.css" media="print" onload="this.media='all'"><script>const GLOBAL_CONFIG = { 
+  root: '/',
+  algolia: undefined,
+  localSearch: {"path":"/search.xml","preload":true,"languages":{"hits_empty":"找不到您查询的内容：${query}"}},
+  translate: undefined,
+  noticeOutdate: {"limitDay":365,"position":"top","messagePrev":"It has been","messageNext":"days since the last update, the content of the article may be outdated."},
+  highlight: {"plugin":"highlighjs","highlightCopy":true,"highlightLang":true,"highlightHeightLimit":230},
+  copy: {
+    success: '复制成功',
+    error: '复制错误',
+    noSupport: '浏览器不支持'
+  },
+  relativeDate: {
+    homepage: true,
+    post: true
+  },
+  runtime: '',
+  date_suffix: {
+    just: '刚刚',
+    min: '分钟前',
+    hour: '小时前',
+    day: '天前',
+    month: '个月前'
+  },
+  copyright: undefined,
+  lightbox: 'fancybox',
+  Snackbar: undefined,
+  source: {
+    justifiedGallery: {
+      js: 'https://cdnjs.cloudflare.com/ajax/libs/flickr-justified-gallery/2.1.2/fjGallery.min.js',
+      css: 'https://cdnjs.cloudflare.com/ajax/libs/flickr-justified-gallery/2.1.2/fjGallery.min.css'
+    }
+  },
+  isPhotoFigcaption: false,
+  islazyload: true,
+  isAnchor: false
+}</script><script id="config-diff">var GLOBAL_CONFIG_SITE = {
+  title: 'text',
+  isPost: true,
+  isHome: false,
+  isHighlightShrink: false,
+  isToc: true,
+  postUpdate: '2025-05-10 16:56:49'
+}</script><noscript><style type="text/css">
+  #nav {
+    opacity: 1
+  }
+  .justified-gallery img {
+    opacity: 1
+  }
+
+  #recent-posts time,
+  #post-meta time {
+    display: inline !important
+  }
+</style></noscript><script>(win=>{
+    win.saveToLocal = {
+      set: function setWithExpiry(key, value, ttl) {
+        if (ttl === 0) return
+        const now = new Date()
+        const expiryDay = ttl * 86400000
+        const item = {
+          value: value,
+          expiry: now.getTime() + expiryDay,
+        }
+        localStorage.setItem(key, JSON.stringify(item))
+      },
+
+      get: function getWithExpiry(key) {
+        const itemStr = localStorage.getItem(key)
+
+        if (!itemStr) {
+          return undefined
+        }
+        const item = JSON.parse(itemStr)
+        const now = new Date()
+
+        if (now.getTime() > item.expiry) {
+          localStorage.removeItem(key)
+          return undefined
+        }
+        return item.value
+      }
+    }
+  
+    win.getScript = url => new Promise((resolve, reject) => {
+      const script = document.createElement('script')
+      script.src = url
+      script.async = true
+      script.onerror = reject
+      script.onload = script.onreadystatechange = function() {
+        const loadState = this.readyState
+        if (loadState && loadState !== 'loaded' && loadState !== 'complete') return
+        script.onload = script.onreadystatechange = null
+        resolve()
+      }
+      document.head.appendChild(script)
+    })
+  
+      win.activateDarkMode = function () {
+        document.documentElement.setAttribute('data-theme', 'dark')
+        if (document.querySelector('meta[name="theme-color"]') !== null) {
+          document.querySelector('meta[name="theme-color"]').setAttribute('content', '#0d0d0d')
+        }
+      }
+      win.activateLightMode = function () {
+        document.documentElement.setAttribute('data-theme', 'light')
+        if (document.querySelector('meta[name="theme-color"]') !== null) {
+          document.querySelector('meta[name="theme-color"]').setAttribute('content', 'ffffff')
+        }
+      }
+      const t = saveToLocal.get('theme')
+    
+          const now = new Date()
+          const hour = now.getHours()
+          const isNight = hour <= 6 || hour >= 18
+          if (t === undefined) isNight ? activateDarkMode() : activateLightMode()
+          else if (t === 'light') activateLightMode()
+          else activateDarkMode()
+        
+      const asideStatus = saveToLocal.get('aside-status')
+      if (asideStatus !== undefined) {
+        if (asideStatus === 'hide') {
+          document.documentElement.classList.add('hide-aside')
+        } else {
+          document.documentElement.classList.remove('hide-aside')
+        }
+      }
+    
+    const detectApple = () => {
+      if(/iPad|iPhone|iPod|Macintosh/.test(navigator.userAgent)){
+        document.documentElement.classList.add('apple')
+      }
+    }
+    detectApple()
+    })(window)</script><link rel="stylesheet" href="https://cdn1.tianli0.top/npm/element-ui@2.15.6/packages/theme-chalk/lib/index.css"><style id="themeColor"></style><style id="rightSide"></style><style id="transPercent"></style><style id="blurNum"></style><style id="settingStyle"></style><span id="fps"></span><style id="defineBg"></style><style id="menu_shadow"></style><svg aria-hidden="true" style="position:absolute; overflow:hidden; width:0; height:0"><symbol id="icon-sun" viewBox="0 0 1024 1024"><path d="M960 512l-128 128v192h-192l-128 128-128-128H192v-192l-128-128 128-128V192h192l128-128 128 128h192v192z" fill="#FFD878" p-id="8420"></path><path d="M736 512a224 224 0 1 0-448 0 224 224 0 1 0 448 0z" fill="#FFE4A9" p-id="8421"></path><path d="M512 109.248L626.752 224H800v173.248L914.752 512 800 626.752V800h-173.248L512 914.752 397.248 800H224v-173.248L109.248 512 224 397.248V224h173.248L512 109.248M512 64l-128 128H192v192l-128 128 128 128v192h192l128 128 128-128h192v-192l128-128-128-128V192h-192l-128-128z" fill="#4D5152" p-id="8422"></path><path d="M512 320c105.888 0 192 86.112 192 192s-86.112 192-192 192-192-86.112-192-192 86.112-192 192-192m0-32a224 224 0 1 0 0 448 224 224 0 0 0 0-448z" fill="#4D5152" p-id="8423"></path></symbol><symbol id="icon-moon" viewBox="0 0 1024 1024"><path d="M611.370667 167.082667a445.013333 445.013333 0 0 1-38.4 161.834666 477.824 477.824 0 0 1-244.736 244.394667 445.141333 445.141333 0 0 1-161.109334 38.058667 85.077333 85.077333 0 0 0-65.066666 135.722666A462.08 462.08 0 1 0 747.093333 102.058667a85.077333 85.077333 0 0 0-135.722666 65.024z" fill="#FFB531" p-id="11345"></path><path d="M329.728 274.133333l35.157333-35.157333a21.333333 21.333333 0 1 0-30.165333-30.165333l-35.157333 35.157333-35.114667-35.157333a21.333333 21.333333 0 0 0-30.165333 30.165333l35.114666 35.157333-35.114666 35.157334a21.333333 21.333333 0 1 0 30.165333 30.165333l35.114667-35.157333 35.157333 35.157333a21.333333 21.333333 0 1 0 30.165333-30.165333z" fill="#030835" p-id="11346"></path></symbol></svg><!-- hexo injector head_end start --><link rel="stylesheet" href="https://npm.elemecdn.com/hexo-butterfly-tag-plugins-plus@latest/lib/assets/font-awesome-animation.min.css" media="defer" onload="this.media='all'"><link rel="stylesheet" href="https://npm.elemecdn.com/hexo-butterfly-tag-plugins-plus@latest/lib/tag_plugins.css" media="defer" onload="this.media='all'"><script src="https://npm.elemecdn.com/hexo-butterfly-tag-plugins-plus@latest/lib/assets/carousel-touch.js"></script><link rel="stylesheet" href="https://npm.elemecdn.com/hexo-butterfly-swiper/lib/swiper.min.css" media="print" onload="this.media='all'"><link rel="stylesheet" href="https://npm.elemecdn.com/hexo-butterfly-swiper/lib/swiperstyle.css" media="print" onload="this.media='all'"><link rel="stylesheet" href="https://npm.elemecdn.com/hexo-butterfly-wowjs/lib/animate.min.css" media="print" onload="this.media='screen'"><link rel="stylesheet" href="https://npm.elemecdn.com/hexo-filter-gitcalendar/lib/gitcalendar.css" media="print" onload="this.media='all'"><!-- hexo injector head_end end --><meta name="generator" content="Hexo 6.3.0"><link rel="alternate" href="/atom.xml" title="Fomalhaut🥝" type="application/atom+xml">
+</head><body><div id="loading-box" onclick="document.getElementById(&quot;loading-box&quot;).classList.add(&quot;loaded&quot;)"><div class="loading-bg"><div class="loading-img"></div><div class="loading-image-dot"></div></div></div><div id="web_bg"></div><div id="sidebar"><div id="menu-mask"></div><div id="sidebar-menus"><div class="avatar-img is-center"><img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="https://tuchuang.voooe.cn/images/2023/01/02/avatar.webp" onerror="onerror=null;src='/assets/r1.jpg'" alt="avatar"/></div><div class="sidebar-site-data site-data is-center"><a href="/archives/"><div class="headline">文章</div><div class="length-num">81</div></a><a href="/tags/"><div class="headline">标签</div><div class="length-num">11</div></a><a href="/categories/"><div class="headline">分类</div><div class="length-num">1</div></a></div><hr/><div class="menus_items"><div class="menus_item"><a class="site-page faa-parent animated-hover" href="/"><svg class="menu_icon faa-tada" aria-hidden="true" style="width:1.30em;height:1.30em;vertical-align:-0.15em;fill:currentColor;overflow:hidden;"><use xlink:href="#icon-home"></use></svg><span class="menu_word" style="font-size:17px"> 首页</span></a></div><div class="menus_item"><a class="site-page group faa-parent animated-hover hide" href="javascript:void(0);"><svg class="menu_icon faa-tada" aria-hidden="true" style="width:1.30em;height:1.30em;vertical-align:-0.15em;fill:currentColor;overflow:hidden;"><use xlink:href="#icon--article"></use></svg><span class="menu_word" style="font-size:17px"> 文章</span><i class="fas fa-chevron-down"></i></a><ul class="menus_item_child"><li><a class="site-page child faa-parent animated-hover" href="/archives/"><svg class="menu_icon faa-tada" aria-hidden="true" style="width:1.30em;height:1.30em;vertical-align:-0.15em;fill:currentColor;overflow:hidden;"><use xlink:href="#icon-guidang1">                   </use></svg><span class="menu_word" style="font-size:17px"> 归档</span></a></li><li><a class="site-page child faa-parent animated-hover" href="/tags/"><svg class="menu_icon faa-tada" aria-hidden="true" style="width:1.30em;height:1.30em;vertical-align:-0.15em;fill:currentColor;overflow:hidden;"><use xlink:href="#icon-sekuaibiaoqian">                   </use></svg><span class="menu_word" style="font-size:17px"> 标签</span></a></li><li><a class="site-page child faa-parent animated-hover" href="/categories/"><svg class="menu_icon faa-tada" aria-hidden="true" style="width:1.30em;height:1.30em;vertical-align:-0.15em;fill:currentColor;overflow:hidden;"><use xlink:href="#icon-fenlei">                   </use></svg><span class="menu_word" style="font-size:17px"> 分类</span></a></li></ul></div><div class="menus_item"><a class="site-page group faa-parent animated-hover hide" href="javascript:void(0);"><svg class="menu_icon faa-tada" aria-hidden="true" style="width:1.30em;height:1.30em;vertical-align:-0.15em;fill:currentColor;overflow:hidden;"><use xlink:href="#icon-pinweishenghuo"></use></svg><span class="menu_word" style="font-size:17px"> 休闲</span><i class="fas fa-chevron-down"></i></a><ul class="menus_item_child"><li><a class="site-page child faa-parent animated-hover" href="/life/music/"><svg class="menu_icon faa-tada" aria-hidden="true" style="width:1.30em;height:1.30em;vertical-align:-0.15em;fill:currentColor;overflow:hidden;"><use xlink:href="#icon-yinle">                   </use></svg><span class="menu_word" style="font-size:17px"> 八音盒</span></a></li><li><a class="site-page child faa-parent animated-hover" href="/life/movies/"><svg class="menu_icon faa-tada" aria-hidden="true" style="width:1.30em;height:1.30em;vertical-align:-0.15em;fill:currentColor;overflow:hidden;"><use xlink:href="#icon-dianying1">                   </use></svg><span class="menu_word" style="font-size:17px"> 影院</span></a></li><li><a class="site-page child faa-parent animated-hover" href="/life/games/"><svg class="menu_icon faa-tada" aria-hidden="true" style="width:1.30em;height:1.30em;vertical-align:-0.15em;fill:currentColor;overflow:hidden;"><use xlink:href="#icon-youxishoubing">                   </use></svg><span class="menu_word" style="font-size:17px"> 游戏</span></a></li></ul></div><div class="menus_item"><a class="site-page group faa-parent animated-hover hide" href="javascript:void(0);"><svg class="menu_icon faa-tada" aria-hidden="true" style="width:1.30em;height:1.30em;vertical-align:-0.15em;fill:currentColor;overflow:hidden;"><use xlink:href="#icon-xiangzi"></use></svg><span class="menu_word" style="font-size:17px"> 八宝箱</span><i class="fas fa-chevron-down"></i></a><ul class="menus_item_child"><li><a class="site-page child faa-parent animated-hover" href="/box/gallery/"><svg class="menu_icon faa-tada" aria-hidden="true" style="width:1.30em;height:1.30em;vertical-align:-0.15em;fill:currentColor;overflow:hidden;"><use xlink:href="#icon-tubiaozhizuomoban">                   </use></svg><span class="menu_word" style="font-size:17px"> 画廊</span></a></li><li><a class="site-page child faa-parent animated-hover" href="/box/animation/"><svg class="menu_icon faa-tada" aria-hidden="true" style="width:1.30em;height:1.30em;vertical-align:-0.15em;fill:currentColor;overflow:hidden;"><use xlink:href="#icon-nvwumao">                   </use></svg><span class="menu_word" style="font-size:17px"> 动画</span></a></li><li><a class="site-page child faa-parent animated-hover" href="/box/nav/"><svg class="menu_icon faa-tada" aria-hidden="true" style="width:1.30em;height:1.30em;vertical-align:-0.15em;fill:currentColor;overflow:hidden;"><use xlink:href="#icon-zhifengche">                   </use></svg><span class="menu_word" style="font-size:17px"> 网址导航</span></a></li></ul></div><div class="menus_item"><a class="site-page group faa-parent animated-hover hide" href="javascript:void(0);"><svg class="menu_icon faa-tada" aria-hidden="true" style="width:1.30em;height:1.30em;vertical-align:-0.15em;fill:currentColor;overflow:hidden;"><use xlink:href="#icon-shejiaoxinxi"></use></svg><span class="menu_word" style="font-size:17px"> 社交</span><i class="fas fa-chevron-down"></i></a><ul class="menus_item_child"><li><a class="site-page child faa-parent animated-hover" href="/social/fcircle/"><svg class="menu_icon faa-tada" aria-hidden="true" style="width:1.30em;height:1.30em;vertical-align:-0.15em;fill:currentColor;overflow:hidden;"><use xlink:href="#icon-pengyouquan">                   </use></svg><span class="menu_word" style="font-size:17px"> 朋友圈</span></a></li><li><a class="site-page child faa-parent animated-hover" href="/comments/"><svg class="menu_icon faa-tada" aria-hidden="true" style="width:1.30em;height:1.30em;vertical-align:-0.15em;fill:currentColor;overflow:hidden;"><use xlink:href="#icon-liuyan">                   </use></svg><span class="menu_word" style="font-size:17px"> 留言板</span></a></li><li><a class="site-page child faa-parent animated-hover" href="/social/link/"><svg class="menu_icon faa-tada" aria-hidden="true" style="width:1.30em;height:1.30em;vertical-align:-0.15em;fill:currentColor;overflow:hidden;"><use xlink:href="#icon-lianjie">                   </use></svg><span class="menu_word" style="font-size:17px"> 友人帐</span></a></li></ul></div><div class="menus_item"><a class="site-page group faa-parent animated-hover hide" href="javascript:void(0);"><svg class="menu_icon faa-tada" aria-hidden="true" style="width:1.30em;height:1.30em;vertical-align:-0.15em;fill:currentColor;overflow:hidden;"><use xlink:href="#icon-wangye"></use></svg><span class="menu_word" style="font-size:17px"> 网站</span><i class="fas fa-chevron-down"></i></a><ul class="menus_item_child"><li><a class="site-page child faa-parent animated-hover" href="/site/census/"><svg class="menu_icon faa-tada" aria-hidden="true" style="width:1.30em;height:1.30em;vertical-align:-0.15em;fill:currentColor;overflow:hidden;"><use xlink:href="#icon--tongjibiao">                   </use></svg><span class="menu_word" style="font-size:17px"> 网站统计</span></a></li><li><a class="site-page child faa-parent animated-hover" href="/site/echarts/"><svg class="menu_icon faa-tada" aria-hidden="true" style="width:1.30em;height:1.30em;vertical-align:-0.15em;fill:currentColor;overflow:hidden;"><use xlink:href="#icon-shujutongji1">                   </use></svg><span class="menu_word" style="font-size:17px"> 文章统计</span></a></li><li><a class="site-page child faa-parent animated-hover" href="/site/time/"><svg class="menu_icon faa-tada" aria-hidden="true" style="width:1.30em;height:1.30em;vertical-align:-0.15em;fill:currentColor;overflow:hidden;"><use xlink:href="#icon-xianxingshalou">                   </use></svg><span class="menu_word" style="font-size:17px"> 旧时光</span></a></li></ul></div><div class="menus_item"><a class="site-page group faa-parent animated-hover hide" href="javascript:void(0);"><svg class="menu_icon faa-tada" aria-hidden="true" style="width:1.30em;height:1.30em;vertical-align:-0.15em;fill:currentColor;overflow:hidden;"><use xlink:href="#icon-maoliang"></use></svg><span class="menu_word" style="font-size:17px"> 个人</span><i class="fas fa-chevron-down"></i></a><ul class="menus_item_child"><li><a class="site-page child faa-parent animated-hover" href="/personal/bb/"><svg class="menu_icon faa-tada" aria-hidden="true" style="width:1.30em;height:1.30em;vertical-align:-0.15em;fill:currentColor;overflow:hidden;"><use xlink:href="#icon-qunliaotian">                   </use></svg><span class="menu_word" style="font-size:17px"> 唠叨</span></a></li><li><a class="site-page child faa-parent animated-hover" href="/personal/love/"><svg class="menu_icon faa-tada" aria-hidden="true" style="width:1.30em;height:1.30em;vertical-align:-0.15em;fill:currentColor;overflow:hidden;"><use xlink:href="#icon-love-sign">                   </use></svg><span class="menu_word" style="font-size:17px"> 恋爱小屋</span></a></li><li><a class="site-page child faa-parent animated-hover" href="/personal/about/"><svg class="menu_icon faa-tada" aria-hidden="true" style="width:1.30em;height:1.30em;vertical-align:-0.15em;fill:currentColor;overflow:hidden;"><use xlink:href="#icon-paperplane">                   </use></svg><span class="menu_word" style="font-size:17px"> 关于</span></a></li></ul></div></div></div></div><div class="post" id="body-wrap"><header class="post-bg" id="page-header"><nav id="nav"><span id="blog_name"><a id="site-name" href="/">Fomalhaut🥝</a></span><div id="menus"><div class="menus_items"><div class="menus_item"><a class="site-page faa-parent animated-hover" href="/"><svg class="menu_icon faa-tada" aria-hidden="true" style="width:1.30em;height:1.30em;vertical-align:-0.15em;fill:currentColor;overflow:hidden;"><use xlink:href="#icon-home"></use></svg><span class="menu_word" style="font-size:17px"> 首页</span></a></div><div class="menus_item"><a class="site-page group faa-parent animated-hover hide" href="javascript:void(0);"><svg class="menu_icon faa-tada" aria-hidden="true" style="width:1.30em;height:1.30em;vertical-align:-0.15em;fill:currentColor;overflow:hidden;"><use xlink:href="#icon--article"></use></svg><span class="menu_word" style="font-size:17px"> 文章</span><i class="fas fa-chevron-down"></i></a><ul class="menus_item_child"><li><a class="site-page child faa-parent animated-hover" href="/archives/"><svg class="menu_icon faa-tada" aria-hidden="true" style="width:1.30em;height:1.30em;vertical-align:-0.15em;fill:currentColor;overflow:hidden;"><use xlink:href="#icon-guidang1">                   </use></svg><span class="menu_word" style="font-size:17px"> 归档</span></a></li><li><a class="site-page child faa-parent animated-hover" href="/tags/"><svg class="menu_icon faa-tada" aria-hidden="true" style="width:1.30em;height:1.30em;vertical-align:-0.15em;fill:currentColor;overflow:hidden;"><use xlink:href="#icon-sekuaibiaoqian">                   </use></svg><span class="menu_word" style="font-size:17px"> 标签</span></a></li><li><a class="site-page child faa-parent animated-hover" href="/categories/"><svg class="menu_icon faa-tada" aria-hidden="true" style="width:1.30em;height:1.30em;vertical-align:-0.15em;fill:currentColor;overflow:hidden;"><use xlink:href="#icon-fenlei">                   </use></svg><span class="menu_word" style="font-size:17px"> 分类</span></a></li></ul></div><div class="menus_item"><a class="site-page group faa-parent animated-hover hide" href="javascript:void(0);"><svg class="menu_icon faa-tada" aria-hidden="true" style="width:1.30em;height:1.30em;vertical-align:-0.15em;fill:currentColor;overflow:hidden;"><use xlink:href="#icon-pinweishenghuo"></use></svg><span class="menu_word" style="font-size:17px"> 休闲</span><i class="fas fa-chevron-down"></i></a><ul class="menus_item_child"><li><a class="site-page child faa-parent animated-hover" href="/life/music/"><svg class="menu_icon faa-tada" aria-hidden="true" style="width:1.30em;height:1.30em;vertical-align:-0.15em;fill:currentColor;overflow:hidden;"><use xlink:href="#icon-yinle">                   </use></svg><span class="menu_word" style="font-size:17px"> 八音盒</span></a></li><li><a class="site-page child faa-parent animated-hover" href="/life/movies/"><svg class="menu_icon faa-tada" aria-hidden="true" style="width:1.30em;height:1.30em;vertical-align:-0.15em;fill:currentColor;overflow:hidden;"><use xlink:href="#icon-dianying1">                   </use></svg><span class="menu_word" style="font-size:17px"> 影院</span></a></li><li><a class="site-page child faa-parent animated-hover" href="/life/games/"><svg class="menu_icon faa-tada" aria-hidden="true" style="width:1.30em;height:1.30em;vertical-align:-0.15em;fill:currentColor;overflow:hidden;"><use xlink:href="#icon-youxishoubing">                   </use></svg><span class="menu_word" style="font-size:17px"> 游戏</span></a></li></ul></div><div class="menus_item"><a class="site-page group faa-parent animated-hover hide" href="javascript:void(0);"><svg class="menu_icon faa-tada" aria-hidden="true" style="width:1.30em;height:1.30em;vertical-align:-0.15em;fill:currentColor;overflow:hidden;"><use xlink:href="#icon-xiangzi"></use></svg><span class="menu_word" style="font-size:17px"> 八宝箱</span><i class="fas fa-chevron-down"></i></a><ul class="menus_item_child"><li><a class="site-page child faa-parent animated-hover" href="/box/gallery/"><svg class="menu_icon faa-tada" aria-hidden="true" style="width:1.30em;height:1.30em;vertical-align:-0.15em;fill:currentColor;overflow:hidden;"><use xlink:href="#icon-tubiaozhizuomoban">                   </use></svg><span class="menu_word" style="font-size:17px"> 画廊</span></a></li><li><a class="site-page child faa-parent animated-hover" href="/box/animation/"><svg class="menu_icon faa-tada" aria-hidden="true" style="width:1.30em;height:1.30em;vertical-align:-0.15em;fill:currentColor;overflow:hidden;"><use xlink:href="#icon-nvwumao">                   </use></svg><span class="menu_word" style="font-size:17px"> 动画</span></a></li><li><a class="site-page child faa-parent animated-hover" href="/box/nav/"><svg class="menu_icon faa-tada" aria-hidden="true" style="width:1.30em;height:1.30em;vertical-align:-0.15em;fill:currentColor;overflow:hidden;"><use xlink:href="#icon-zhifengche">                   </use></svg><span class="menu_word" style="font-size:17px"> 网址导航</span></a></li></ul></div><div class="menus_item"><a class="site-page group faa-parent animated-hover hide" href="javascript:void(0);"><svg class="menu_icon faa-tada" aria-hidden="true" style="width:1.30em;height:1.30em;vertical-align:-0.15em;fill:currentColor;overflow:hidden;"><use xlink:href="#icon-shejiaoxinxi"></use></svg><span class="menu_word" style="font-size:17px"> 社交</span><i class="fas fa-chevron-down"></i></a><ul class="menus_item_child"><li><a class="site-page child faa-parent animated-hover" href="/social/fcircle/"><svg class="menu_icon faa-tada" aria-hidden="true" style="width:1.30em;height:1.30em;vertical-align:-0.15em;fill:currentColor;overflow:hidden;"><use xlink:href="#icon-pengyouquan">                   </use></svg><span class="menu_word" style="font-size:17px"> 朋友圈</span></a></li><li><a class="site-page child faa-parent animated-hover" href="/comments/"><svg class="menu_icon faa-tada" aria-hidden="true" style="width:1.30em;height:1.30em;vertical-align:-0.15em;fill:currentColor;overflow:hidden;"><use xlink:href="#icon-liuyan">                   </use></svg><span class="menu_word" style="font-size:17px"> 留言板</span></a></li><li><a class="site-page child faa-parent animated-hover" href="/social/link/"><svg class="menu_icon faa-tada" aria-hidden="true" style="width:1.30em;height:1.30em;vertical-align:-0.15em;fill:currentColor;overflow:hidden;"><use xlink:href="#icon-lianjie">                   </use></svg><span class="menu_word" style="font-size:17px"> 友人帐</span></a></li></ul></div><div class="menus_item"><a class="site-page group faa-parent animated-hover hide" href="javascript:void(0);"><svg class="menu_icon faa-tada" aria-hidden="true" style="width:1.30em;height:1.30em;vertical-align:-0.15em;fill:currentColor;overflow:hidden;"><use xlink:href="#icon-wangye"></use></svg><span class="menu_word" style="font-size:17px"> 网站</span><i class="fas fa-chevron-down"></i></a><ul class="menus_item_child"><li><a class="site-page child faa-parent animated-hover" href="/site/census/"><svg class="menu_icon faa-tada" aria-hidden="true" style="width:1.30em;height:1.30em;vertical-align:-0.15em;fill:currentColor;overflow:hidden;"><use xlink:href="#icon--tongjibiao">                   </use></svg><span class="menu_word" style="font-size:17px"> 网站统计</span></a></li><li><a class="site-page child faa-parent animated-hover" href="/site/echarts/"><svg class="menu_icon faa-tada" aria-hidden="true" style="width:1.30em;height:1.30em;vertical-align:-0.15em;fill:currentColor;overflow:hidden;"><use xlink:href="#icon-shujutongji1">                   </use></svg><span class="menu_word" style="font-size:17px"> 文章统计</span></a></li><li><a class="site-page child faa-parent animated-hover" href="/site/time/"><svg class="menu_icon faa-tada" aria-hidden="true" style="width:1.30em;height:1.30em;vertical-align:-0.15em;fill:currentColor;overflow:hidden;"><use xlink:href="#icon-xianxingshalou">                   </use></svg><span class="menu_word" style="font-size:17px"> 旧时光</span></a></li></ul></div><div class="menus_item"><a class="site-page group faa-parent animated-hover hide" href="javascript:void(0);"><svg class="menu_icon faa-tada" aria-hidden="true" style="width:1.30em;height:1.30em;vertical-align:-0.15em;fill:currentColor;overflow:hidden;"><use xlink:href="#icon-maoliang"></use></svg><span class="menu_word" style="font-size:17px"> 个人</span><i class="fas fa-chevron-down"></i></a><ul class="menus_item_child"><li><a class="site-page child faa-parent animated-hover" href="/personal/bb/"><svg class="menu_icon faa-tada" aria-hidden="true" style="width:1.30em;height:1.30em;vertical-align:-0.15em;fill:currentColor;overflow:hidden;"><use xlink:href="#icon-qunliaotian">                   </use></svg><span class="menu_word" style="font-size:17px"> 唠叨</span></a></li><li><a class="site-page child faa-parent animated-hover" href="/personal/love/"><svg class="menu_icon faa-tada" aria-hidden="true" style="width:1.30em;height:1.30em;vertical-align:-0.15em;fill:currentColor;overflow:hidden;"><use xlink:href="#icon-love-sign">                   </use></svg><span class="menu_word" style="font-size:17px"> 恋爱小屋</span></a></li><li><a class="site-page child faa-parent animated-hover" href="/personal/about/"><svg class="menu_icon faa-tada" aria-hidden="true" style="width:1.30em;height:1.30em;vertical-align:-0.15em;fill:currentColor;overflow:hidden;"><use xlink:href="#icon-paperplane">                   </use></svg><span class="menu_word" style="font-size:17px"> 关于</span></a></li></ul></div></div><center id="name-container"><a id="page-name" href="javascript:scrollToTop()">PAGE_NAME</a></center><div id="nav-right"><div id="search-button"><a class="search faa-parent animated-hover" title="检索站内任何你想要的信息"><svg class="faa-tada icon" style="height:24px;width:24px;fill:currentColor;position:relative;top:6px" aria-hidden="true"><use xlink:href="#icon-valentine_-search-love-find-heart"></use></svg><span> 搜索</span></a></div><a class="meihua faa-parent animated-hover" onclick="toggleWinbox()" title="美化设置-自定义你的风格" id="meihua-button"><svg class="faa-tada icon" style="height:26px;width:26px;fill:currentColor;position:relative;top:8px" aria-hidden="true"><use xlink:href="#icon-tupian1"></use></svg></a><a class="sun_moon faa-parent animated-hover" onclick="switchNightMode()" title="浅色和深色模式转换" id="nightmode-button"><svg class="faa-tada" style="height:25px;width:25px;fill:currentColor;position:relative;top:7px" viewBox="0 0 1024 1024"><use id="modeicon" xlink:href="#icon-moon">       </use></svg></a><div id="toggle-menu"><a><i class="fas fa-bars fa-fw"></i></a></div></div></div></nav><div id="post-info"><h1 class="post-title">text</h1><div id="post-meta"><div class="meta-firstline"><span class="post-meta-date"><svg class="meta_icon post-meta-icon" style="width:30px;height:30px;position:relative;top:10px"><use xlink:href="#icon-rili"></use></svg><span class="post-meta-label">发表于 </span><time class="post-meta-date-created" datetime="2025-05-10T08:53:12.000Z" title="发表于 2025-05-10 16:53:12">2025-05-10</time><span class="post-meta-separator">|</span><svg class="meta_icon post-meta-icon" style="width:18px;height:18px;position:relative;top:5px"><use xlink:href="#icon-gengxin1"></use></svg><span class="post-meta-label">更新于</span><time class="post-meta-date-updated" datetime="2025-05-10T08:56:49.853Z" title="更新于 2025-05-10 16:56:49">2025-05-10</time></span></div><div class="meta-secondline"><span class="post-meta-separator">|</span><span class="post-meta-wordcount"><svg class="meta_icon post-meta-icon" style="width:25px;height:25px;position:relative;top:8px"><use xlink:href="#icon-charuword"></use></svg><span class="post-meta-label">字数总计:</span><span class="word-count">6720</span><span class="post-meta-separator">|</span><svg class="meta_icon post-meta-icon" style="width:20px;height:20px;position:relative;top:5px"><use xlink:href="#icon-shizhong"></use></svg><span class="post-meta-label">阅读时长:</span><span>20分钟</span></span><span class="post-meta-separator">|</span><span class="post-meta-pv-cv" id="" data-flag-title="text"><svg class="meta_icon post-meta-icon" style="width:25px;height:25px;position:relative;top:5px"><use xlink:href="#icon-eye"></use></svg><span class="post-meta-label">阅读量:</span><span id="busuanzi_value_page_pv"><i class="fa-solid fa-spinner fa-spin"></i></span></span></div></div></div><section class="main-hero-waves-area waves-area"><svg class="waves-svg" xmlns="http://www.w3.org/2000/svg" xlink="http://www.w3.org/1999/xlink" viewBox="0 24 150 28" preserveAspectRatio="none" shape-rendering="auto"><defs><path id="gentle-wave" d="M -160 44 c 30 0 58 -18 88 -18 s 58 18 88 18 s 58 -18 88 -18 s 58 18 88 18 v 44 h -352 Z"></path></defs><g class="parallax"><use href="#gentle-wave" x="48" y="0"></use><use href="#gentle-wave" x="48" y="3"></use><use href="#gentle-wave" x="48" y="5"></use><use href="#gentle-wave" x="48" y="7"></use></g></svg></section></header><main class="layout" id="content-inner"><div id="post"><article class="post-content" id="article-container"><h1>数据分析介绍</h1>
+<h2 id="什么是数据分析：">什么是数据分析：</h2>
+<p>数据分析是指用适当的统计分析方法对收集来的大量数据进行分析，提取有用信息和形成结论而对数据加以详细研究和概括总结的过程。数据分析的目的有多种，概括起来有三种：现状分析、原因分析、预测分析。现状分析简单来说就是告诉你过去发生了什么。原因分析简单来说就是告诉你某一现状为什么发生。预测分析简单来说就是预测未来会发生什么。</p>
+<h2 id="数据分析步骤：">数据分析步骤：</h2>
+<p>数据分析主要有六个过程：</p>
+<ol>
+<li>需求明确：明确做数据分析的目标。为后面的分析过程做好铺垫。</li>
+<li>数据收集：通过爬虫、商务合作的方式，获取想要的数据。</li>
+<li>数据处理：对获取来的数据进行处理和清洗，把不需要的剔除掉，把需要的加工成我们想要的。方便后面的分析。</li>
+<li>数据分析：根据自己的目的，以及现有的数据确定好分析的方法。</li>
+<li>数据展现：将数据按照确定好的分析方法进行展示出来。</li>
+<li>数据建模：使用算法去预测关于我们整个数据的情况。</li>
+</ol>
+<h2 id="数据分析的误区：">数据分析的误区：</h2>
+<ol>
+<li>分析目的不明确，为分析而分析：一定要找准自己分析数据的目标而去分析，比如是要了解现状，还是找出原因，还是预测未来发展等，千万不要为了分析而分析，这样就偏离主题了。</li>
+<li>缺乏业务知识，分析结果偏离实际：分析数据的时候，一定要和公司的业务结合起来。如果脱离业务，即使数据分析方法再牛逼，图标再优美，也无济于事。</li>
+<li>追求高级分析方法：一些人喜欢用一些高级的分析方法，认为只有这样才能体现专业性。其实高级的数据分析方法不一定是最好的，能够简单有效的解决问题的方法才是最好的。</li>
+</ol>
+<h2 id="数据分析的方法和工具：">数据分析的方法和工具：</h2>
+<p>数据分析可以通过工具，也可以通过代码来实现。以下分别列出这些常用的：</p>
+<ol>
+<li>工具：Excel、Tableau、SPSS、百度图说等。</li>
+<li>编程：Python语言、R语言、数据库的SQL语言、Excel的VBA语言等。</li>
+</ol>
+<h2 id="工具和代码该怎么选：">工具和代码该怎么选：</h2>
+<p>两者没有好坏之分，只有合适之分。数据分析总体来讲有两个模块，一个是数据处理，一个是可视化。如果数据已经经过处理了，并且手头上的软件可以直接非常方便的做可视化处理，那么我们用软件实现就可以。如果数据没有经过处理，那么最好通过python或者r对数据进行有一些处理，然后再通过软件可视化。或者软件的可视化无法满足我们的要求，那么可以通过代码来实现。总而言之，工具功能无法100%的满足你的要求，但是效率高。代码做数据处理比较好，最数据可视化比较繁琐，但是DIY属性强！</p>
+<p><img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="https://bu.dusays.com/2024/11/22/6740311a38841.png" alt="1664344993618"></p>
+<h1>环境搭建</h1>
+<h2 id="一、Python版本：">一、Python版本：</h2>
+<p>本课程用到的Python版本都是3.x。要有一定的Python基础，知道列表、字符串、函数等的用法。</p>
+<hr>
+<h2 id="Anaconda：">Anaconda：</h2>
+<p><code>Anaconda（水蟒）</code>是一个捆绑了<code>Python</code>、<code>conda</code>、其他相关依赖包的一个软件。包含了180多个可学计算包及其依赖。<code>Anaconda3</code>是集成了<code>Python3</code>的环境，<code>Anaconda2</code>是集成了<code>Python2</code>的环境。<code>Anaconda</code>默认集成的包，是属于内置的<code>Python</code>的包。并且支持绝大部分操作系统（比如：Windows、Mac、Linux等）。下载地址如下：<code>https://www.anaconda.com/distribution/</code>（如果官网下载太慢，可以在清华大学开源软件站中下载：<code>https://mirrors.tuna.tsinghua.edu.cn/anaconda/archive/</code>）。根据自己的操作系统，下载相应的版本，因为<code>Anaconda</code>内置了许多的包，所以安装过程需要耗费相当长的时间，大家在安装的时候需要耐心等待。在安装完成后，会有以下几个模块：<code>Anaconda prompt</code>、<code>Anaconda Navigator</code>、<code>Spyder</code>、<code>jupyter notebook</code>，以下分别做一些介绍。</p>
+<h3 id="Anaconda-prompt：">Anaconda prompt：</h3>
+<p><code>Anaconda prompt</code>是专门用来操作<code>anaconda</code>的终端。如果你安装完<code>Anaconda</code>后没有在环境变量的<code>PATH</code>中添加相关的环境变量，那么以后你想在终端使用<code>anaconda</code>相关的命令，则必须要在<code>Anaconda prompt</code>中完成。<br>
+<img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="https://bu.dusays.com/2024/11/22/6740311b72c9f.png" alt="1647519980341"></p>
+<h3 id="Anaconda-Navigator：">Anaconda Navigator：</h3>
+<p>这个相当于是一个导航面板，上面组织了<code>Anaconda</code>相关的软件。</p>
+<h2 id="在windows系统安装Andaconda">在windows系统安装Andaconda</h2>
+<p>以Windows系统为例，向学员如何从Anaconda官方网站下载合适的安装包，并成功安装到自己的计算机上，在浏览器输入https://www.anaconda.com/download/进入 Anaconda的官方网站，</p>
+<p>Anaconda 的下载文件比较大（约 500 MB），因为Anaconda附带了 Python 中最常用的数据科学包。</p>
+<p>如果计算机上已经安装了 Python，安装不会对你有任何影响。实际上，脚本和程序使用的默认 Python 是 Anaconda 附带的 Python。</p>
+<p><strong>注意：如果你是windows 10系统，注意在安装Anaconda软件的时候，右击anaconda软件→选择以管理员的身份运行。</strong></p>
+<p><strong>具体安装步骤：</strong></p>
+<p><strong>1.</strong> 前往官方下载页面下载。有两个版本可供选择：Python 3.6 和 Python 2.7，选择版之后根据自己操作系统的情况点击“64-Bit Graphical Installer”或“32-Bit Graphical Installer”进行下载。</p>
+<p><strong>2.</strong> 完成下载之后，双击下载文件，启动安装程序。</p>
+<ul>
+<li>注意：</li>
+</ul>
+<p>① 如果在安装过程中遇到任何问题，那么暂时地关闭杀毒软件，并在安装程序完成之后再打开。</p>
+<p>② 如果在安装时选择了“为所有用户安装”，则卸载Anaconda然后重新安装，只为“我这个用户”安装。</p>
+<p><strong>3.</strong> 选择“Next”。</p>
+<p><strong>4.</strong> 阅读许可证协议条款，然后勾选“I Agree”并进行下一步。</p>
+<p><strong>5.</strong> 除非是以管理员身份为所有用户安装，否则仅勾选“Just Me”并点击“Next”。</p>
+<p><strong>6.</strong> 在“Choose Install Location”界面中选择安装Anaconda的目标路径，然后点击“Next”。</p>
+<ul>
+<li>注意：</li>
+</ul>
+<p>① 目标路径中不能含有空格，同时不能是“unicode”编码。</p>
+<p>② 除非被要求以管理员权限安装，否则不要以管理员身份安装。</p>
+<p><img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="https://bu.dusays.com/2024/11/22/6740311cdff60.png" alt="1647520090892"></p>
+<p><strong>7.</strong> 在“Advanced Installation Options”中不要勾选“Add Anaconda to my PATH environment variable.”（“添加Anaconda至我的环境变量。”）。因为如果勾选，则将会影响其他程序的使用。如果使用Anaconda，则通过打开Anaconda Navigator或者在开始菜单中的“Anaconda Prompt”（类似macOS中的“终端”）中进行使用。</p>
+<p>除非你打算使用多个版本的Anaconda或者多个版本的Python，否则便勾选“Register Anaconda as my default Python 3.6”。</p>
+<p>然后点击“Install”开始安装。如果想要查看安装细节，则可以点击“Show Details”。</p>
+<p><img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="https://bu.dusays.com/2024/11/22/67403120197cc.png" alt="1647520127611"></p>
+<p><strong>8.</strong> 点击“Next”。</p>
+<p><strong>9.</strong> 进入“Thanks for installing Anaconda!”界面则意味着安装成功，点击“Finish”完成安装。</p>
+<ul>
+<li>注意：如果你不想了解“Anaconda云”和“Anaconda支持”，则可以不勾选“Learn more about Anaconda Cloud”和“Learn more about Anaconda Support”。</li>
+</ul>
+<p><img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="https://bu.dusays.com/2024/11/22/674031225c716.png" alt="1647520158263"></p>
+<p><strong>10.</strong> 验证安装结果。可以选择下面的结果进行验证是否安装成功：</p>
+<p>其实安装的过程就是一路next就好，是不是很简单，不要勾选将其加入到环境变量即可，安装完成之后即可在开始界面看到如下内容：</p>
+<p><img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="https://bu.dusays.com/2024/11/22/67403124a7f97.png" alt="1647520224135"></p>
+<p>此时我们就可以在开始界面Anaconda中右击Anaconda Prompt打开终端或命令提示符中键入 conda list，以查看你安装的内容如下图：</p>
+<p><img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="https://bu.dusays.com/2024/11/22/6740312608383.png" alt="1647520262490"></p>
+<h3 id="Spyder：">Spyder：</h3>
+<p>一个专门开发<code>Python</code>的软件，熟悉<code>MATLAB</code>的同学会比较有亲切感，但在后期的学习过程中，我们将不会使用这个工具写代码，因为还有更好的可替代的工具。<br>
+<img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="https://bu.dusays.com/2024/11/22/67403127a9ca4.png" alt="1647520292627"></p>
+<h3 id="jupyter-notebook：">jupyter notebook：</h3>
+<p>一个Python编辑环境，可以实时的查看代码的运行效果。</p>
+<h2 id="1647520320425"><img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="https://bu.dusays.com/2024/11/22/67403128e0dda.png" alt="1647520320425"></h2>
+<h2 id="使用jupyter-notebook的姿势：">使用jupyter notebook的姿势：</h2>
+<ol>
+<li>先打开<code>Anaconda Prompt</code>，然后进入到项目所在的目录。</li>
+<li>输入命令<code>jupyter notebook</code>打开<code>jupyter notebook</code>浏览器。</li>
+</ol>
+<h2 id="conda基本使用：">conda基本使用：</h2>
+<p><code>conda</code>伴随着<code>Anaconda</code>安装而自动安装的。<code>conda</code>可以跟<code>virtualenv</code>一样管理不同的环境，也可以跟<code>pip</code>一样管理某个环境下的包。以下来看看两个功能的用法。</p>
+<h3 id="环境管理：">环境管理：</h3>
+<p><code>conda</code>能跟<code>virtualenv</code>一样管理不同的<code>Python</code>环境，不同的环境之间是互相隔离，互不影响的。为什么需要创建不同的环境呢？原因是有时候项目比较多，但是项目依赖的包不一样，比如<code>A</code>项目用的是<code>Python2</code>开发的，而<code>B</code>项目用的是<code>Python3</code>开发的，那么我们在同一台电脑上就需要两套不同的环境来支撑他们运行了。创建环境的基本命令如下：</p>
+<figure class="highlight lua"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"># conda <span class="built_in">create</span> <span class="comment">--name [环境名称] 比如以下：</span></span><br><span class="line">conda <span class="built_in">create</span> <span class="comment">--name da-env</span></span><br></pre></td></tr></table></figure>
+<p>这样将创建一个叫做<code>da-env</code>的环境，这个环境的<code>python</code>解释器根据<code>anaconda</code>来，如果<code>anaconda</code>为<code>3.7</code>，那么将默认使用<code>3.7</code>的环境，如果<code>anaconda</code>内置的是<code>2.7</code>，那么将默认使用<code>2.7</code>的环境。然后你就可以使用<code>conda install numpy</code>的方式来安装包了，并且这样安装进来的包，只会安装在当前环境中。有的同学可能有想问，如果想要装一个<code>Python2.7</code>的环境，<code>anaconda</code>中没有内置<code>Python2.7</code>，那么该怎么实现呢？。实际上，我们只需要在安装的时候指定<code>python</code>的版本，如果这个版本现在不存在，那么<code>anaconda</code>会自动的给我们下载。所以安装<code>Python2.7</code>的环境，使用以下代码即可实现：</p>
+<figure class="highlight apache"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="attribute">conda</span> create --name xxx python=<span class="number">2</span>.<span class="number">7</span></span><br></pre></td></tr></table></figure>
+<p>以下再列出<code>conda</code>管理环境的其他命令：</p>
+<ol>
+<li>
+<p>创建的时候指定需要安装的包：</p>
+<figure class="highlight livecodeserver"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">conda <span class="built_in">create</span> <span class="comment">--name xxx numpy pandas</span></span><br></pre></td></tr></table></figure>
+</li>
+<li>
+<p>创建的时候既需要指定包，也需要指定python环境：</p>
+<figure class="highlight apache"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="attribute">conda</span> create --name xxx python=<span class="number">3</span>.<span class="number">7</span> numpy pandas</span><br></pre></td></tr></table></figure>
+</li>
+<li>
+<p>进入到某个环境</p>
+<figure class="highlight applescript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">windows: <span class="built_in">activate</span> xxx</span><br><span class="line">mac/linux: source <span class="built_in">activate</span> xxx</span><br></pre></td></tr></table></figure>
+</li>
+<li>
+<p>退出环境：</p>
+<figure class="highlight ebnf"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="attribute">deactivate</span></span><br></pre></td></tr></table></figure>
+</li>
+<li>
+<p>列出当前所有的环境：</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">conda <span class="built_in">env</span> list</span><br></pre></td></tr></table></figure>
+</li>
+<li>
+<p>移除某个环境：</p>
+<figure class="highlight brainfuck"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">conda remove</span> <span class="literal">--</span><span class="comment">name xxx</span> <span class="literal">--</span><span class="comment">all</span></span><br></pre></td></tr></table></figure>
+</li>
+<li>
+<p>环境下的包导出和导入：</p>
+<ul>
+<li>导出：<code>conda env export &gt; environment.yml</code>。</li>
+<li>导入：<code>conda env create --name xxx -f environment.yml</code>。</li>
+</ul>
+</li>
+</ol>
+<h3 id="包管理：">包管理：</h3>
+<p><code>conda</code>也可以用来管理包。比如我们创建完一个新的环境后，想要在这个环境中安装包（比如numpy），那么可以通过以下代码来实现：</p>
+<figure class="highlight applescript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">activate</span> xxx</span><br><span class="line">conda install numpy</span><br></pre></td></tr></table></figure>
+<p>以下再介绍一些包管理常用的命令：</p>
+<ol>
+<li>
+<p>在不进入某个环境下直接给这个环境安装包：</p>
+<figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">conda install <span class="selector-attr">[包名]</span> -n <span class="selector-attr">[环境名]</span></span><br></pre></td></tr></table></figure>
+</li>
+<li>
+<p>列出该环境下所有的包：</p>
+<figure class="highlight ebnf"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="attribute">conda list</span></span><br></pre></td></tr></table></figure>
+</li>
+<li>
+<p>卸载某个包：</p>
+<figure class="highlight routeros"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">conda <span class="built_in">remove</span> [包名]</span><br></pre></td></tr></table></figure>
+</li>
+<li>
+<p>设置安装包的源：</p>
+<figure class="highlight arduino"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">conda config --add channels https:<span class="comment">//mirrors.tuna.tsinghua.edu.cn/anaconda/pkgs/free/</span></span><br><span class="line">conda config --add channels https:<span class="comment">//mirrors.tuna.tsinghua.edu.cn/anaconda/pkgs/main/</span></span><br><span class="line">conda config --set show_channel_urls yes</span><br></pre></td></tr></table></figure>
+</li>
+</ol>
+<h1>Jupyter notebook使用</h1>
+<h2 id="常用快捷键：">常用快捷键：</h2>
+<h3 id="命令模式（按Esc键）：">命令模式（按Esc键）：</h3>
+<ol>
+<li>Enter：转入编辑模式</li>
+<li>Shift-Enter：运行本单元，选中下个单元</li>
+<li>Ctrl-Enter：运行本单元</li>
+<li>Alt-Enter：运行本单元，在其下插入新单元</li>
+<li>Y：单元转入代码状态</li>
+<li>M：单元转入markdown状态</li>
+<li>R：单元转入raw状态</li>
+<li>1：设定 1 级标题</li>
+<li>2：设定 2 级标题</li>
+<li>3：设定 3 级标题</li>
+<li>4：设定 4 级标题</li>
+<li>5：设定 5 级标题</li>
+<li>6：设定 6 级标题</li>
+<li>Up：选中上方单元</li>
+<li>K：选中上方单元</li>
+<li>Down：选中下方单元</li>
+<li>J：选中下方单元</li>
+<li>Shift-K：扩大选中上方单元</li>
+<li>Shift-J：扩大选中下方单元</li>
+<li>A：在上方插入新单元</li>
+<li>B：在下方插入新单元</li>
+<li>X：剪切选中的单元</li>
+<li>C：复制选中的单元</li>
+<li>Shift-V：粘贴到上方单元</li>
+<li>V：粘贴到下方单元</li>
+<li>Z：恢复删除的最后一个单元</li>
+<li>D,D：删除选中的单元</li>
+<li>Shift-M：合并选中的单元</li>
+<li>Ctrl-S：文件存盘</li>
+<li>S：文件存盘</li>
+<li>L：转换行号</li>
+<li>O：转换输出</li>
+<li>Shift-O：转换输出滚动</li>
+<li>Esc：关闭页面</li>
+<li>Q：关闭页面</li>
+<li>H：显示快捷键帮助</li>
+<li>I,I：中断Notebook内核</li>
+<li>0,0：重启Notebook内核</li>
+<li>Shift：忽略</li>
+<li>Shift-Space：向上滚动</li>
+<li>Space：向下滚动</li>
+</ol>
+<h3 id="编辑模式：">编辑模式：</h3>
+<ol>
+<li>Tab : 代码补全或缩进</li>
+<li>Shift-Tab : 提示</li>
+<li>Ctrl-] : 缩进</li>
+<li>Ctrl-[ : 解除缩进</li>
+<li>Ctrl-A : 全选</li>
+<li>Ctrl-Z : 复原</li>
+<li>Ctrl-Shift-Z : 再做</li>
+<li>Ctrl-Y : 再做</li>
+<li>Ctrl-Home : 跳到单元开头</li>
+<li>Ctrl-Up : 跳到单元开头</li>
+<li>Ctrl-End : 跳到单元末尾</li>
+<li>Ctrl-Down : 跳到单元末尾</li>
+<li>Ctrl-Left : 跳到左边一个字首</li>
+<li>Ctrl-Right : 跳到右边一个字首</li>
+<li>Ctrl-Backspace : 删除前面一个字</li>
+<li>Ctrl-Delete : 删除后面一个字</li>
+<li>Esc : 进入命令模式</li>
+<li>Ctrl-M : 进入命令模式</li>
+<li>Shift-Enter : 运行本单元，选中下一单元</li>
+<li>Ctrl-Enter : 运行本单元</li>
+<li>Alt-Enter : 运行本单元，在下面插入一单元</li>
+<li>Ctrl-Shift-- : 分割单元</li>
+<li>Ctrl-Shift-Subtract : 分割单元</li>
+<li>Ctrl-S : 文件存盘</li>
+<li>Shift : 忽略</li>
+<li>Up : 光标上移或转入上一单元</li>
+<li>Down :光标下移或转入下一单元</li>
+</ol>
+<h2 id="注意事项：">注意事项：</h2>
+<p><code>jupyter notebook</code>每一个<code>cell</code>运行完后都会把这个<code>cell</code>中的变量保存到内存中，如果在一个<code>cell</code>中修改了之前的变量，再此运行这个<code>cell</code>的时候可能会导致一些问题产生。比如以下代码：</p>
+<figure class="highlight ini"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># 第一个cell中的代码</span></span><br><span class="line"><span class="attr">a</span> = <span class="number">10</span></span><br><span class="line"><span class="attr">b</span> = <span class="number">20</span></span><br><span class="line"></span><br><span class="line"><span class="comment"># 第二个cell中的代码</span></span><br><span class="line"><span class="attr">c</span> = a/b</span><br><span class="line"><span class="attr">b</span> = <span class="number">0</span></span><br></pre></td></tr></table></figure>
+<p>因为第二个<code>cell</code>修改了<code>b</code>变量，此时在整个环境中<code>b</code>都是等于0的，所以以后再运行这个<code>cell</code>的时候，<code>a/b</code>这个就会出问题了。这时候可以使用<code>Kernel-&gt;Rstart&amp;Run All</code>来重新运行整个项目。</p>
+<h1>业务</h1>
+<h3 id="什么是业务">什么是业务</h3>
+<p>业务 : 把产品以合理的方式通过渠道卖给客户(消费者)赚取利润</p>
+<p><img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="https://bu.dusays.com/2024/11/22/6740312b1c41c.png" alt="1664345204946"></p>
+<p>通俗点来讲，就是一切企业经营的各种可以赚钱的事情都可以称之为业务。</p>
+<p>可以通过以下问题进一步了解业务：</p>
+<pre><code>1. 你对接的业务部门每天，每个月都在做什么？ 
+2. 他们最关注什么数据？
+3. 由哪些环节会产生数据？
+4. 哪些行为对数据会产生影响？ 
+5. 影响的幅度大吗？ 
+</code></pre>
+<h2 id="什么是数据指标">什么是数据指标 ?</h2>
+<p>数据指标是一个比较抽象的，百度是这样定义的：<em>指标体系是指由若干个反映社会经济现象总体数量特征的相对独立又相互联系的统计指标所组成的有机整体</em></p>
+<p>可能大家在这里听的是一头的蒙蔽，你就把他理解一下：</p>
+<p>对当前业务有参考价值的统计数据</p>
+<p>比如你是数据分析，那公司一个产品出现购买下讲，访问下降，这种情况，那你去看星座数据，血行数据，这个是没有业务有半毛钱关系的。</p>
+<p>在这里之前我们先要明白关于常用流量指标一些数据标签</p>
+<p><img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="https://bu.dusays.com/2024/11/22/6740312c61a33.png" alt="1664346496241"></p>
+<p>数据对于一款产品来说，无疑是最重要的部分。假设没有数据的支撑，产品的各项评价都无法具体量化，这也就导致我们会非常难以准确判断一款产品或者是功能的好坏。客观、真实的产品数据往往可以指导我们做出正确的决策和判断，产品经理日常工作中也经常需要和数据打交道，数据分析的能力对于产品经理来说是非常重要的能力！基本的数据指标是数据分析的基础，我们需要了解最常见、最基本的数据指标有哪些。</p>
+<p><img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="https://bu.dusays.com/2024/11/22/6740312d8cb6e.png" alt="1664346708739"></p>
+<p>避免我们做数据分析工作的时候出现容易犯错的问题</p>
+<p>比如运营跟你说的日活语与你说的日活不一样，你们两个工作分析数据就会有差距，那么有差距包括有问题，这个时候这么办尼？这个就是因为你们两个没有统一的标准，当然，每个行业的数据指标不一样，像高铁行业，电商行业，钢铁行业。不可能知道所有的，老师会把方法论，基本的指标跟大家讲一下。</p>
+<p><img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="https://bu.dusays.com/2024/11/22/6740312ec666a.png" alt="1664346757045"></p>
+<p><img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="https://bu.dusays.com/2024/11/22/6740313006cd3.png" alt="1664346812195"></p>
+<p><img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="https://bu.dusays.com/2024/11/22/6740313131baf.png" alt="1664348454712"></p>
+<p><img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="https://bu.dusays.com/2024/11/22/674031323e0f1.png" alt="1664353343566"></p>
+<p>Daily : 一个自然日</p>
+<p>小提示 : 跨时区(全球服务),则关心最近的24H</p>
+<p>Monthly : ??</p>
+<p><img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="https://bu.dusays.com/2024/11/22/67403133600f8.png" alt="1664353417302"></p>
+<p>Daily : 一个自然日 小提示 : 跨时区(全球服务),则关心最近的24H</p>
+<p>Monthly : 当月至少活跃一次的用户总数 小提示 : MAU ≠ 各日的DAU之和 ,务必去重才有观察的意义</p>
+<p><img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="https://bu.dusays.com/2024/11/22/6740313468d2c.png" alt="1664353481472"></p>
+<p><img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="https://bu.dusays.com/2024/11/22/674031359df61.png" alt="1664353507606"></p>
+<p>淘宝购买球球，属于是我们看到的一种世间上报，这个地方跟程序员看到的有点不一样，程序员可能是点这个页面购买了的数据，那你看到的是发生链接属于事件上报，所以这个时候商品数据会出大问题，销量下降，那这个时候你们就选哟统一好事件上报是那些数据。</p>
+<p><img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="https://bu.dusays.com/2024/11/22/67403136a53bb.png" alt="1664353530405"></p>
+<p><img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="https://bu.dusays.com/2024/11/22/67403137bfe96.png" alt="1664353563074"></p>
+<p><img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="C:%5CUsers%5CTULING~1%5CAppData%5CLocal%5CTemp%5C1664353613115.png" alt="1664353613115"></p>
+<p><img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="https://bu.dusays.com/2024/11/22/6740313902f4a.png" alt="1664353658713"></p>
+<h2 id="新增用户">新增用户</h2>
+<p><img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="https://bu.dusays.com/2024/11/22/6740313a3bb19.png" alt="1664353711875"></p>
+<p>每个人都在说 “新增用户”, 但是每个人的 所理解的含义是不一样的</p>
+<p><img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="https://bu.dusays.com/2024/11/22/6740313b76058.png" alt="1664353803097"></p>
+<p><img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="https://bu.dusays.com/2024/11/22/6740313cc05fa.png" alt="1664353823563"></p>
+<h2 id="用户留存">用户留存</h2>
+<p><img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="https://bu.dusays.com/2024/11/22/6740313dea5b0.png" alt="1664353876263"></p>
+<p><img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="https://bu.dusays.com/2024/11/22/6740313f46f3c.png" alt="1664353915307"></p>
+<p><img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="https://bu.dusays.com/2024/11/22/674031407d778.png" alt="1664353953228"></p>
+<p><img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="https://bu.dusays.com/2024/11/22/67403141b3470.png" alt="1664353982237"></p>
+<p><img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="https://bu.dusays.com/2024/11/22/67403142e21cb.png" alt="1664354018898"></p>
+<p><img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="https://bu.dusays.com/2024/11/22/6740314437600.png" alt="1664354072506"></p>
+<p><img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="https://bu.dusays.com/2024/11/22/6740314570c07.png" alt="1664354108289"></p>
+<p><img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="https://bu.dusays.com/2024/11/22/67403146b68a6.png" alt="1664354157688"></p>
+<p><img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="https://bu.dusays.com/2024/11/22/67403147ec065.png" alt="1664354190839"></p>
+<p><img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="https://bu.dusays.com/2024/11/22/674031492c925.png" alt="1664354215140"></p>
+<p><strong>Page Views 页面浏览量</strong></p>
+<p><strong>Unique Visitors 独立访问数</strong></p>
+<p><img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="https://bu.dusays.com/2024/11/22/6740314a50edc.png" alt="1664354256038"></p>
+<p><img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="https://bu.dusays.com/2024/11/22/6740314b7402a.png" alt="1664354299913"></p>
+<p><img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="https://bu.dusays.com/2024/11/22/6740314c86f46.png" alt="1664354332858"></p>
+<p><img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="https://bu.dusays.com/2024/11/22/6740314d9b40e.png" alt="1664354363717"></p>
+<p><img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="https://bu.dusays.com/2024/11/22/6740314ecdd1b.png" alt="1664354389381"></p>
+<p><img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="https://bu.dusays.com/2024/11/22/6740315020d8c.png" alt="1664354410051"></p>
+<p><img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="https://bu.dusays.com/2024/11/22/6740315142c72.png" alt="1664354458137"></p>
+<p><img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="https://bu.dusays.com/2024/11/22/67403152533dc.png" alt="1664354510927"></p>
+<p><img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="https://bu.dusays.com/2024/11/22/674031536db87.png" alt="1664354541143"></p>
+<p><img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="https://bu.dusays.com/2024/11/22/67403154b3ad4.png" alt="1664354586772"></p>
+<p>基本数据指标</p>
+<p>上图基于用户、行为、业务三个层面详解了产品基本数据指标。产品基本数据指标比较多，但是有其内在的规律可以把握。我们看产品或者是功能的时候，首先关注用户数据，其次关注行为数据，也就是用户做了什么，再次关注业务数据，通过用户—行为—业务三个层面，我们就可以轻松的将所有数据都串联起来使用了</p>
+<p>这些数据指标有什么作用尼？</p>
+<p>第一指标体系是一套标准的化衡量指标，可以监控业务的发展情况</p>
+<p>第二指标体系可以形成报表并固定下来，可以减少重复的工作</p>
+<p>第三，如果业务有问题，数据分析可以通过指标拆解，迅速定位业务问题，给业务优化方向。</p>
+<p><img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="https://bu.dusays.com/2024/11/22/67403155cd7f3.png" alt="1664346076950"></p>
+<h1>数据思维如此重要</h1>
+<p>随着互联网技术大数据技术的发展，市场对数据分析师的要求越来越高。数据分析掌握必备的技能可以分为硬技能和软技能两大类。硬技能就是工具的使用，软技能就是对整个行业的认知，包括数据思维等</p>
+<p>硬件能包括掌握的工具包括PYTHON,	SQL,BI,EXCEL工具。</p>
+<p>互联网企业的数据一般都是存储在数据库中会用到SQL，是最基础的技能。数据提取完毕后，如有分析的需求，可以通过Excel，或者python进行下一步的分析，如果是需要长期监控的业务，可以通过BI工具可以直接做成数据报表以减少重复工作。</p>
+<p>数据分析的软技能</p>
+<p>业务知识</p>
+<p>数据思维</p>
+<p>沟通能力</p>
+<p>数据思维包括：</p>
+<p>对新的业务建立合理的指标体系，对制定相对应的评价标准以监控业务的发展</p>
+<p>合理去应用统计学的知识，分析方法解决业务问题，探究原因，预测结果以及评估活动效果</p>
+<p>面对不同业务场景，选择合适的方法定位问题，以辅助业务提升。</p>
+<p>那我们既然知道数据思维怎么重要，我们要怎么去培养了。</p>
+<p>第一：</p>
+<p>想要面对具体问题有分析的思路和方法，就需要熟悉业务以及常用的数据分析方法，最好能够建立自己的分析体系</p>
+<p>第二：</p>
+<p>面对具体问题多问几个为什么，树立目标意识，找出需求背后的潜在分析点。</p>
+<p>第三：</p>
+<p>作为数据分析师，需要建立标准，凡事不预设立立场，通过客观的标准代替主观的判断</p>
+<p>第四：</p>
+<p>基于数据分析结果为业务提成切实可行的解决方案。从第一种方法到第四种方法，难度是循序渐进，不是一下字而成，需要在工作当中不短学习，不断积累。</p>
+<p>数据思维三大分析思维：</p>
+<p>对比思维</p>
+<p>分群思维</p>
+<p>相关思维</p>
+<p>没有对比，就没有明确的数据结论。对比分析可以衡量数据整体大小，数据波动及数据变化趋势，所以说对比分析是得出数据结论最简单有效的方法。通常情况下，数据分析师会利用业务数据与大盘数据或者行业的标准进行对比，以去判断业务的现状，除次之外，同比，环比，横比，众比，也是比较常用的对比方法。</p>
+<p>分群思维是贯穿数据分析全链路的分析思维。根据用户的行为数据，消费数据等特征用户分群是实现用户精细化运营的基础。根据用户的行为数据，消费数据等特征用户分群是实现用户精细化运营的基础。用户分群可以基于用户历史数据，对数据进行分箱处理形成规则类型的标签。如果企业的数据标签体系做的好，可以直接通过数据标签实现用户的分群。除此之外，用户同期分析是用户分群的另外的一种方法，该方法是一种横纵结合方法，在这个横香上分析同期群随着周期推移而发生变化。在纵向上分析在生命周期相同阶段的群组之间的差异。这个我们通常可以用RFM模型与K-Means等机器学习方法进行用户分群。</p>
+<p>相关性与因果性分析是数据分析师具备的除对比分析和用户群之外的第三大分析思维。在变量关系探索过程中，相关性分析是较为常见的分析方法，但是变量之间存在相关性并不代表他们之间存在因果性。在无法通过A/B试验检验变量间因果关系时，因果推断也是数据分析常用的分析方法。</p>
+<p>举例子：</p>
+<p>数据分析师经常遇到的两个场景分别是用户流失问题。？</p>
+<p>那数据分析师是不是可以分析用户流失历史数据，研究流失用户的共性，分析用户流失的原因，给运营给出对应意见和建议。</p>
+<p>用户流水</p>
+<p>内因：5w2h法，流失前n步分析法 漏斗分析法</p>
+<p>外因：4p理论，波特五力模型 pest,竞品分析</p>
+<p>问卷调查，验证内因，外因</p>
+<p>分析用户流失的最终目的是实现用户增长和要用户进行付费，对于用户付费转化来说，数据分析师通常需要预估步同方案的转化率，通过漏斗分析和路径分析找出用户转化流程去可以找到一下优化的环节。同时，数据分析师可以通过营销增益模型识别营销敏感人群，以提升转化方案的投入产出比，当然这个也可以通过行为数据以及包括付费数据预估的生命周期价值</p>
+<p>用户转化与付费分析</p>
+<p>预估步同方案的转化率 ：用户画像 朴素贝叶斯</p>
+<p>用户画像与用户分层运营：营销增益模型 用户标签，RFM  模型</p>
+<p>用户转化路径分析：用户行为漏斗分析</p>
+<p>预估用户生命周期总价值 生存分析 机器学习</p>
+<h1>5步搞定可视化看板</h1>
+<h2 id="1-明需求">1.明需求</h2>
+<p>简单来说就是第一个你要知道你老板需要知道什么？</p>
+<p>我们会用到5W2H方法，这个方法是每个数据分析必学的分析方法，又称七何分析法，由5个以W开头的英文单词和2个H开头的英文单词进行试问。</p>
+<p>1what：发送了什么？</p>
+<p>2when：何时？在什么时候发生的？</p>
+<p>3where：何地？在哪里发生的？</p>
+<p>4who：是谁？</p>
+<p>5why为什么会这样</p>
+<p>2H的内容</p>
+<p>1how这么做？</p>
+<p>2how much 多少钱？做到什么程度，数量如何，费用是多少？</p>
+<p><img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="https://bu.dusays.com/2024/11/22/67403156eb35c.png" alt="1664267488632"></p>
+<h2 id="2-看数据">2.看数据</h2>
+<p>指的的是数据有什么维度</p>
+<h2 id="3-定图表">3.定图表</h2>
+<h2 id="选对合适的图表">选对合适的图表</h2>
+<ul>
+<li>在进行可视化之前，我们必须得想清楚，我们的数据是什么，是要来解决什么问题，需要通过图表来做什么。</li>
+<li>选对一个合适的图表，比任何美化图表的技巧都管用；</li>
+<li><strong>参考下方表格</strong></li>
+</ul>
+<table>
+<thead>
+<tr>
+<th>对比关系</th>
+<th>定义</th>
+<th>示例</th>
+<th>图表形式</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>占比</td>
+<td>个体在整体中占有的比例</td>
+<td>A 类业务的收入在整个公司中占据了 50%</td>
+<td>饼图、环形图、玫瑰图、百分比堆积柱形图、百分比堆积条形图、树状图、百分比瀑布图、矩形树图</td>
+</tr>
+<tr>
+<td>比较与排序</td>
+<td>显示 A 和 B 之间的比较；对不同的对象进行排名</td>
+<td>A 区域在 8 月的销售额远超其他 5 个区域</td>
+<td>柱形图、条形图、子弹图、雷达图、词云图、哑铃图、棒棒糖图</td>
+</tr>
+<tr>
+<td>时间趋势</td>
+<td>业务指标随着时间的推移而变化</td>
+<td>销售额在 5 年内的增长情况</td>
+<td>折线图、面积图</td>
+</tr>
+<tr>
+<td>频率分布</td>
+<td>同一指标的不同维度分析</td>
+<td>某公司人员的年龄段分布、收入分布 、</td>
+<td>直方图、箱线图、人口金字塔</td>
+</tr>
+<tr>
+<td>位置分布</td>
+<td>根据地理位置数据，通过地图展示不同分布特征</td>
+<td>某公司在全国各省份的销售额、人口密度</td>
+<td>地图、流向地图、点地图、热力地图</td>
+</tr>
+<tr>
+<td>相关性</td>
+<td>某A、B和C之间的关系</td>
+<td>通胀与失业率、收入与平均寿命</td>
+<td>散点图、气泡图、流程图、甘特图、组织结构图</td>
+</tr>
+</tbody>
+</table>
+<h2 id="4-定排布">4.定排布</h2>
+<p>排布这个问题主要是一个优先级。最重要的东西是放在哪里。</p>
+<p>这里大家也需要注意一个问题，就是我呢在做排版建议不要一张图出现一样的图形</p>
+<h2 id="5-画看板">5.画看板</h2>
+<p>就是把这个格局布置好，看起来会更加精美一点，这个在后面可视化当中，我在会跟大家仔细去介绍。</p>
+</article><div class="post-copyright"><div class="post-copyright__title"><span class="post-copyright-info"><h>text</h></span></div><div class="post-copyright__type"><span class="post-copyright-info"><a href="https://www.fomal.cc/posts/3b8ba7c7.html">https://www.fomal.cc/posts/3b8ba7c7.html</a></span></div><div class="post-copyright-m"><div class="post-copyright-m-info"><div class="post-copyright-a"><h>作者</h><div class="post-copyright-cc-info"><h>Fomalhaut🥝</h></div></div><div class="post-copyright-c"><h>发布于</h><div class="post-copyright-cc-info"><h>2025-05-10</h></div></div><div class="post-copyright-u"><h>更新于</h><div class="post-copyright-cc-info"><h>2025-05-10</h></div></div><div class="post-copyright-c"><h>许可协议</h><div class="post-copyright-cc-info"><a class="icon" rel="noopener" target="_blank" title="Creative Commons" href="https://creativecommons.org/"><i class="fab fa-creative-commons"></i></a><a rel="noopener" target="_blank" title="CC BY-NC-SA 4.0" href="https://creativecommons.org/licenses/by-nc-sa/4.0/">CC BY-NC-SA 4.0</a></div></div></div></div></div><div class="tag_share"><div class="post-meta__tag-list"></div></div><link rel="stylesheet" href="/css/coin.css" media="defer" onload="this.media='all'"/><div class="post-reward"><button class="tip-button reward-button"><span class="tip-button__text">投喂作者</span><div class="coin-wrapper"><div class="coin"><div class="coin__middle"></div><div class="coin__back"></div><div class="coin__front"></div></div></div><div class="reward-main"><ul class="reward-all"><li class="reward-item"><a href="https://tuchuang.voooe.cn/images/2023/01/04/2.webp" target="_blank"><img class="post-qr-code-img" src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="https://tuchuang.voooe.cn/images/2023/01/04/2.webp" alt="微信"/></a><div class="post-qr-code-desc">微信</div></li><li class="reward-item"><a href="https://tuchuang.voooe.cn/images/2023/01/04/20f8e49805975b8f8.webp" target="_blank"><img class="post-qr-code-img" src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="https://tuchuang.voooe.cn/images/2023/01/04/20f8e49805975b8f8.webp" alt="支付宝"/></a><div class="post-qr-code-desc">支付宝</div></li></ul></div></button></div><audio id="coinAudio" src="https://npm.elemecdn.com/akilar-candyassets@1.0.36/audio/aowu.m4a"></audio><script defer="defer" src="/js/coin.js"></script><nav class="pagination-post" id="pagination"><div class="prev-post pull-left"><a href="/posts/117cf8e9.html"><img class="prev-cover" src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="https://source.fomal.cc/img/default_cover_14.webp" onerror="onerror=null;src='/assets/r2.jpg'" alt="cover of previous post"><div class="pagination-info"><div class="label">上一篇</div><div class="prev_info">口红</div></div></a></div><div class="next-post pull-right"><a href="/posts/0.html"><img class="next-cover" src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="https://source.fomal.cc/img/default_cover_14.webp" onerror="onerror=null;src='/assets/r2.jpg'" alt="cover of next post"><div class="pagination-info"><div class="label">下一篇</div><div class="next_info"></div></div></a></div></nav><hr/><div id="post-comment"><div class="comment-head"><div class="comment-headline"><i class="fas fa-comments fa-fw"></i><span> 评论</span></div></div><div class="comment-wrap"><div><div id="twikoo-wrap"></div></div></div></div></div><div class="aside-content" id="aside-content"><div class="sticky_layout"><div class="card-widget" id="card-toc"><div class="item-headline"><svg class="meta_icon" style="width:22px;height:22px;position:relative;top:5px"><use xlink:href="#icon-mulu1"></use></svg><span style="font-weight:bold">目录</span><span class="toc-percentage"></span></div><div class="toc-content"><ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link"><span class="toc-text">数据分析介绍</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#%E4%BB%80%E4%B9%88%E6%98%AF%E6%95%B0%E6%8D%AE%E5%88%86%E6%9E%90%EF%BC%9A"><span class="toc-text">什么是数据分析：</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E6%95%B0%E6%8D%AE%E5%88%86%E6%9E%90%E6%AD%A5%E9%AA%A4%EF%BC%9A"><span class="toc-text">数据分析步骤：</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E6%95%B0%E6%8D%AE%E5%88%86%E6%9E%90%E7%9A%84%E8%AF%AF%E5%8C%BA%EF%BC%9A"><span class="toc-text">数据分析的误区：</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E6%95%B0%E6%8D%AE%E5%88%86%E6%9E%90%E7%9A%84%E6%96%B9%E6%B3%95%E5%92%8C%E5%B7%A5%E5%85%B7%EF%BC%9A"><span class="toc-text">数据分析的方法和工具：</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%B7%A5%E5%85%B7%E5%92%8C%E4%BB%A3%E7%A0%81%E8%AF%A5%E6%80%8E%E4%B9%88%E9%80%89%EF%BC%9A"><span class="toc-text">工具和代码该怎么选：</span></a></li></ol></li><li class="toc-item toc-level-1"><a class="toc-link"><span class="toc-text">环境搭建</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#%E4%B8%80%E3%80%81Python%E7%89%88%E6%9C%AC%EF%BC%9A"><span class="toc-text">一、Python版本：</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Anaconda%EF%BC%9A"><span class="toc-text">Anaconda：</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#Anaconda-prompt%EF%BC%9A"><span class="toc-text">Anaconda prompt：</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#Anaconda-Navigator%EF%BC%9A"><span class="toc-text">Anaconda Navigator：</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%9C%A8windows%E7%B3%BB%E7%BB%9F%E5%AE%89%E8%A3%85Andaconda"><span class="toc-text">在windows系统安装Andaconda</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#Spyder%EF%BC%9A"><span class="toc-text">Spyder：</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#jupyter-notebook%EF%BC%9A"><span class="toc-text">jupyter notebook：</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#1647520320425"><span class="toc-text"></span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E4%BD%BF%E7%94%A8jupyter-notebook%E7%9A%84%E5%A7%BF%E5%8A%BF%EF%BC%9A"><span class="toc-text">使用jupyter notebook的姿势：</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#conda%E5%9F%BA%E6%9C%AC%E4%BD%BF%E7%94%A8%EF%BC%9A"><span class="toc-text">conda基本使用：</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E7%8E%AF%E5%A2%83%E7%AE%A1%E7%90%86%EF%BC%9A"><span class="toc-text">环境管理：</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%8C%85%E7%AE%A1%E7%90%86%EF%BC%9A"><span class="toc-text">包管理：</span></a></li></ol></li></ol></li><li class="toc-item toc-level-1"><a class="toc-link"><span class="toc-text">Jupyter notebook使用</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%B8%B8%E7%94%A8%E5%BF%AB%E6%8D%B7%E9%94%AE%EF%BC%9A"><span class="toc-text">常用快捷键：</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%91%BD%E4%BB%A4%E6%A8%A1%E5%BC%8F%EF%BC%88%E6%8C%89Esc%E9%94%AE%EF%BC%89%EF%BC%9A"><span class="toc-text">命令模式（按Esc键）：</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E7%BC%96%E8%BE%91%E6%A8%A1%E5%BC%8F%EF%BC%9A"><span class="toc-text">编辑模式：</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E6%B3%A8%E6%84%8F%E4%BA%8B%E9%A1%B9%EF%BC%9A"><span class="toc-text">注意事项：</span></a></li></ol></li><li class="toc-item toc-level-1"><a class="toc-link"><span class="toc-text">业务</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E4%BB%80%E4%B9%88%E6%98%AF%E4%B8%9A%E5%8A%A1"><span class="toc-text">什么是业务</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E4%BB%80%E4%B9%88%E6%98%AF%E6%95%B0%E6%8D%AE%E6%8C%87%E6%A0%87"><span class="toc-text">什么是数据指标 ?</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E6%96%B0%E5%A2%9E%E7%94%A8%E6%88%B7"><span class="toc-text">新增用户</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E7%94%A8%E6%88%B7%E7%95%99%E5%AD%98"><span class="toc-text">用户留存</span></a></li></ol></li><li class="toc-item toc-level-1"><a class="toc-link"><span class="toc-text">数据思维如此重要</span></a></li><li class="toc-item toc-level-1"><a class="toc-link"><span class="toc-text">5步搞定可视化看板</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#1-%E6%98%8E%E9%9C%80%E6%B1%82"><span class="toc-text">1.明需求</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#2-%E7%9C%8B%E6%95%B0%E6%8D%AE"><span class="toc-text">2.看数据</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#3-%E5%AE%9A%E5%9B%BE%E8%A1%A8"><span class="toc-text">3.定图表</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E9%80%89%E5%AF%B9%E5%90%88%E9%80%82%E7%9A%84%E5%9B%BE%E8%A1%A8"><span class="toc-text">选对合适的图表</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#4-%E5%AE%9A%E6%8E%92%E5%B8%83"><span class="toc-text">4.定排布</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#5-%E7%94%BB%E7%9C%8B%E6%9D%BF"><span class="toc-text">5.画看板</span></a></li></ol></li></ol></div></div></div></div></main><footer id="footer" style="background-color: transparent;"><div id="footer-wrap"><div id="ft"><div class="ft-item-1"><div class="t-top"><div class="t-t-l"><p class="ft-t t-l-t">格言🧬</p><div class="bg-ad"><div>再看看那个光点，它就在这里，这是家园，这是我们 —— 你所爱的每一个人，你认识的一个人，你听说过的每一个人，曾经有过的每一个人，都在它上面度过他们的一生✨</div><div class="btn-xz-box"><a class="btn-xz" target="_blank" rel="noopener" href="https://stellarium.org/">点击开启星辰之旅</a></div></div></div><div class="t-t-r"><p class="ft-t t-l-t">猜你想看💡</p><ul class="ft-links"><li><a href="/posts/eec9786.html">魔改指南</a><a href="/box/nav/">网址导航</a></li><li><a href="/social/link/">我的朋友</a><a href="/comments/">留点什么</a></li><li><a href="/personal/about/">关于作者</a><a href="/archives/">文章归档</a></li><li><a href="/categories/">文章分类</a><a href="/tags/">文章标签</a></li><li><a href="/box/Gallery/">我的画廊</a><a href="/personal/bb/">我的唠叨</a></li><li><a href="/site/time/">建设进程</a><a href="/site/census/">网站统计</a></li></ul></div></div></div><div class="ft-item-2"><p class="ft-t">推荐友链⌛</p><div class="ft-img-group"><div class="img-group-item"><a href="https://www.fomal.cc/" title="Fomalhaut🥝"><img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="https://lskypro.acozycotage.net/LightPicture/2022/12/60e5d4e39da7c077.webp" alt=""/></a></div><div class="img-group-item"><a href="javascript:void(0)" title="广告位招租"><img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="https://lskypro.acozycotage.net/LightPicture/2022/12/65307a5828af6790.webp" alt=""/></a></div><div class="img-group-item"><a href="javascript:void(0)" title="广告位招租"><img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="https://lskypro.acozycotage.net/LightPicture/2022/12/65307a5828af6790.webp" alt=""/></a></div><div class="img-group-item"><a href="javascript:void(0)" title="广告位招租"><img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="https://lskypro.acozycotage.net/LightPicture/2022/12/65307a5828af6790.webp" alt=""/></a></div><div class="img-group-item"><a href="javascript:void(0)" title="广告位招租"><img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="https://lskypro.acozycotage.net/LightPicture/2022/12/65307a5828af6790.webp" alt=""/></a></div><div class="img-group-item"><a href="javascript:void(0)" title="广告位招租"><img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="https://lskypro.acozycotage.net/LightPicture/2022/12/65307a5828af6790.webp" alt=""/></a></div><div class="img-group-item"><a href="javascript:void(0)" title="广告位招租"><img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="https://lskypro.acozycotage.net/LightPicture/2022/12/65307a5828af6790.webp" alt=""/></a></div><div class="img-group-item"><a href="javascript:void(0)" title="广告位招租"><img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="https://lskypro.acozycotage.net/LightPicture/2022/12/65307a5828af6790.webp" alt=""/></a></div></div></div></div><div class="copyright"><span><b>&copy;2022-2025</b></span><span><b>&nbsp;&nbsp;By Fomalhaut🥝</b></span></div><div id="workboard"></div><p id="ghbdages"><a class="github-badge" target="_blank" href="https://hexo.io/" style="margin-inline:5px" title="博客框架为Hexo_v6.3.0"><img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="https://sourcebucket.s3.ladydaily.com/badge/Frame-Hexo-blue.svg" alt=""/></a><a class="github-badge" target="_blank" href="https://butterfly.js.org/" style="margin-inline:5px" title="主题版本Butterfly_v4.3.1"><img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="https://sourcebucket.s3.ladydaily.com/badge/Theme-Butterfly-6513df.svg" alt=""/></a><a class="github-badge" target="_blank" href="https://vercel.com/" style="margin-inline:5px" title="本站采用多线部署，主线路托管于Vercel"><img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="https://sourcebucket.s3.ladydaily.com/badge/Hosted-Vercel-brightgreen.svg" alt=""/></a><a class="github-badge" target="_blank" href="https://user.51.la/" style="margin-inline:5px" title="本站数据分析得益于51la技术支持"><img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="https://sourcebucket.s3.ladydaily.com/badge/Analytics-51la-3db1eb.svg" alt=""/></a><a class="github-badge" target="_blank" href="https://icp.gov.moe/?keyword=20226665" style="margin-inline:5px" title="本站已加入萌ICP豪华套餐，萌ICP备20226665号"><img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="https://sourcebucket.s3.ladydaily.com/badge/萌ICP备-20226665-fe1384.svg" alt=""/></a><a class="github-badge" target="_blank" href="https://bitiful.dogecast.com/buckets" style="margin-inline:5px" title="本网站经Service Worker分流至缤纷云对象存储"><img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src=" https://sourcebucket.s3.ladydaily.com/badge/Bucket-缤纷云-9c62da.svg" alt=""/></a><a class="github-badge" target="_blank" href="https://www.netdun.net/" style="margin-inline:5px" title="本站使用网盾星球提供CDN加速与防护"><img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="https://sourcebucket.s3.ladydaily.com/badge/CDN-网盾星球-fff2cc.svg" alt=""/></a><a class="github-badge" target="_blank" href="https://github.com/" style="margin-inline:5px" title="本网站源码由Github提供存储仓库"><img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src=" https://sourcebucket.s3.ladydaily.com/badge/Source-Github-d021d6.svg" alt=""/></a></p></div></footer></div><div id="rightside"><div id="rightside-config-hide"><button id="readmode" type="button" title="阅读模式"><i class="fas fa-book-open"></i></button><a class="icon-V hidden" onclick="switchNightMode()" title="浅色和深色模式转换"><svg width="25" height="25" viewBox="0 0 1024 1024"><use id="modeicon" xlink:href="#icon-moon"></use></svg></a><button id="hide-aside-btn" type="button" title="单栏和双栏切换"><i class="fas fa-arrows-alt-h"></i></button><button class="share" type="button" title="右键模式" onclick="changeMouseMode()"><i class="fas fa-mouse"></i></button></div><div id="rightside-config-show"><button id="rightside_config" type="button" title="设置"><i class="fas fa-cog right_side"></i></button><button class="close" id="mobile-toc-button" type="button" title="目录"><i class="fas fa-list-ul"></i></button><button class="share" type="button" title="分享链接" onclick="share()"><i class="fas fa-share-nodes"></i></button><a id="to_comment" href="#post-comment" title="直达评论"><i class="fas fa-comments"></i></a><button id="go-up" type="button" title="回到顶部"><i class="fas fa-arrow-up"></i><span id="percent">0<span>%</span></span></button><button id="go-down" type="button" title="直达底部" onclick="btf.scrollToDest(document.body.scrollHeight, 500)"><i class="fas fa-arrow-down"></i></button></div></div><div id="local-search"><div class="search-dialog"><nav class="search-nav"><span class="search-dialog-title">搜索</span><span id="loading-status"></span><button class="search-close-button"><i class="fas fa-times"></i></button></nav><div class="is-center" id="loading-database"><i class="fas fa-spinner fa-pulse"></i><span>  数据库加载中</span></div><div class="search-wrap"><div id="local-search-input"><div class="local-search-box"><input class="local-search-box--input" placeholder="搜索文章" type="text"/></div></div><hr/><div id="local-search-results"></div></div></div><div id="search-mask"></div></div><div class="js-pjax" id="rightMenu"><div class="rightMenu-group rightMenu-small"><a class="rightMenu-item" href="javascript:window.history.back();"><i class="fa fa-arrow-left"></i></a><a class="rightMenu-item" href="javascript:window.history.forward();"><i class="fa fa-arrow-right"></i></a><a class="rightMenu-item" href="javascript:window.location.reload();"><i class="fa fa-refresh"></i></a><a class="rightMenu-item" href="javascript:rmf.scrollToTop();"><i class="fa fa-arrow-up"></i></a></div><div class="rightMenu-group rightMenu-line hide" id="menu-text"><a class="rightMenu-item" href="javascript:rmf.copySelect();"><i class="fa fa-copy"></i><span>复制</span></a><a class="rightMenu-item" href="javascript:window.open(&quot;https://www.baidu.com/s?wd=&quot;+window.getSelection().toString());window.location.reload();"><i class="fa fa-search"></i><span>百度搜索</span></a></div><div class="rightMenu-group rightMenu-line hide" id="menu-too"><a class="rightMenu-item" href="javascript:window.open(window.getSelection().toString());window.location.reload();"><i class="fa fa-link"></i><span>转到链接</span></a></div><div class="rightMenu-group rightMenu-line hide" id="menu-paste"><a class="rightMenu-item" href="javascript:rmf.paste()"><i class="fa fa-copy"></i><span>粘贴</span></a></div><div class="rightMenu-group rightMenu-line hide" id="menu-post"><a class="rightMenu-item" href="#post-comment"><i class="fas fa-comment"></i><span>空降评论</span></a><a class="rightMenu-item" href="javascript:rmf.copyWordsLink()"><i class="fa fa-link"></i><span>复制本文地址</span></a></div><div class="rightMenu-group rightMenu-line hide" id="menu-to"><a class="rightMenu-item" href="javascript:rmf.openWithNewTab()"><i class="fa fa-window-restore"></i><span>新窗口打开</span></a><a class="rightMenu-item" id="menu-too" href="javascript:rmf.open()"><i class="fa fa-link"></i><span>转到链接</span></a><a class="rightMenu-item" href="javascript:rmf.copyLink()"><i class="fa fa-copy"></i><span>复制链接</span></a></div><div class="rightMenu-group rightMenu-line hide" id="menu-img"><a class="rightMenu-item" href="javascript:rmf.saveAs()"><i class="fa fa-download"></i><span>保存图片</span></a><a class="rightMenu-item" href="javascript:rmf.openWithNewTab()"><i class="fa fa-window-restore"></i><span>在新窗口打开</span></a><a class="rightMenu-item" href="javascript:rmf.copyLink()"><i class="fa fa-copy"></i><span>复制图片链接</span></a></div><div class="rightMenu-group rightMenu-line"><a class="rightMenu-item" href="javascript:randomPost()"><i class="fa fa-paper-plane"></i><span>随便逛逛</span></a><a class="rightMenu-item" href="javascript:switchNightMode();"><i class="fa fa-moon"></i><span>昼夜切换</span></a><a class="rightMenu-item" href="/personal/about/"><i class="fa fa-info-circle"></i><span>关于博客</span></a><a class="rightMenu-item" href="javascript:toggleWinbox();"><i class="fas fa-cog"></i><span>美化设置</span></a><a class="rightMenu-item" href="javascript:rmf.fullScreen();"><i class="fas fa-expand"></i><span>切换全屏</span></a><a class="rightMenu-item" href="javascript:window.print();"><i class="fa-solid fa-print"></i><span>打印页面</span></a></div></div><div><script src="/js/utils.js"></script><script src="/js/main.js"></script><script src="https://cdn.staticfile.org/fancyapps-ui/4.0.31/fancybox.umd.min.js"></script><script src="https://lf3-cdn-tos.bytecdntp.com/cdn/expire-1-M/instant.page/5.1.0/instantpage.min.js" type="module"></script><script src="https://lf3-cdn-tos.bytecdntp.com/cdn/expire-1-M/vanilla-lazyload/17.3.1/lazyload.iife.min.js"></script><script src="/js/search/local-search.js"></script><script async="async">var preloader = {
+  endLoading: () => {
+    document.body.style.overflow = 'auto';
+    document.getElementById('loading-box').classList.add("loaded")
+  },
+  initLoading: () => {
+    document.body.style.overflow = '';
+    document.getElementById('loading-box').classList.remove("loaded")
+
+  }
+}
+window.addEventListener('load',preloader.endLoading())
+setTimeout(function(){preloader.endLoading();}, 5000);
+document.getElementById('loading-box').addEventListener('click',()=> {preloader.endLoading()})</script><div class="js-pjax"><script>if (!window.MathJax) {
+  window.MathJax = {
+    tex: {
+      inlineMath: [ ['$','$'], ["\\(","\\)"]],
+      tags: 'ams'
+    },
+    chtml: {
+      scale: 1.2
+    },
+    options: {
+      renderActions: {
+        findScript: [10, doc => {
+          for (const node of document.querySelectorAll('script[type^="math/tex"]')) {
+            const display = !!node.type.match(/; *mode=display/)
+            const math = new doc.options.MathItem(node.textContent, doc.inputJax[0], display)
+            const text = document.createTextNode('')
+            node.parentNode.replaceChild(text, node)
+            math.start = {node: text, delim: '', n: 0}
+            math.end = {node: text, delim: '', n: 0}
+            doc.math.push(math)
+          }
+        }, ''],
+        insertScript: [200, () => {
+          document.querySelectorAll('mjx-container:not\([display]\)').forEach(node => {
+            const target = node.parentNode
+            if (target.nodeName.toLowerCase() === 'li') {
+              target.parentNode.classList.add('has-jax')
+            } else {
+              target.classList.add('has-jax')
+            }
+          });
+        }, '', false]
+      }
+    }
+  }
+  
+  const script = document.createElement('script')
+  script.src = 'https://cdnjs.cloudflare.com/ajax/libs/mathjax/3.2.2/es5/tex-mml-chtml.min.js'
+  script.id = 'MathJax-script'
+  script.async = true
+  document.head.appendChild(script)
+} else {
+  MathJax.startup.document.state(0)
+  MathJax.texReset()
+  MathJax.typeset()
+}</script><script>(()=>{
+  const init = () => {
+    twikoo.init(Object.assign({
+      el: '#twikoo-wrap',
+      envId: '',
+      region: '',
+      onCommentLoaded: function () {
+        btf.loadLightbox(document.querySelectorAll('#twikoo .tk-content img:not(.tk-owo-emotion)'))
+      }
+    }, null))
+  }
+
+  const getCount = () => {
+    const countELement = document.getElementById('twikoo-count')
+    if(!countELement) return
+    twikoo.getCommentsCount({
+      envId: '',
+      region: '',
+      urls: [window.location.pathname],
+      includeReply: false
+    }).then(function (res) {
+      countELement.innerText = res[0].count
+    }).catch(function (err) {
+      console.error(err);
+    });
+  }
+
+  const runFn = () => {
+    init()
+    
+  }
+
+  const loadTwikoo = () => {
+    if (typeof twikoo === 'object') {
+      setTimeout(runFn,0)
+      return
+    } 
+    getScript('https://cdn.staticfile.org/twikoo/1.6.8/twikoo.all.min.js').then(runFn)
+  }
+
+  if ('Twikoo' === 'Twikoo' || !true) {
+    if (true) btf.loadComment(document.getElementById('twikoo-wrap'), loadTwikoo)
+    else loadTwikoo()
+  } else {
+    window.loadOtherComment = () => {
+      loadTwikoo()
+    }
+  }
+})()</script></div><script src="https://cdn.staticfile.org/jquery/3.6.3/jquery.min.js"></script><script async src="https://cdn1.tianli0.top/npm/vue@2.6.14/dist/vue.min.js"></script><script async src="https://cdn1.tianli0.top/npm/element-ui@2.15.6/lib/index.js"></script><script async src="https://cdn.bootcdn.net/ajax/libs/clipboard.js/2.0.11/clipboard.min.js"></script><script defer type="text/javascript" src="https://cdn1.tianli0.top/npm/sweetalert2@8.19.0/dist/sweetalert2.all.js"></script><script async src="//npm.elemecdn.com/pace-js@1.2.4/pace.min.js"></script><script defer src="https://cdn1.tianli0.top/gh/nextapps-de/winbox/dist/winbox.bundle.min.js"></script><script async src="//at.alicdn.com/t/c/font_3586335_hsivh70x0fm.js"></script><script async src="//at.alicdn.com/t/c/font_3636804_gr02jmjr3y9.js"></script><script async src="//at.alicdn.com/t/c/font_3612150_kfv55xn3u2g.js"></script><script async src="https://cdn.wpon.cn/2022-sucai/Gold-ingot.js"></script><canvas id="universe"></canvas><canvas id="snow"></canvas><script defer src="/js/fomal.js"></script><link rel="stylesheet" href="https://lf6-cdn-tos.bytecdntp.com/cdn/expire-1-M/aplayer/1.10.1/APlayer.min.css" media="print" onload="this.media='all'"><script src="https://lf6-cdn-tos.bytecdntp.com/cdn/expire-1-M/aplayer/1.10.1/APlayer.min.js"></script><script src="https://cdn1.tianli0.top/npm/js-heo@1.0.12/metingjs/Meting.min.js"></script><script src="https://lib.baomitu.com/pjax/0.2.8/pjax.min.js"></script><script>let pjaxSelectors = ["head > title","#config-diff","#body-wrap","#rightside-config-hide","#rightside-config-show","#web_bg",".js-pjax","#bibi","body > title","#app","#tag-echarts","#posts-echart","#categories-echarts"]
+
+var pjax = new Pjax({
+  elements: 'a:not([target="_blank"])',
+  selectors: pjaxSelectors,
+  cacheBust: false,
+  analytics: false,
+  scrollRestoration: false
+})
+
+document.addEventListener('pjax:send', function () {
+
+  // removeEventListener scroll 
+  window.tocScrollFn && window.removeEventListener('scroll', window.tocScrollFn)
+  window.scrollCollect && window.removeEventListener('scroll', scrollCollect)
+
+  typeof preloader === 'object' && preloader.initLoading()
+  document.getElementById('rightside').style.cssText = "opacity: ''; transform: ''"
+  
+  if (window.aplayers) {
+    for (let i = 0; i < window.aplayers.length; i++) {
+      if (!window.aplayers[i].options.fixed) {
+        window.aplayers[i].destroy()
+      }
+    }
+  }
+
+  typeof typed === 'object' && typed.destroy()
+
+  //reset readmode
+  const $bodyClassList = document.body.classList
+  $bodyClassList.contains('read-mode') && $bodyClassList.remove('read-mode')
+
+  typeof disqusjs === 'object' && disqusjs.destroy()
+})
+
+document.addEventListener('pjax:complete', function () {
+  window.refreshFn()
+
+  document.querySelectorAll('script[data-pjax]').forEach(item => {
+    const newScript = document.createElement('script')
+    const content = item.text || item.textContent || item.innerHTML || ""
+    Array.from(item.attributes).forEach(attr => newScript.setAttribute(attr.name, attr.value))
+    newScript.appendChild(document.createTextNode(content))
+    item.parentNode.replaceChild(newScript, item)
+  })
+
+  GLOBAL_CONFIG.islazyload && window.lazyLoadInstance.update()
+
+  typeof chatBtnFn === 'function' && chatBtnFn()
+  typeof panguInit === 'function' && panguInit()
+
+  // google analytics
+  typeof gtag === 'function' && gtag('config', '', {'page_path': window.location.pathname});
+
+  // baidu analytics
+  typeof _hmt === 'object' && _hmt.push(['_trackPageview',window.location.pathname]);
+
+  typeof loadMeting === 'function' && document.getElementsByClassName('aplayer').length && loadMeting()
+
+  // prismjs
+  typeof Prism === 'object' && Prism.highlightAll()
+
+  typeof preloader === 'object' && preloader.endLoading()
+})
+
+document.addEventListener('pjax:error', (e) => {
+  if (e.request.status === 404) {
+    pjax.loadUrl('/404.html')
+  }
+})</script><script async data-pjax src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script></div><!-- hexo injector body_end start --> <script data-pjax>if(document.getElementById('recent-posts') && (location.pathname ==='/'|| '/' ==='all')){
+    var parent = document.getElementById('recent-posts');
+    var child = '<div class="recent-post-item" style="width:100%;height: auto"><div id="catalog_magnet"><a class="magnet_link_more"  href="https://www.fomal.cc/categories/" style="flex:1;text-align: center;margin-bottom: 10px;">查看更多...</a></div></div>';
+    console.log('已挂载magnet')
+    parent.insertAdjacentHTML("afterbegin",child)}
+     </script><style>#catalog_magnet{flex-wrap: wrap;display: flex;width:100%;justify-content:space-between;padding: 10px 10px 0 10px;align-content: flex-start;}.magnet_item{flex-basis: calc(33.333333333333336% - 5px);background: #e9e9e9;margin-bottom: 10px;border-radius: 8px;transition: all 0.2s ease-in-out;}.magnet_item:hover{background: var(--text-bg-hover)}.magnet_link_more{color:#555}.magnet_link{color:black}.magnet_link:hover{color:white}@media screen and (max-width: 600px) {.magnet_item {flex-basis: 100%;}}.magnet_link_context{display:flex;padding: 10px;font-size:16px;transition: all 0.2s ease-in-out;}.magnet_link_context:hover{padding: 10px 20px;}</style>
+    <style></style><script data-pjax>
+  function butterfly_swiper_injector_config(){
+    var parent_div_git = document.getElementById('recent-posts');
+    var item_html = '<div class="recent-post-item" style="height: auto;width: 100%"><div class="blog-slider swiper-container-fade swiper-container-horizontal" id="swiper_container"><div class="blog-slider__wrp swiper-wrapper" style="transition-duration: 0ms;"></div><div class="blog-slider__pagination swiper-pagination-clickable swiper-pagination-bullets"></div></div></div>';
+    console.log('已挂载butterfly_swiper')
+    parent_div_git.insertAdjacentHTML("afterbegin",item_html)
+    }
+  var elist = 'undefined'.split(',');
+  var cpage = location.pathname;
+  var epage = '/';
+  var flag = 0;
+
+  for (var i=0;i<elist.length;i++){
+    if (cpage.includes(elist[i])){
+      flag++;
+    }
+  }
+
+  if ((epage ==='all')&&(flag == 0)){
+    butterfly_swiper_injector_config();
+  }
+  else if (epage === cpage){
+    butterfly_swiper_injector_config();
+  }
+  </script><script defer src="https://npm.elemecdn.com/hexo-butterfly-swiper/lib/swiper.min.js"></script><script defer data-pjax src="https://npm.elemecdn.com/hexo-butterfly-swiper/lib/swiper_init.js"></script><div class="js-pjax"><script async="async">var arr = document.getElementsByClassName('recent-post-item');
+for(var i = 0;i<arr.length;i++){
+    arr[i].classList.add('wow');
+    arr[i].classList.add('animate__zoomIn');
+    arr[i].setAttribute('data-wow-duration', '2s');
+    arr[i].setAttribute('data-wow-delay', '200ms');
+    arr[i].setAttribute('data-wow-offset', '30');
+    arr[i].setAttribute('data-wow-iteration', '1');
+  }</script><script async="async">var arr = document.getElementsByClassName('card-widget');
+for(var i = 0;i<arr.length;i++){
+    arr[i].classList.add('wow');
+    arr[i].classList.add('animate__zoomIn');
+    arr[i].setAttribute('data-wow-duration', '2s');
+    arr[i].setAttribute('data-wow-delay', '200ms');
+    arr[i].setAttribute('data-wow-offset', '30');
+    arr[i].setAttribute('data-wow-iteration', '1');
+  }</script></div><script defer src="https://npm.elemecdn.com/hexo-butterfly-wowjs/lib/wow.min.js"></script><script defer src="https://npm.elemecdn.com/hexo-butterfly-wowjs/lib/wow_init.js"></script><script data-pjax src="https://npm.elemecdn.com/hexo-filter-gitcalendar/lib/gitcalendar.js"></script><script data-pjax>
+  function gitcalendar_injector_config(){
+      var parent_div_git = document.getElementById('gitZone');
+      var item_html = '<div class="recent-post-item" id="gitcalendarBar" style="width:100%;height:auto;padding:10px;"><style>#git_container{min-height: 320px}@media screen and (max-width:650px) {#git_container{min-height: 0px}}</style><div id="git_loading" style="width:10%;height:100%;margin:0 auto;display: block;"><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 50 50" style="enable-background:new 0 0 50 50" xml:space="preserve"><path fill="#d0d0d0" d="M25.251,6.461c-10.318,0-18.683,8.365-18.683,18.683h4.068c0-8.071,6.543-14.615,14.615-14.615V6.461z" transform="rotate(275.098 25 25)"><animatetransform attributeType="xml" attributeName="transform" type="rotate" from="0 25 25" to="360 25 25" dur="0.6s" repeatCount="indefinite"></animatetransform></path></svg><style>#git_container{display: none;}</style></div><div id="git_container"></div></div>';
+      parent_div_git.insertAdjacentHTML("afterbegin",item_html)
+      console.log('已挂载gitcalendar')
+      }
+
+    if( document.getElementById('gitZone') && (location.pathname ==='/site/census/'|| '/site/census/' ==='all')){
+        gitcalendar_injector_config()
+        GitCalendarInit("/api?null",['#d9e0df', '#c6e0dc', '#a8dcd4', '#9adcd2', '#89ded1', '#77e0d0', '#5fdecb', '#47dcc6', '#39dcc3', '#1fdabe', '#00dab9'],'null')
+    }
+  </script><!-- hexo injector body_end end --></body></html>
